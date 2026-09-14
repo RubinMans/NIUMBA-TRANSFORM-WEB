@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#2a1700","primary-fixed":"#b3f1c3","on-secondary-fixed-variant":"#00522f","on-primary-container":"#80ba90","outline-variant":"#c0c9bf","inverse-surface":"#283044","secondary-fixed":"#8df8b7","primary-container":"#0e4b2a","on-tertiary-fixed-variant":"#653e00","surface":"#faf8ff","tertiary-fixed":"#ffddb8","surface-container-high":"#e2e7ff","error-container":"#ffdad6","primary-fixed-dim":"#98d4a8","tertiary":"#3f2500","on-error":"#ffffff","on-background":"#131b2e","inverse-on-surface":"#eef0ff","on-secondary-container":"#007243","surface-container":"#eaedff","secondary-fixed-dim":"#70db9d","on-tertiary-container":"#f09a02","on-primary-fixed":"#00210e","tertiary-container":"#5d3900","on-error-container":"#93000a","inverse-primary":"#98d4a8","secondary":"#006d40","tertiary-fixed-dim":"#ffb95f","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#16512f","error":"#ba1a1a","surface-variant":"#dae2fd","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary":"#ffffff","on-surface-variant":"#404941","primary":"#003319","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002110","secondary-container":"#8af5b4","outline":"#717971","on-surface":"#131b2e","surface-tint":"#316945"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md font-bold tracking-tight">NT</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">NIUMBA TRANSFORM</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Industrie &amp; Hygiène Durable</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="entreprise" href="#">Entreprise</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="produits-bukhete" href="#">Produits BUKHETE</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="videos" href="#">Vidéos</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="innovation-&amp;-ecologie" href="#">Innovation &amp; Écologie</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="actualites" href="#">Actualités</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="devenir-distributeur" href="#">Devenir Distributeur</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase">RDC</span><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">FR</span></div><a class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" data-path="commander" href="#"><span class="font-bold">Commander</span><span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></span></a><a class="p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dashboard-vue-d'ensemble" href="#" title="Espace Admin"><span class="material-symbols-outlined">admin_panel_settings</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1U-lqjrzSXAWeIT-_tAp8izyX9pKLEMl7EWwHZSyrWlP1IEeXwYUftVPvmRi2Hng7RP27AMPmvJBestR1UMQiZFl_7rAaXuKaXbJim_SOQIlKuaueGepNNWkuYkTNqqSqdtgatMHXSWYBIgW5ojiHmqLY4fYi1B18D_4sM1J7m6SJXUvyTiuYogFLjrGNdzuZETgqJD3Pq3sC1d0wSZEJEDJr0pPkXk3LAxHy_j91rP1kcpW_yf3jZa-kjDWIxy-jdH8j3bHVdW"/></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Admin Bar Contextual Banner -->
+<div class="w-full bg-primary-container text-on-primary px-margin py-space-md shadow-md">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-md font-bold shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-primary">Console d'Administration Centrale</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">v2.4 Production</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface/10 text-primary-fixed font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+              Usine Limete • Kinshasa RDC
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+            RCCM : CD/KNG/RCCM/19-B-01429 • ID.NAT : 01-G4701-N82914K • Conformité OCC Certifiée
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto shrink-0">
+<div class="hidden items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm transition-all" id="save-status-pill">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span id="save-status-text">Données synchronisées</span>
+</div>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-high/20 hover:bg-surface-container-high/40 text-on-primary font-label-lg text-label-lg transition-all flex items-center gap-space-xs" id="btn-revert-factory" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Valeurs d'usine</span>
+</button>
+<button class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" id="btn-save-global" type="button">
+<span class="font-bold">Enregistrer les modifications</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">save</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs & Sub-header -->
+<div class="w-full bg-surface-container-lowest shadow-sm">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex items-center justify-between overflow-x-auto py-space-xs gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-max" role="tablist">
+<button class="tab-btn active inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full font-label-lg text-label-lg bg-primary-container text-on-primary transition-all shadow-sm" data-tab="tab-brand" type="button">
+<span class="material-symbols-outlined text-[18px]">branding_watermark</span>
+<span>Identité &amp; Marque</span>
+</button>
+<button class="tab-btn inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-tab="tab-coords" type="button">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+<span>Coordonnées &amp; Réseaux</span>
+</button>
+<button class="tab-btn inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-tab="tab-cms" type="button">
+<span class="material-symbols-outlined text-[18px]">web</span>
+<span>Contenu Accueil &amp; Hero</span>
+</button>
+<button class="tab-btn inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-tab="tab-security" type="button">
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+<span>Rôles &amp; Sécurité</span>
+</button>
+<button class="tab-btn inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-tab="tab-occ" type="button">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>SEO &amp; Traçabilité OCC</span>
+</button>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs shrink-0 pl-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud_done</span>
+<span>Dernier déploiement CDN : il y a 8 min</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Layout Area -->
+<div class="max-w-7xl mx-auto px-margin py-space-xl w-full">
+<!-- Breadcrumb & Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>Administration</span>
+<span>/</span>
+<span class="text-secondary font-bold">Paramètres Généraux</span>
+<span>/</span>
+<span>Identité &amp; CMS</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+          Identité Corporative &amp; CMS de Marque
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Supervisez l'affichage visuel officiel, la baseline BUKHETE, les passerelles de commande rapide et l'intégrité légale.
+        </p>
+</div>
+<!-- Quick Action Pill Group -->
+<div class="flex items-center gap-space-xs self-start md:self-auto">
+<a class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Voir le site public</span>
+</a>
+<a class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Exporter JSON</span>
+</a>
+</div>
+</div>
+<!-- TAB 1: IDENTITÉ & MARQUE (ACTIVE) -->
+<div class="tab-panel flex flex-col gap-space-xl" id="tab-brand-panel">
+<!-- Grid Section: Logo Master Bay & Favicon Setup -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Logo Principal Niumba Transform -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Logo Officiel</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Format Vectoriel Maître</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-1">Emblème &amp; Logotype Corporatif</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Actif officiel de Niumba Transform avec symbole de réacteur chimique, engrenage industriel et fiole de laboratoire.
+              </p>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-space-xs rounded-full bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container font-label-md text-label-md transition-all flex items-center gap-space-xs" id="btn-replace-logo" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Téléverser nouveau fichier</span>
+</button>
+<input accept=".png,.svg,.jpg,.webp" class="hidden" id="logo-file-input" type="file"/>
+</div>
+</div>
+<!-- Logo Display Stage -->
+<div class="my-space-md p-space-xl rounded-xl bg-surface-container-low flex flex-col items-center justify-center relative overflow-hidden group">
+<div class="absolute top-space-sm left-space-sm flex items-center gap-space-xs bg-surface-container-lowest/80 backdrop-blur-sm px-space-sm py-0.5 rounded-full text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Actif en production</span>
+</div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">2400 × 1600 px</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">PNG 32-bit</span>
+</div>
+<div class="p-space-lg max-w-md w-full flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+<img alt="Logo officiel Niumba Transform - Des molécules à la performance" class="max-h-48 w-auto object-contain" id="main-logo-preview" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAquCIMmJQr7PP2mUP3peNiXs59ZaYySTP5rHtHJL67yDuxt9EMVmgVMueQPxJLHf91TFuauxZiqpoXF-dC-Rw8BV94mTVvKIN-EBUu91VQzQC1gKjmIP3AQjS0e-u0hoKK92heAd8Djlz53Gr1IeVlb7G6zqa_KvVUuvRAAClsggdu03N38m81PYa4nTuKQ3CXv4FDJT-HbCCJWp0N1yKeQtfsl7zQbxv_oC3T6z33Tg8tfwvzjcx6QY2j4UBgwx5"/>
+</div>
+<div class="flex items-center gap-space-md mt-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Couleurs CMJN/Pantone calibrées</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">contrast</span>
+<span>Variante fond sombre disponible</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-sm">
+<div class="p-space-sm rounded-xl bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Teinte Primaire Usine</span>
+<div class="flex items-center gap-space-xs mt-1">
+<div class="w-5 h-5 rounded-full bg-[#0E4B2A] shadow-inner"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">#0E4B2A</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Teinte Végétale BUKHETE</span>
+<div class="flex items-center gap-space-xs mt-1">
+<div class="w-5 h-5 rounded-full bg-[#008751] shadow-inner"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">#008751</span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container">
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase">Bleu Marine Minéral</span>
+<div class="flex items-center gap-space-xs mt-1">
+<div class="w-5 h-5 rounded-full bg-[#061D38] shadow-inner"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">#061D38</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Favicon & Mobile Touch Icons -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between h-full">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Navigation &amp; Mobile</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">devices</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Favicon &amp; App Icon</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Icônes pour onglets navigateurs, raccourcis PWA et signets mobiles.
+              </p>
+<div class="flex items-center gap-space-md my-space-lg">
+<div class="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center text-primary-fixed font-headline-md font-bold shadow-md">
+                  NT
+                </div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">favicon.ico / 64×64</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Version monogramme NT vectoriel</span>
+<span class="font-label-sm text-label-sm text-secondary mt-0.5">Optimisé écran Retina</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-on-surface font-label-md text-label-md">
+<span>Apple Touch Icon (180×180)</span>
+<span class="text-secondary font-bold">Actif</span>
+</div>
+<div class="flex justify-between items-center text-on-surface font-label-md text-label-md">
+<span>Android Chrome (512×512)</span>
+<span class="text-secondary font-bold">Actif</span>
+</div>
+<div class="flex justify-between items-center text-on-surface font-label-md text-label-md">
+<span>Manifest Web PWA</span>
+<span class="text-secondary font-bold">Généré</span>
+</div>
+</div>
+</div>
+<button class="mt-space-md w-full py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+<span>Régénérer le package d'icônes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Slogans, Baseline & Legal Metadata Panel -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-lg gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Signatures Vocales &amp; Slogans Stratégiques
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Textes institutionnels appliqués automatiquement sur le packaging, les entêtes de facture et les bannières web.
+            </p>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm self-start md:self-auto">
+            Langue par défaut : Français (RDC)
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Slogan Principal -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold flex items-center justify-between">
+<span>Slogan Officiel Corporatif</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Sous le logo</span>
+</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" id="input-corp-slogan" type="text" value="Des molécules à la performance"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Inscrit sur le monogramme industriel officiel Niumba Transform.
+            </span>
+</div>
+<!-- Slogan BUKHETE -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold flex items-center justify-between">
+<span>Signature Commerciale BUKHETE</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Gamme Hygiène</span>
+</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" id="input-brand-slogan" type="text" value="La propreté qui nous ressemble"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Slogan grand public pour les gammes vaisselle, savon liquide et détergents ménagers.
+            </span>
+</div>
+<!-- Baseline Écologique -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold">
+              Baseline Écologique &amp; Chimie Verte
+            </label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" id="input-eco-baseline" type="text" value="Formulation biodégradable locale, 0% solvants agressifs, 100% fabriqué en RDC"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Visible dans les blocs d'engagements environnementaux et les fiches techniques.
+            </span>
+</div>
+<!-- Nom Légal et Structure -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold">
+              Raison Sociale &amp; Forme Juridique
+            </label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" id="input-legal-name" type="text" value="NIUMBA TRANSFORM SARL"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Mention officielle sur les bordereaux de livraison et CGV.
+            </span>
+</div>
+</div>
+<!-- Identifiants d'Entreprise & Registre Commercial -->
+<div class="mt-space-lg pt-space-lg bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Registres Fiscaux &amp; Légaux RDC</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">Numéro RCCM</span>
+<input class="w-full mt-1 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none" id="input-rccm" type="text" value="CD/KNG/RCCM/19-B-01429"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">Identification Nationale</span>
+<input class="w-full mt-1 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none" id="input-idnat" type="text" value="01-G4701-N82914K"/>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase font-bold">Numéro Impôt (NIF)</span>
+<input class="w-full mt-1 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none" id="input-nif" type="text" value="A1829472H"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Passerelle WhatsApp Commerciale & Commandes Directes -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-md gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-[#25D366]/15 text-[#075E54] flex items-center justify-center font-headline-md font-bold shrink-0">
+<span class="material-symbols-outlined text-[26px]">chat</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+                Passerelle Commerciale WhatsApp Direct (RDC)
+              </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Gère le bouton flottant du site public, les devis grossistes B2B et l'accueil des distributeurs provinciaux.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-secondary font-bold">Canal Ouvert 24/7</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg mt-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold">Numéro WhatsApp Commercial</label>
+<div class="flex items-center rounded-xl bg-surface-container-low px-space-md py-space-sm gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">🇨🇩 +243</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none" id="input-wa-number" type="text" value="81 234 56 78"/>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Attribué au pôle Ventes BUKHETE &amp; Grands Comptes.</span>
+</div>
+<div class="md:col-span-2 flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold">Message d'amorce automatique (Grossistes &amp; CHR)</label>
+<textarea class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all resize-none" id="input-wa-message" rows="2">Bonjour Niumba Transform, je souhaite recevoir la grille tarifaire grossiste pour la gamme BUKHETE (savons &amp; détergents).</textarea>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Texte généré à l'ouverture de la discussion WhatsApp via le bouton web.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: COORDONNÉES & RÉSEAUX (HIDDEN INITIAL) -->
+<div class="tab-panel hidden flex flex-col gap-space-xl" id="tab-coords-panel">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-sm">
+          Sites Industriels &amp; Bureaux de Contact
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Siège Social &amp; Usine Principale</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kinshasa - Limete Industriel</h3>
+<input class="w-full mt-2 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md" type="text" value="Avenue des Poids Lourds, Q. Kingabwa, Limete, Kinshasa, RDC"/>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<input class="w-1/2 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm" type="text" value="+243 810 000 001"/>
+<input class="w-1/2 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm" type="email" value="contact@niumbatransform.cd"/>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Centre de Distribution Katanga</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Lubumbashi - Haut-Katanga</h3>
+<input class="w-full mt-2 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md" type="text" value="Chaussée Laurent-Désiré Kabila, Lubumbashi, RDC"/>
+<div class="flex items-center gap-space-sm mt-space-xs">
+<input class="w-1/2 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm" type="text" value="+243 990 000 002"/>
+<input class="w-1/2 px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm" type="email" value="katanga@niumbatransform.cd"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 3: CONTENU ACCUEIL & BANNIÈRE (HIDDEN INITIAL) -->
+<div class="tab-panel hidden flex flex-col gap-space-xl" id="tab-cms-panel">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs">
+          Éditeur de la Bannière d'Accueil (Hero Showcase)
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+          Ajustez en direct les accroches principales de la page d'accueil.
+        </p>
+<div class="space-y-space-md">
+<div>
+<label class="font-label-lg text-label-lg text-on-surface font-bold block mb-1">Titre d'Impact Hero (H1 Public)</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md" type="text" value="La science au service de la transformation industrielle en RDC"/>
+</div>
+<div>
+<label class="font-label-lg text-label-lg text-on-surface font-bold block mb-1">Accroche Narrative Développée</label>
+<textarea class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md resize-none" rows="3">Découvrez nos solutions détergentes haute efficacité conçues localement avec des standards de chimie verte internationale. BUKHETE protège les foyers et les institutions.</textarea>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div>
+<label class="font-label-lg text-label-lg text-on-surface font-bold block mb-1">Texte Bouton Principal</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md" type="text" value="Découvrir les produits BUKHETE"/>
+</div>
+<div>
+<label class="font-label-lg text-label-lg text-on-surface font-bold block mb-1">URL Vidéo de Présentation (ID YouTube/Vimeo)</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md" type="text" value="https://youtu.be/usine-niumba-kinshasa-reportage"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 4: RÔLES & SÉCURITÉ (HIDDEN INITIAL) -->
+<div class="tab-panel hidden flex flex-col gap-space-xl" id="tab-security-panel">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-sm">
+          Contrôle d'Accès &amp; Privilèges Administrateurs
+        </h2>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center">DA</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Direction Générale</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">admin.global@niumbatransform.cd</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold">Super Admin</span>
+</div>
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-bold flex items-center justify-center">CL</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Chef de Laboratoire &amp; R&amp;D</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">labo.formulation@niumbatransform.cd</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Éditeur Produits &amp; FDS</span>
+</div>
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface font-bold flex items-center justify-center">CB</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Responsable Commercial B2B</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">commandes@niumbatransform.cd</p>
+</div>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Gestionnaire Commandes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 5: SEO & TRAÇABILITÉ OCC (HIDDEN INITIAL) -->
+<div class="tab-panel hidden flex flex-col gap-space-xl" id="tab-occ-panel">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs">
+          Traçabilité Officielle OCC &amp; Référencement Google RDC
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+          Paramètres indexés par l'Office Congolais de Contrôle (OCC) et balisage Schema.org pour les moteurs de recherche.
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-lg text-label-lg text-on-surface font-bold block mb-1">Certificat de conformité OCC</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md" type="text" value="OCC/KIN/IND-2024-99824"/>
+</div>
+<div>
+<label class="font-label-lg text-label-lg text-on-surface font-bold block mb-1">Mots-clés SEO Institutionnels</label>
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md" type="text" value="savon vaisselle Kinshasa, industrie hygiène RDC, BUKHETE, détergent éco-responsable"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Save Footer Bar inside Card Frame -->
+<div class="mt-space-xl p-space-lg rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Configuration en mémoire active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Toutes les modifications prennent effet immédiatement sur le CDN et l'App Publique.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="px-space-md py-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors" id="btn-cancel" type="button">
+          Annuler
+        </button>
+<button class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" id="btn-save-bottom" type="button">
+<span class="font-bold">Appliquer les changements</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Script for Tab Switching & State Feedback -->
+<script>
+    (function() {
+      // Tab Switching
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabPanels = {
+        'tab-brand': document.getElementById('tab-brand-panel'),
+        'tab-coords': document.getElementById('tab-coords-panel'),
+        'tab-cms': document.getElementById('tab-cms-panel'),
+        'tab-security': document.getElementById('tab-security-panel'),
+        'tab-occ': document.getElementById('tab-occ-panel')
+      };
+
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabButtons.forEach(b => {
+            b.classList.remove('active', 'bg-primary-container', 'text-on-primary', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('active', 'bg-primary-container', 'text-on-primary', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+
+          const target = btn.dataset.tab;
+          Object.keys(tabPanels).forEach(key => {
+            if (tabPanels[key]) {
+              if (key === target) {
+                tabPanels[key].classList.remove('hidden');
+              } else {
+                tabPanels[key].classList.add('hidden');
+              }
+            }
+          });
+        });
+      });
+
+      // Save Flow Feedback
+      const statusPill = document.getElementById('save-status-pill');
+      const statusText = document.getElementById('save-status-text');
+      const saveButtons = [document.getElementById('btn-save-global'), document.getElementById('btn-save-bottom')];
+
+      function triggerSave() {
+        if (!statusPill) return;
+        statusPill.classList.remove('hidden');
+        statusPill.classList.add('inline-flex');
+        statusText.textContent = 'Enregistrement en cours...';
+
+        setTimeout(() => {
+          statusText.textContent = 'Modifications enregistrées !';
+          setTimeout(() => {
+            statusPill.classList.add('hidden');
+            statusPill.classList.remove('inline-flex');
+          }, 3000);
+        }, 600);
+      }
+
+      saveButtons.forEach(btn => {
+        if (btn) btn.addEventListener('click', triggerSave);
+      });
+
+      // Logo Replace Trigger
+      const uploadBtn = document.getElementById('btn-replace-logo');
+      const fileInput = document.getElementById('logo-file-input');
+      const logoImg = document.getElementById('main-logo-preview');
+
+      if (uploadBtn && fileInput) {
+        uploadBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => {
+          if (e.target.files && e.target.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+              if (logoImg) logoImg.src = evt.target.result;
+              triggerSave();
+            };
+            reader.readAsDataURL(e.target.files[0]);
+          }
+        });
+      }
+
+      // Factory Reset
+      const revertBtn = document.getElementById('btn-revert-factory');
+      if (revertBtn) {
+        revertBtn.addEventListener('click', () => {
+          if (confirm('Voulez-vous restaurer les paramètres d’usine officiels de Niumba Transform ?')) {
+            document.getElementById('input-corp-slogan').value = 'Des molécules à la performance';
+            document.getElementById('input-brand-slogan').value = 'La propreté qui nous ressemble';
+            document.getElementById('input-eco-baseline').value = 'Formulation biodégradable locale, 0% solvants agressifs, 100% fabriqué en RDC';
+            document.getElementById('input-wa-number').value = '81 234 56 78';
+            triggerSave();
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-md font-bold flex items-center justify-center">NT</div><span class="font-headline-sm text-headline-sm text-on-primary font-bold">NIUMBA TRANSFORM</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Fleuron industriel de la transformation locale et de la formulation de produits d'hygiène éco-responsables de haute performance. Marque officielle BUKHETE.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span>Fièrement fabriqué en RDC</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Navigation Corporate</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="entreprise" href="#">L'Entreprise &amp; Gouvernance</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="produits-bukhete" href="#">Gamme de Produits BUKHETE</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="innovation-&amp;-ecologie" href="#">Laboratoire, R&amp;D &amp; Écologie</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="videos" href="#">Vidéos &amp; Reportages Usine</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="actualites" href="#">Communiqués &amp; Presse</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Partenariats &amp; Ventes</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="devenir-distributeur" href="#">Réseau National de Distribution</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="commander" href="#">Commandes Grossistes &amp; CHR</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="contact" href="#">Service Client &amp; Devis</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="connexion-back-office" href="#">Portail Collaborateurs &amp; Admin</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Mentions Légales &amp; Usine</span><div class="font-body-sm text-body-sm text-on-primary-container space-y-space-xs"><p><strong class="text-on-primary">RCCM :</strong> CD/KNG/RCCM/19-B-01429</p><p><strong class="text-on-primary">Id. Nat. :</strong> 01-G4701-N82914K</p><p><strong class="text-on-primary">NIF :</strong> A1829472H</p><p class="pt-space-xs"><strong class="text-on-primary">Siège Social &amp; Usine :</strong> Kinshasa, République Démocratique du Congo</p></div></div></div><div class="pt-space-lg border-t border-primary-container flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-primary-container">© 2025 Niumba Transform SARL. Tous droits réservés. BUKHETE est une marque déposée.</p><div class="flex items-center gap-space-lg font-label-md text-label-md text-surface-variant"><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Confidentialité</a><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Conditions Générales</a><a class="hover:text-primary-fixed transition-colors flex items-center gap-space-xs" data-path="connexion-back-office" href="#"><span class="material-symbols-outlined text-[14px]">lock</span>Accès Système</a></div></div></div></footer></body></html>

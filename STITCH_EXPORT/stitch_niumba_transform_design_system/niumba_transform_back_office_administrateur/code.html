@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#2a1700","primary-fixed":"#b3f1c3","on-secondary-fixed-variant":"#00522f","on-primary-container":"#80ba90","outline-variant":"#c0c9bf","inverse-surface":"#283044","secondary-fixed":"#8df8b7","primary-container":"#0e4b2a","on-tertiary-fixed-variant":"#653e00","surface":"#faf8ff","tertiary-fixed":"#ffddb8","surface-container-high":"#e2e7ff","error-container":"#ffdad6","primary-fixed-dim":"#98d4a8","tertiary":"#3f2500","on-error":"#ffffff","on-background":"#131b2e","inverse-on-surface":"#eef0ff","on-secondary-container":"#007243","surface-container":"#eaedff","secondary-fixed-dim":"#70db9d","on-tertiary-container":"#f09a02","on-primary-fixed":"#00210e","tertiary-container":"#5d3900","on-error-container":"#93000a","inverse-primary":"#98d4a8","secondary":"#006d40","tertiary-fixed-dim":"#ffb95f","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#16512f","error":"#ba1a1a","surface-variant":"#dae2fd","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary":"#ffffff","on-surface-variant":"#404941","primary":"#003319","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002110","secondary-container":"#8af5b4","outline":"#717971","on-surface":"#131b2e","surface-tint":"#316945"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-primary-container z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex flex-col"><div class="h-20 px-space-md flex items-center gap-space-sm bg-primary"><div class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-headline-md font-bold flex items-center justify-center shrink-0">NT</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-primary font-bold">NIUMBA ADMIN</span><span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Back-Office Opérations</span></div></div><div class="p-space-md"><span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider px-space-sm font-bold block mb-space-xs">Pilotage Industriel</span><nav class="flex flex-col gap-space-xs" data-active-classes="bg-secondary text-on-secondary font-bold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full transition-colors bg-secondary text-on-secondary font-bold shadow-sm" data-path="dashboard-vue-d'ensemble" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Vue d'ensemble</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors" data-path="gestion-des-commandes" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Commandes Grossistes</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors" data-path="catalogue-produits" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span>Catalogue BUKHETE</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors" data-path="reseau-distributeurs" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span>Réseau Distributeurs</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors" data-path="mediatheque-&amp;-videos" href="#"><span class="material-symbols-outlined text-[20px]">video_library</span><span>Vidéothèque &amp; Médias</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-on-primary-container hover:bg-primary hover:text-on-primary font-label-lg text-label-lg transition-colors" data-path="parametres-systeme" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Paramètres &amp; RCCM</span></a></nav></div></div><div class="p-space-md bg-primary/40 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm px-space-sm"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-primary-fixed font-bold">Usine Kinshasa : En Ligne</span></div><a class="flex items-center justify-center gap-space-xs py-space-xs px-space-md bg-primary text-primary-fixed hover:bg-primary-fixed hover:text-on-primary-fixed rounded-full font-label-sm text-label-sm transition-all" data-path="accueil" href="#"><span class="material-symbols-outlined text-[16px]">arrow_back</span><span>Retour au site public</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline">search</span><input class="w-96 pl-10 pr-4 py-2 bg-surface-container rounded-full font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" placeholder="Rechercher un bon de commande, lot, distributeur..." type="text"/></div></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors relative"><span class="material-symbols-outlined">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm"><div class="flex flex-col text-right hidden sm:flex"><span class="font-label-md text-label-md text-on-surface font-bold">Direction Générale</span><span class="font-label-sm text-label-sm text-secondary">Super Administrateur</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary-container" src="https://lh3.googleusercontent.com/aida/AEtjO1U-lqjrzSXAWeIT-_tAp8izyX9pKLEMl7EWwHZSyrWlP1IEeXwYUftVPvmRi2Hng7RP27AMPmvJBestR1UMQiZFl_7rAaXuKaXbJim_SOQIlKuaueGepNNWkuYkTNqqSqdtgatMHXSWYBIgW5ojiHmqLY4fYi1B18D_4sM1J7m6SJXUvyTiuYogFLjrGNdzuZETgqJD3Pq3sC1d0wSZEJEDJr0pPkXk3LAxHy_j91rP1kcpW_yf3jZa-kjDWIxy-jdH8j3bHVdW"/></div></div></header><main class="relative pt-20 w-full px-space-xl py-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Operational Sub-bar & Filter Strip -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Portail Industriel Central</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed text-label-sm font-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+          Système Opérationnel : RCCM-CD/KNG/25-A-02289
+        </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-extrabold tracking-tight">Tableau de bord Administrateur</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Surveillance en temps réel des commandes BUKHETE, validation des grossistes et flux logistiques RDC.</p>
+</div>
+<!-- Date selector & Primary Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold" id="currentDateString">Aujourd'hui, 24 Mai 2025</span>
+</div>
+<div class="inline-flex p-1 bg-surface-container rounded-full shadow-inner">
+<button class="px-space-md py-1 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-bold shadow-sm transition-all">30J</button>
+<button class="px-space-md py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">Ce Trimestre</button>
+<button class="px-space-md py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-all">2025</button>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-md hover:bg-primary-container transition-all" data-path="parametres-systeme" href="#">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Paramètres &amp; Identité</span>
+</a>
+</div>
+</div>
+<!-- Key Metrics Row (4 Bento KPI Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- KPI 1: Commandes -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-secondary-container/20 group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Commandes BUKHETE</span>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">428</span>
+<span class="inline-flex items-center gap-0.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +18.4%
+          </span>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">29 en attente</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kinshasa &amp; Équateur</span>
+</div>
+</div>
+<!-- KPI 2: Distributeurs -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-primary-fixed/20 group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Candidatures Réseau</span>
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">handshake</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">74</span>
+<span class="inline-flex items-center gap-0.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +9 ce mois
+          </span>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">12 à certifier</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lubumbashi &amp; Goma</span>
+</div>
+</div>
+<!-- KPI 3: Produits Catalogue -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-surface-container-high/50 group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Gammes Actives</span>
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">inventory</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">18</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SKUs certifiés</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">5 Lignes BUKHETE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">+2 Formulations R&amp;D</span>
+</div>
+</div>
+<!-- KPI 4: Audience & Interactions WhatsApp -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-tertiary-fixed/30 group-hover:scale-125 transition-transform duration-500"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Vues &amp; Commandes Directes</span>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary font-bold flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-hero text-display-hero text-on-surface font-extrabold tracking-tight">8.4k</span>
+<span class="inline-flex items-center gap-0.5 text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">call_made</span> 64% WhatsApp
+          </span>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Taux transfo catalogue</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">14.2% global</span>
+</div>
+</div>
+</div>
+<!-- Main Workboard: Two Columns (70% Table & Operations / 30% Alerts, Actions, Brand Card) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- Left 8 Columns: Live Orders Table & Production Pipeline -->
+<div class="xl:col-span-8 flex flex-col gap-space-lg">
+<!-- Orders Table Container -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-3 h-8 bg-secondary rounded-full"></div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Dernières commandes reçues</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Traitement prioritaire des flux grossistes et particuliers</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-bold hover:bg-surface-variant transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_list</span> Filtrer
+            </button>
+<button class="px-space-md py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:bg-secondary-fixed-dim transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">download</span> Exporter CSV
+            </button>
+</div>
+</div>
+<!-- Table Responsive Wrapper -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-xl">N° Commande</th>
+<th class="py-space-sm px-space-sm">Client &amp; Contact</th>
+<th class="py-space-sm px-space-sm">Localisation</th>
+<th class="py-space-sm px-space-sm">Produits BUKHETE</th>
+<th class="py-space-sm px-space-sm">Quantité</th>
+<th class="py-space-sm px-space-sm">Statut</th>
+<th class="py-space-sm px-space-md rounded-r-xl text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-space-md px-space-md font-label-md text-label-md font-bold text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-secondary">#NT-2025-089</span>
+<span class="text-[11px] text-on-surface-variant font-normal">Aujourd'hui 10:42</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Ets Maluku Distribution</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">+243 81 445 9012</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="font-body-sm text-body-sm text-on-surface">Kinshasa (Gombe)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Vaisselle 1L (Citron)</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Savon Liquide 250ml</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">120 Cartons</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-ping"></span>
+                    Nouvelle
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center hover:scale-105 transition-transform" href="https://wa.me/243814459012" target="_blank" title="Discuter sur WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-variant transition-colors" title="Détails du bon de commande">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-space-md px-space-md font-label-md text-label-md font-bold text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-secondary">#NT-2025-088</span>
+<span class="text-[11px] text-on-surface-variant font-normal">Aujourd'hui 09:15</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Alimentation Centrale Masina</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">+243 99 820 1140</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="font-body-sm text-body-sm text-on-surface">Kinshasa (Masina)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Lessive Automatique 1L</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Eau de Javel 1L</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">85 Cartons</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    En traitement
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center hover:scale-105 transition-transform" href="https://wa.me/243998201140" target="_blank" title="Discuter sur WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-variant transition-colors" title="Détails du bon de commande">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-space-md px-space-md font-label-md text-label-md font-bold text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-secondary">#NT-2025-087</span>
+<span class="text-[11px] text-on-surface-variant font-normal">Hier 17:30</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Kivu Clean SARL</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">+243 97 102 4478</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-outline text-[16px]">flight_takeoff</span>
+<span class="font-body-sm text-body-sm text-on-surface font-bold text-secondary">Goma (Nord-Kivu)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Savon Poudre 2kg</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Entretien Sols 5L</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">350 Cartons</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                    En livraison
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center hover:scale-105 transition-transform" href="https://wa.me/243971024478" target="_blank" title="Discuter sur WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-variant transition-colors" title="Détails du bon de commande">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-space-md px-space-md font-label-md text-label-md font-bold text-on-surface">
+<div class="flex flex-col">
+<span class="font-bold text-secondary">#NT-2025-086</span>
+<span class="text-[11px] text-on-surface-variant font-normal">Hier 14:10</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Clinique Bon Berger</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-mono">+243 82 990 3311</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span class="font-body-sm text-body-sm text-on-surface">Kinshasa (Limete)</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">Désinfection Hospitalière 5L</span>
+</div>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">40 Bidons</span>
+</td>
+<td class="py-space-md px-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    Terminée
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1.5">
+<a class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center hover:scale-105 transition-transform" href="https://wa.me/243829903311" target="_blank" title="Discuter sur WhatsApp">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-variant transition-colors" title="Détails du bon de commande">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Affichage de 4 commandes sur 428 traitées ce mois</span>
+<a class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-bold hover:underline" data-path="gestion-des-commandes" href="#">
+<span>Accéder au registre complet des commandes</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Industrial Production & Warehouse Feed -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Production Plant Status Kinshasa -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Usine Principale Kinshasa</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-space-xs">Ligne de conditionnement BUKHETE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Ligne automatisée flacons 250ml &amp; 1L à plein régime avec certification locale OCC.</p>
+<!-- Mini Progress Indicator -->
+<div class="flex flex-col gap-1 mb-space-sm">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Objectif mensuel de production (Cartons)</span>
+<span class="text-on-surface font-bold">82% (16 400 / 20 000)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span>Responsable Chimie : Dr. L. Kalala</span>
+<span class="text-secondary font-bold">Rendement : 98.6%</span>
+</div>
+</div>
+<!-- Stock Buffer Status Alert -->
+<div class="p-space-lg rounded-2xl bg-primary text-on-primary shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary/20"></div>
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary-fixed-dim font-bold">Alertes Stock &amp; Réappro</span>
+<span class="material-symbols-outlined text-secondary-fixed">sensors</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary font-bold mb-space-xs">Matières premières saponification</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mb-space-md">Stock suffisant pour 45 jours de production continue sans dépendance d'importation critique.</p>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-xl bg-primary-container/80 flex flex-col">
+<span class="text-[11px] text-primary-fixed uppercase font-bold">Essence Citron</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">1 200 L</span>
+</div>
+<div class="p-2.5 rounded-xl bg-primary-container/80 flex flex-col">
+<span class="text-[11px] text-primary-fixed uppercase font-bold">Tensio-actifs</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">4.8 Tonnes</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed">Contrôle qualité vérifié</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4 Columns: Brand Identity Hub, Distributor Approvals, Media shortcuts -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Official Brand Identity Card (Shows Logo 2 & Brand Tokens) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Identité &amp; Marque</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold">Actif v2.4</span>
+</div>
+<!-- Official Logo Presentation -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col items-center justify-center text-center my-space-xs group relative">
+<img class="w-48 h-auto object-contain py-2 transition-transform duration-300 group-hover:scale-105" data-alt="Niumba Transform corporate official vector logo, showing deep forest green and navy modern typography, chemical beaker and industrial gear symbol, slogan Des molecules a la performance on crisp white backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC18iEZqzYgKhNgnoLDxF-9wlkwUtwvhrM_lSb27Pi8nzleO_7kq_XV79Lo4i3E7tyrla3LAtfhR2BpyEI6C-gropyIttf6CaV2B7PNm8vaCTxTE-uNAOXOVXzKi2qwcHe-G2XZG3wW3WxO130v7_lzxciEpqnRE0DnTL_tj2sN99n3AFp8bfWNQfDHnCPmbfd7z0Z1Rtcc7ktzctIcH0djyW6SZwvHlj0cw1-R40ngIWqHoCSYMfs"/>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 font-mono">Logo Officiel : Des molécules à la performance</span>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-sm font-body-sm text-body-sm">
+<div class="flex justify-between py-1 border-b-0">
+<span class="text-on-surface-variant">Slogan public :</span>
+<span class="font-bold text-on-surface">"La propreté qui nous ressemble"</span>
+</div>
+<div class="flex justify-between py-1 border-b-0">
+<span class="text-on-surface-variant">Marque hygiène :</span>
+<span class="font-bold text-secondary">BUKHETE (Savons &amp; Détergents)</span>
+</div>
+<div class="flex justify-between py-1 border-b-0">
+<span class="text-on-surface-variant">Contact WhatsApp :</span>
+<span class="font-mono text-on-surface font-bold">+243 89 000 0000</span>
+</div>
+</div>
+<a class="mt-space-md w-full py-space-xs px-space-md rounded-full bg-surface-container text-on-surface hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm font-bold text-center transition-all flex items-center justify-center gap-2" data-path="parametres-systeme" href="#">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span>Modifier les logos &amp; coordonnées</span>
+</a>
+</div>
+<!-- Distributor Applications Pending (Validation Queue) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Candidatures Distributeurs</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-on-tertiary-container/20 text-tertiary-container font-label-sm text-label-sm font-bold">3 en attente</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Dossiers de partenariat grossiste nécessitant la vérification administrative.</p>
+<!-- List items -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold font-label-md text-label-md">
+                KD
+              </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Kin-Distribution Express</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kinshasa (Kintambo) • 5 Points de vente</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors" title="Valider le dossier">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container text-outline hover:text-error transition-colors" title="Refuser">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold font-label-md text-label-md">
+                GC
+              </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Grand Katanga Négoce</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lubumbashi • Dépôt central</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors" title="Valider le dossier">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container text-outline hover:text-error transition-colors" title="Refuser">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold font-label-md text-label-md">
+                BO
+              </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Boma Ouest Import-Export</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Kongo-Central • Réseau maritime</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center hover:bg-secondary hover:text-on-secondary transition-colors" title="Valider le dossier">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-container text-outline hover:text-error transition-colors" title="Refuser">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<a class="mt-space-md text-center font-label-sm text-label-sm text-secondary font-bold hover:underline" data-path="reseau-distributeurs" href="#">
+          Voir les 74 distributeurs agréés
+        </a>
+</div>
+<!-- Quick Media & Content Module -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">smart_display</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Vidéothèque &amp; Campagnes</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 spots actifs</span>
+</div>
+<!-- Video mini preview -->
+<div class="relative rounded-xl overflow-hidden bg-primary-container h-36 flex items-center justify-center group mb-space-sm">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-300" data-alt="Laboratory cleanroom research team testing BUKHETE liquid dishwashing detergents with glowing green test tubes in Kinshasa factory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlm_0IBMoQbhFBDlM5IEdZv8Tb_7pcE9zIa3A-wnQnTRk0jpkGO5SmosEVLWkqEoFrBXgiZ8ZwCDY4IZXFIRNix7icBzTo-NafW5kU61StztxKJCl465JS86cELpBquBCNI4NcRGaZbmhaTu07z5QNdE6xdMiieOK2KPgVpzl3yD2kpotdw7r9eoU0quHo_T2nMuCr4kERSrhrvaSWkz330BcE5BreJYijAcM_dDE4sONKwNQoArI"/>
+<div class="absolute inset-0 bg-primary/40 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center text-primary shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">
+            Spot BUKHETE Vaisselle (1:25)
+          </div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dernière mise à jour : 18 Mai 2025</span>
+<a class="font-label-sm text-label-sm text-secondary font-bold hover:underline flex items-center gap-1" data-path="mediatheque-&amp;-videos" href="#">
+<span>Gérer les médias</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Dynamically display formatted current date
+    const dateElement = document.getElementById('currentDateString');
+    if (dateElement) {
+      const today = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const formatted = today.toLocaleDateString('fr-FR', options);
+      dateElement.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
+    }
+  })();
+</script></main></div></body></html>

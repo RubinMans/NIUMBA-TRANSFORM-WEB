@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#2a1700","primary-fixed":"#b3f1c3","on-secondary-fixed-variant":"#00522f","on-primary-container":"#80ba90","outline-variant":"#c0c9bf","inverse-surface":"#283044","secondary-fixed":"#8df8b7","primary-container":"#0e4b2a","on-tertiary-fixed-variant":"#653e00","surface":"#faf8ff","tertiary-fixed":"#ffddb8","surface-container-high":"#e2e7ff","error-container":"#ffdad6","primary-fixed-dim":"#98d4a8","tertiary":"#3f2500","on-error":"#ffffff","on-background":"#131b2e","inverse-on-surface":"#eef0ff","on-secondary-container":"#007243","surface-container":"#eaedff","secondary-fixed-dim":"#70db9d","on-tertiary-container":"#f09a02","on-primary-fixed":"#00210e","tertiary-container":"#5d3900","on-error-container":"#93000a","inverse-primary":"#98d4a8","secondary":"#006d40","tertiary-fixed-dim":"#ffb95f","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#16512f","error":"#ba1a1a","surface-variant":"#dae2fd","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary":"#ffffff","on-surface-variant":"#404941","primary":"#003319","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002110","secondary-container":"#8af5b4","outline":"#717971","on-surface":"#131b2e","surface-tint":"#316945"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md font-bold tracking-tight">NT</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">NIUMBA TRANSFORM</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Industrie &amp; Hygiène Durable</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="entreprise" href="#">Entreprise</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="produits-bukhete" href="#">Produits BUKHETE</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="videos" href="#">Vidéos</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="innovation-&amp;-ecologie" href="#">Innovation &amp; Écologie</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="actualites" href="#">Actualités</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="devenir-distributeur" href="#">Devenir Distributeur</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase">RDC</span><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">FR</span></div><a class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" data-path="commander" href="#"><span class="font-bold">Commander</span><span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></span></a><a class="p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dashboard-vue-d'ensemble" href="#" title="Espace Admin"><span class="material-symbols-outlined">admin_panel_settings</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1U-lqjrzSXAWeIT-_tAp8izyX9pKLEMl7EWwHZSyrWlP1IEeXwYUftVPvmRi2Hng7RP27AMPmvJBestR1UMQiZFl_7rAaXuKaXbJim_SOQIlKuaueGepNNWkuYkTNqqSqdtgatMHXSWYBIgW5ojiHmqLY4fYi1B18D_4sM1J7m6SJXUvyTiuYogFLjrGNdzuZETgqJD3Pq3sC1d0wSZEJEDJr0pPkXk3LAxHy_j91rP1kcpW_yf3jZa-kjDWIxy-jdH8j3bHVdW"/></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Breadcrumbs & Quick Return Bar -->
+<section class="w-full bg-surface-container-low py-space-sm">
+<div class="max-w-7xl mx-auto px-margin flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-body-sm font-body-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="accueil" href="#">Accueil</a>
+<span class="text-outline-variant font-bold">/</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" data-path="produits-bukhete" href="#">Produits BUKHETE</a>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-on-surface-variant">Nettoyage Cuisine</span>
+<span class="text-outline-variant font-bold">/</span>
+<span class="text-primary font-bold">BUKHETE Vaisselle 250ml</span>
+</nav>
+<a class="inline-flex items-center gap-space-xs text-label-lg font-label-lg text-secondary hover:text-primary font-bold transition-colors" data-path="produits-bukhete" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Retour au catalogue complet</span>
+</a>
+</div>
+</section>
+<!-- Main Product Section (2 Columns Split) -->
+<section class="w-full py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Gallery Showcase -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="relative bg-surface-container-lowest rounded-lg p-space-lg shadow-sm overflow-hidden flex items-center justify-center min-h-[460px]">
+<!-- Subtle Radial Gradient Ambience -->
+<div class="absolute inset-0 bg-gradient-to-br from-secondary-container/20 via-transparent to-primary-fixed-dim/10 pointer-events-none"></div>
+<!-- Floating Badges on Hero Packshot -->
+<div class="absolute top-space-md left-space-md flex flex-col gap-space-xs z-10">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Formule RDC Certifiée</span>
+</span>
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Dégraissant Max</span>
+</span>
+</div>
+<div class="absolute top-space-md right-space-md flex flex-col items-end gap-space-xs z-10">
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+                Format Expert 250 ml
+              </span>
+<span class="px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">recycling</span>
+                Flacon recyclable
+              </span>
+</div>
+<!-- Main High-Res Image View -->
+<div class="relative z-0 w-full max-w-[340px] flex items-center justify-center p-space-md transition-all duration-300 group">
+<img class="w-full max-h-[420px] object-contain drop-shadow-xl group-hover:scale-105 transition-transform duration-300" data-alt="Official high-resolution bottle photograph of BUKHETE Vaisselle 250ml dishwashing liquid bottle on a clean white marble countertop. Crystal clear ergonomic plastic pump bottle showing radiant translucent lemon-yellow liquid, green eco-label featuring fresh cut lemons and sparkling clean tableware, modern kitchen studio ambient light with soft emerald tones." id="mainProductImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDopEXe736wK7lFmNe5KouZJ1XEyeyc4c1Aad4fj06jn6Ze6lxRyTOTvDEOnS_qaL4X-vyTuM85LcXs9f_2-2JoOzHUaIFnWuzRGl5HROWP8fufiVwrA3Z7v2O6abQP6tyeN8sWLdDsSW_a3PkkGLOOdMeC2dnBQ3Cof8j7oOnC0Co3fPS9yQnB5W0jTbxOeV4OHNpgCQj7hDtHl_UUcRWi-CpxvdTOv55v2XII2HbUw1IxuCsabLc"/>
+</div>
+<div class="absolute bottom-space-md right-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-1 rounded-full text-label-sm font-label-sm text-on-surface-variant shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">zoom_in</span>
+<span>Vue studio 360°</span>
+</div>
+</div>
+<!-- Thumbnails Selector Corridor -->
+<div class="grid grid-cols-3 gap-space-sm">
+<button class="thumb-btn active-thumb p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center gap-1 text-left group" onclick="switchProductThumb(0)" type="button">
+<div class="w-full h-20 rounded bg-surface-container-low flex items-center justify-center overflow-hidden">
+<img class="h-full object-contain group-hover:scale-105 transition-transform" data-alt="Front view photograph of BUKHETE Vaisselle 250ml yellow liquid dish detergent bottle with blue pump dispenser on soft studio surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwQ6l0WtRk8oxvxAG62xuQyW0Y0_aPtl6_YhAHORzEBcV5wCDwSFd10qvVbNlq64XlmAalDbkEReVX10YW3cd7UNJtsmYswAkYpFV6VCnxgU8CY2Eftd7ysxS8X_EhsUHoxXnd7VRtG_jNhO6cGETluJ-godP21sxmBK3Z4unum5qmzQXZ58vEo1-4bBeJ5j7rPQw_aAFb8l-H9XDuBCljnNpzPwTE9qXoDp_VzL5LbqDK_Aih4cg"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Face avant officielle</span>
+</button>
+<button class="thumb-btn p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center gap-1 text-left group" onclick="switchProductThumb(1)" type="button">
+<div class="w-full h-20 rounded bg-surface-container-low flex items-center justify-center overflow-hidden">
+<img class="h-full object-contain group-hover:scale-105 transition-transform" data-alt="Detailed back label inspection of BUKHETE dishwashing liquid bottle showing precise dosage directions, formulation ingredients and Niumba Transform manufacturing data" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN_7z702CIMDtC6mZmWzQ1QbKxFvcXqgfhJkbimrfdjcfTUNa4icjne3ktO9hkEt_zujScoXSvOXV_5ASbAi_-owz_9aEtiZc1fBbEkV-ZKoxAXei5_FCIcqTFHzq8tYwxuVEfnPHeXgY7ZS-YFQkd8U8A1JeMpaa9o5Qmgyu1gtbSd20RAl4BzTTVXiivsGF4q9OYbMytT12aDDBX33PePV338JGcUm3OLsDE0GqhAahq5RSl2pM"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Dosage &amp; Étiquette</span>
+</button>
+<button class="thumb-btn p-space-xs rounded bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col items-center gap-1 text-left group" onclick="switchProductThumb(2)" type="button">
+<div class="w-full h-20 rounded bg-surface-container-low flex items-center justify-center overflow-hidden">
+<img alt="Gamme BUKHETE Niumba Transform" class="h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmazJwYErmN7zPbOC8VWZeYpDr6sYcbj-TQYhropSo6H6mY6RVKN6JomoeUnzJbREU-aBc_LYILm-QDh1Dy2osm0dq1syJUATl0wFp9s-p5YYlKA_lQTe_gxFbXvksCfzBPPEn-78sp-A0QN551iEWiU1r27DNEYSkkpwkTyXllRqtJbC9ZbdPsJq4jNazFxyjuGO4IjG2mIzjZwpq-LX-45XOWeDjZhGLx5XmCoYLizZP-BxiD38HYvDihCC9cUOc"/>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">Gamme Complète</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Specs, Pricing, Ordering & Assurances -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-sm py-1 rounded-full bg-primary text-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-bold">
+                Nettoyage Cuisine &amp; Verre
+              </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Réf: BUK-VAI-250ML
+              </span>
+</div>
+<h1 class="font-display-hero text-headline-xl lg:text-display-hero text-primary tracking-tight font-extrabold mt-space-xs">
+              BUKHETE Vaisselle
+            </h1>
+<p class="font-headline-sm text-headline-sm text-secondary font-semibold">
+              Formule Dégraissante Active — Parfum Citron Vert d'Afrique
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              Dissout instantanément les graisses tenaces, redonne éclat cristallin à la verrerie et protège l'épiderme des mains lors des lavages répétés grâce à sa glycérine dermo-protectrice.
+            </p>
+</div>
+<!-- Technical Formula Badges Rail -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">nutrition</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Citron Vert</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Parfum tonique</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">science</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">pH Neutre</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">6.5 à 7.0 doux</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">eco</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">&gt; 90% Bio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Biodégradable</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col items-center text-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">factory</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Kinshasa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Made in DRC</span>
+</div>
+</div>
+<!-- Price & Stock Container -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-hero text-headline-xl font-extrabold text-primary" id="displayPrice">4 500 FC</span>
+<span class="font-label-lg text-label-lg text-on-surface-variant font-bold">(~1.60 USD)</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>En stock permanent (Usine Limete &amp; Dépôts)</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-body-sm font-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Tarif Carton Professionnel (24 unités) :</span>
+<span class="font-bold text-primary text-headline-sm">96 000 FC <span class="font-label-sm text-secondary">(-11% Pro)</span></span>
+</div>
+</div>
+<!-- Format Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-bold">Sélectionner le Conditionnement :</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-xs" id="packagingSelector">
+<button class="pack-opt active-pack text-left p-space-sm rounded-lg bg-primary-container text-on-primary shadow-sm flex flex-col justify-between transition-all" data-pack="single" onclick="selectPackaging('single', 4500)" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold">Flacon Pompe</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary-fixed mt-1">250 ml standard</span>
+<span class="font-label-md text-label-md font-extrabold mt-space-xs">4 500 FC</span>
+</button>
+<button class="pack-opt text-left p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-all flex flex-col justify-between shadow-sm" data-pack="box" onclick="selectPackaging('box', 96000)" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold">Carton Grossiste</span>
+<span class="material-symbols-outlined text-[18px] opacity-0">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">24 flacons x 250ml</span>
+<span class="font-label-md text-label-md font-extrabold text-secondary mt-space-xs">96 000 FC</span>
+</button>
+<div class="p-space-sm rounded-lg bg-surface-container-low/60 text-on-surface-variant opacity-75 flex flex-col justify-between cursor-not-allowed">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold">Éco-Recharge 1L</span>
+<span class="font-label-sm text-[10px] uppercase px-1.5 py-0.5 rounded bg-surface-container font-bold">Bientôt</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Économie plastique</span>
+<span class="font-label-md text-label-md font-bold mt-space-xs">À confirmer</span>
+</div>
+</div>
+</div>
+<!-- Quantity Counter and Action Row -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+<!-- Counter -->
+<div class="flex items-center justify-between bg-surface-container-lowest rounded-full p-1 shadow-sm sm:w-36 shrink-0">
+<button aria-label="Diminuer" class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center font-bold text-headline-sm transition-colors" onclick="adjustQty(-1)" type="button">
+                -
+              </button>
+<span class="font-headline-sm text-headline-sm font-bold text-primary px-space-sm" id="qtyCounter">1</span>
+<button aria-label="Augmenter" class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center font-bold text-headline-sm transition-colors" onclick="adjustQty(1)" type="button">
+                +
+              </button>
+</div>
+<!-- Primary Action -->
+<a class="flex-1 inline-flex items-center justify-between pl-space-lg pr-space-xs py-space-xs bg-primary hover:bg-primary-container text-on-primary rounded-full font-label-lg text-label-lg transition-all shadow-md group" data-path="commander" href="#">
+<div class="flex flex-col text-left">
+<span class="font-bold">Ajouter à la commande</span>
+<span class="text-primary-fixed font-body-sm text-[12px]">Total: <span id="subtotalDisplay">4 500 FC</span></span>
+</div>
+<span class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow group-hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</span>
+</a>
+</div>
+<!-- Secondary WhatsApp Quick Action Button -->
+<div>
+<a class="w-full inline-flex items-center justify-center gap-space-sm py-space-sm px-space-lg rounded-full text-white font-label-lg text-label-lg shadow-sm hover:opacity-95 transition-opacity" href="https://wa.me/243890000123?text=Bonjour%20Niumba%20Transform,%20je%20souhaite%20commander%20le%20produit%20BUKHETE%20Vaisselle%20250ml" rel="noopener noreferrer" style="background-color: #25D366;" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span class="font-bold">Commander rapidement via WhatsApp</span>
+<span class="font-body-sm text-[13px] opacity-90 hidden sm:inline">(Réponse en moins de 15 min)</span>
+</a>
+</div>
+<!-- Reassurance Checklist (No borders) -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Livraison 24h/48h</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Kinshasa &amp; Dépôts régionaux</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">receipt_long</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Facture NIF / RCCM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Normalisée entreprises &amp; CHR</span>
+</div>
+</div>
+<div class="flex items-start gap-space-xs p-space-sm rounded bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">support_agent</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Support Laboratoire</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">+243 890 000 123</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Tabs Section -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm">
+<!-- Tab Navigation Corridor -->
+<div class="flex flex-wrap items-center gap-space-xs pb-space-md">
+<button class="tab-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg bg-primary text-on-primary font-bold shadow-sm transition-all" onclick="openTab('tab-desc', this)" type="button">
+            Description &amp; Avantages
+          </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-bold transition-all" onclick="openTab('tab-usage', this)" type="button">
+            Mode d'Emploi &amp; Dosage
+          </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-bold transition-all" onclick="openTab('tab-chem', this)" type="button">
+            Composition &amp; Sécurité Chimique
+          </button>
+<button class="tab-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-bold transition-all" onclick="openTab('tab-specs', this)" type="button">
+            Spécifications Industrielles
+          </button>
+</div>
+<!-- Tab 1: Description -->
+<div class="tab-panel flex flex-col gap-space-md pt-space-xs" id="tab-desc">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center">
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">
+                Le pouvoir dégraissant ultra-performant au service du quotidien
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Formulé au sein de l'unité industrielle Niumba Transform de Kinshasa, le liquide vaisselle <strong>BUKHETE Vaisselle</strong> concentre des tensioactifs végétaux doux à haute synergie moussante. Il a été spécialement optimisé pour vaincre les résidus alimentaires les plus coriaces : graisses cuites, huiles de palme raffinées, féculents et sauces épicées.
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Sa mousse onctueuse et dense adhère à la vaisselle sans exiger d'effort abrasif, garantissant un rinçage instantané à l'eau froide ou tiède. Aucun film gras ni résidu olfactif persistant n'est laissé sur les assiettes ou les biberons de nourrissons.
+              </p>
+</div>
+<!-- In-depth highlight cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[28px]">local_fire_department</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Dissolution Lipides</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Technologie tensioactive ciblée découpant les graisses animales et végétales sans eau bouillante.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[28px]">water_lux</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Rinçage Éclair</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Formulation hydrophile réduisant le volume d'eau nécessaire au rinçage de plus de 35%.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[28px]">spa</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Douceur Cutanée</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enrichi en glycérine émolliente pour préserver le film hydrolipidique des mains même lors d'usages intensifs.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="material-symbols-outlined text-secondary text-[28px]">clean_hands</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Brillance Verrerie</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Agents anticalcaires prévenant les voiles blancs et les traces de calcaire sur les verres fins.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 2: Usage & Dosage -->
+<div class="tab-panel hidden flex-col gap-space-md pt-space-xs" id="tab-usage">
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">
+            Recommandations de dosage professionnel et domestique
+          </h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center font-headline-sm">
+                1
+              </div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Vaisselle Courante</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                1 seule pression (environ <strong>2 ml</strong>) appliquée directement sur une éponge préalablement mouillée suffit pour nettoyer jusqu'à <strong>12 assiettes</strong> ou un bac de 10 litres d'eau.
+              </p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary font-bold flex items-center justify-center font-headline-sm">
+                2
+              </div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Poêles &amp; Graisses Incrustées</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Déposer 2 gouttes pures directement sur la zone brûlée ou graisseuse. Laisser agir <strong>2 minutes</strong>, frotter légèrement puis rincer à l'eau claire sans décapage rugueux.
+              </p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-variant text-primary font-bold flex items-center justify-center font-headline-sm">
+                3
+              </div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Température d'Eau</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Action immédiate prouvée en <strong>eau froide</strong> comme en eau tiède. Préserve les consommations d'énergie dans les ménages et les cuisines d'établissements de restauration.
+              </p>
+</div>
+</div>
+</div>
+<!-- Tab 3: Composition & Safety -->
+<div class="tab-panel hidden flex-col gap-space-md pt-space-xs" id="tab-chem">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">
+                Formulation responsable &amp; Contrôle qualité
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Les chimistes de Niumba Transform appliquent les normes de sécurité sanitaire internationale avec exclusion stricte de phosphates, de paraben et de solvants pétrochimiques agressifs.
+              </p>
+<ul class="space-y-space-xs text-body-md text-on-surface-variant">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>5% à 15% :</strong> Tensioactifs anioniques d'origine végétale (huile de coco raffinée)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>&lt; 5% :</strong> Tensioactifs non-ioniques moussants doux</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>Agents d'entretien :</strong> Glycérine végétale hydratante pharmacopée</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>Composants olfactifs :</strong> Extrait naturel de citronnelle &amp; zeste de citron</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+<span><strong>Base solvante :</strong> Eau purifiée déminéralisée industrielle</span>
+</li>
+</ul>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-space-sm justify-between">
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">warning</span>
+                  Précautions d'Emploi &amp; Réglementation
+                </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Usage externe uniquement. Tenir hors de portée des enfants. En cas de contact accidentel avec les yeux, rincer immédiatement avec beaucoup d'eau tiède. Ne pas ingérer.
+                </p>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Fiche de Données de Sécurité (FDS)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Conforme réglementation RDC &amp; OHADA</span>
+</div>
+</div>
+<button class="px-space-sm py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors" type="button">
+                  Télécharger
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Tab 4: Industrial Specs -->
+<div class="tab-panel hidden flex-col gap-space-md pt-space-xs" id="tab-specs">
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">
+            Fiche technique industrielle &amp; Logistique
+          </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-sm">
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Référence SKU</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">BUK-VAI-250ML</span>
+<span class="font-body-sm text-body-sm text-secondary">Unité Flacon Pompe</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Volume Net</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">250 ml ℮</span>
+<span class="font-body-sm text-body-sm text-secondary">Flacon PET recyclable</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Conditionnement Carton</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">24 Pièces</span>
+<span class="font-body-sm text-body-sm text-secondary">Poids brut : 6.8 kg</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Palette Standard</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">80 Cartons</span>
+<span class="font-body-sm text-body-sm text-secondary">1 920 bouteilles / palette</span>
+</div>
+</div>
+<div class="p-space-sm rounded bg-surface-container text-on-surface-variant font-body-sm text-body-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<span><strong>Fabricant :</strong> Niumba Transform SARL — Complexe Industriel Limete, Kinshasa, RDC</span>
+<span><strong>Agrément :</strong> Certifié Hygiène &amp; Salubrité Publique</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Demonstration Section -->
+<section class="w-full py-space-xl bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm w-fit">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>Test en Conditions Réelles</span>
+</div>
+<h2 class="font-display-hero text-headline-xl lg:text-display-hero font-extrabold leading-tight">
+            Voyez l'efficacité BUKHETE Vaisselle en action
+          </h2>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Assistez à notre banc d'essai comparatif filmé en laboratoire : élimination d'huile de palme rouge froide sur assiette porcelaine sans pré-trempage et rinçage d'une carafe de cristal en une passe.
+          </p>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-bold text-label-sm">✓</span>
+<span class="font-body-md text-body-md text-on-primary">Mousse instantanée hyper-dense</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-bold text-label-sm">✓</span>
+<span class="font-body-md text-body-md text-on-primary">Transparence et brillance miroir</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary font-bold text-label-sm">✓</span>
+<span class="font-body-md text-body-md text-on-primary">Rinçage sans traces ni voile gras</span>
+</div>
+</div>
+</div>
+<!-- Video Player Frame -->
+<div class="lg:col-span-7">
+<div class="relative rounded-lg overflow-hidden bg-surface-dim shadow-xl aspect-video flex items-center justify-center group">
+<div class="bg-cover bg-center absolute inset-0 opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="Cinematic still frame of high efficiency dish detergent foam cleaning a gleaming glass dish under clean water stream in a modern African laboratory kitchen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCXye44FRYDsmViYH-LxeqNOrOp9Qw1S1NygzgGJKsfluGonEwCmQiXuOEV07BthphXQR6Ioed5OWTeDb96-_L5-iiNzKsHC47jVwBQa7iVZf0pzrxsiKZ6gs2NMAgCSaHFfKD-oSHxuVXj5mZhy9ffcgAV9Zs0rKpbalooorAsIKusj_mvGQMqkdy2l6C1thF0V3yB8Ce443xcF55lnRY2gtNXrimxFBz03sXSPe-kevm2COECTg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<!-- Play Button Trigger -->
+<button class="relative z-10 w-20 h-20 rounded-full bg-on-primary/20 backdrop-blur-md text-on-primary flex items-center justify-center shadow-lg group-hover:bg-secondary group-hover:scale-110 transition-all" type="button">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<!-- Video Runtime Badge -->
+<div class="absolute bottom-space-md left-space-md z-10 flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary/80 backdrop-blur-md text-on-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span>1:25 min • Test comparatif dégraissage express</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cross-sell / Related BUKHETE Range Products -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-secondary uppercase font-bold tracking-wider">Synergie de Propreté</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold">
+            Dans la même gamme d'hygiène BUKHETE
+          </h2>
+</div>
+<a class="font-label-lg text-label-lg text-secondary hover:text-primary font-bold transition-colors inline-flex items-center gap-1" data-path="produits-bukhete" href="#">
+<span>Découvrir toute la gamme</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Product 1: Lessive Marine -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-56 rounded bg-surface-container-low flex items-center justify-center p-space-sm overflow-hidden relative">
+<img alt="BUKHETE Lessive Fraîcheur Marine" class="h-full object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgApgsmemKmllS1cHjB5RxFsSdXt-cEQE0QCNx-e-DNxmW3L5UlQH9zWm0OtKCO0DknxkvB5vPI3ZnsKIhLb0nbM3exmbNHXDTzGbd_eguiS14m-BgEj-oGtTj8tcHm3WEYW_X1W694TqkEDEtt7Co88SjqE-XWNVQEHLi6OgPRm7BdVii0z7rqwgepXv9poHjSZZouHp8iajNWdhnS4Iwc0Gjhwceufhv6enShxa61JOzWvirM6gxSEaQxy_1H3bc"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-[10px] font-bold uppercase">Textile &amp; Soin</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">BUKHETE Textile</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Lessive Fraîcheur Marine</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Élimine les odeurs tenaces de transpiration et préserve l'éclat des couleurs des cotons et pagnes.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">6 500 FC</span>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" data-path="produits-bukhete" href="#">Détails</a>
+<a class="w-9 h-9 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center shadow-sm transition-colors" data-path="commander" href="#">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 2: Savon Liquide Lave-Mains Fleur de Coton -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-56 rounded bg-surface-container-low flex items-center justify-center p-space-sm overflow-hidden relative">
+<img alt="BUKHETE Savon Liquide Lave-Mains" class="h-full object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpT1YNSN5b7fJf-8CE4HWlZxDvE5e6YwSjj07Fu3xS1e_Ez747hcxMrRs_wuw8n4CnQJ0paTRLbCOf2D7yOyGXuN0P6d8Gquf3W0K3c-8IF9S5DOWE2VJEHFLpTfdZuGkYg7hpJMNgF_r1PaetLPOQTYMMKm9-I234b_BdFIeM1JEJWtXKkl420oV_Q3T_b-gTr6_HS6NDVPF6Qr4K_z5CHWUm_gIdjIOkGle4FowsBacVHqppMw8LfiDW06DYW614"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-[10px] font-bold uppercase">Soin &amp; Dermoprotect</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">BUKHETE Soin Mains</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Lave-Mains Fleur de Coton</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Mousse veloutée antibactérienne, testée dermatologiquement pour les lavages fréquents en entreprise.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">4 000 FC</span>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" data-path="produits-bukhete" href="#">Détails</a>
+<a class="w-9 h-9 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center shadow-sm transition-colors" data-path="commander" href="#">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 3: Nettoyant Multi-Usages Lavande -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="flex flex-col gap-space-sm">
+<div class="w-full h-56 rounded bg-surface-container-low flex items-center justify-center p-space-sm overflow-hidden relative">
+<img alt="BUKHETE Nettoyant Multi-Usages" class="h-full object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHB4_cT0PG6_LUanEeDiJccc7NEpWXiiZ5MnwfgzUTjwBOPzft-zQ09D6nmW5VOzM35XvgpKMueYTJ3rH5xX9uhO3b_DSJkcLgNB75SSV_lo8os2RL1uQzMLvbam2RgMux1Ur58J8a0ya4oVS6kWCuMQoDkucnA_IhSj03X8tRT3x18JaJ0FfSKLVSkSJSR6t5fSilJqCa9GcDkKdopGGDYGe9Zg-mmXYirBkHv1nAaWK205TZveSXWzToTpyQPxC2"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-tertiary-container text-tertiary-fixed font-label-sm text-[10px] font-bold uppercase">Sols &amp; Surfaces</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">BUKHETE Surfaces</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Multi-Usages Lavande</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">Désodorisant longue durée et décrassant puissant pour carrelages, éviers et plans de travail.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md mt-space-sm">
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary">5 500 FC</span>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-bold hover:bg-surface-container-high transition-colors" data-path="produits-bukhete" href="#">Détails</a>
+<a class="w-9 h-9 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center shadow-sm transition-colors" data-path="commander" href="#">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- B2B & Wholesale Callout Banner -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="bg-gradient-to-r from-primary-container to-secondary rounded-lg p-space-lg lg:p-space-xl text-on-primary shadow-lg flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary text-primary-fixed font-label-sm text-label-sm w-fit font-bold">
+<span class="material-symbols-outlined text-[16px]">corporate_fare</span>
+<span>Accompagnement Professionnel &amp; CHR</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl font-extrabold text-on-primary">
+            Vous êtes un hôtel, restaurant, hôpital ou supermarché ?
+          </h3>
+<p class="font-body-md text-body-md text-on-primary-container leading-relaxed">
+            Profitez de grilles tarifaires par palette, d'échantillons d'essai pour vos audits techniques d'hygiène et d'un contrat d'approvisionnement garanti depuis notre manufacture de Kinshasa.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0 w-full md:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-full bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-fixed transition-colors" data-path="contact" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span>Demander un devis B2B</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-sm rounded-full bg-transparent text-on-primary hover:bg-primary-container/40 font-label-lg text-label-lg font-bold transition-colors" data-path="devenir-distributeur" href="#">
+<span>Réseau distributeurs</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+  let currentQuantity = 1;
+  let unitPrice = 4500;
+
+  function switchProductThumb(index) {
+    const mainImg = document.getElementById('mainProductImage');
+    const thumbButtons = document.querySelectorAll('.thumb-btn');
+
+    thumbButtons.forEach((btn, i) => {
+      if (i === index) {
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        const label = btn.querySelector('span');
+        if (label) label.classList.add('text-on-primary');
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        const label = btn.querySelector('span');
+        if (label) {
+          label.classList.remove('text-on-primary');
+          label.classList.add('text-on-surface-variant');
+        }
+      }
+    });
+
+    if (index === 0) {
+      mainImg.src = 'placeholder';
+      mainImg.setAttribute('data-alt', 'Official high-resolution bottle photograph of BUKHETE Vaisselle 250ml dishwashing liquid bottle on a clean white marble countertop. Crystal clear ergonomic plastic pump bottle showing radiant translucent lemon-yellow liquid, green eco-label featuring fresh cut lemons and sparkling clean tableware, modern kitchen studio ambient light with soft emerald tones.');
+    } else if (index === 1) {
+      mainImg.src = 'placeholder';
+      mainImg.setAttribute('data-alt', 'Detailed back label inspection of BUKHETE dishwashing liquid bottle showing precise dosage directions, formulation ingredients and Niumba Transform manufacturing data');
+    } else if (index === 2) {
+      mainImg.src = 'https://lh3.googleusercontent.com/aida-public/AB6AXuA8gfkj5pS3jMn68981fK5HkBYNmdrEzpPteTjYc_YSPF35eyRqvEA6yOUTfhJtoM4REl7G_z4CkBzpI1jI5aRDEgl5off0b_WoJ3TJ0aYLS-YXOFAoysFNoEiBZG2zAMqWDZVplWXo3ATGT6k8nabWidgE-Xn_BOycF4PXwXGbUt41Dy-tpddpB_YTonsxKkZqygx-p9eLYwKO3iADE7Wi_KqDaatyBnCT9TsDhX7SnzcAvrvSShmOkL3L_dtekq0J';
+      mainImg.removeAttribute('data-alt');
+    }
+  }
+
+  function selectPackaging(type, price) {
+    unitPrice = price;
+    const buttons = document.querySelectorAll('#packagingSelector .pack-opt');
+
+    buttons.forEach(btn => {
+      const isSelected = btn.getAttribute('data-pack') === type;
+      const checkIcon = btn.querySelector('.material-symbols-outlined');
+      if (isSelected) {
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        if (checkIcon) checkIcon.classList.remove('opacity-0');
+      } else {
+        btn.classList.remove('bg-primary-container', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+        if (checkIcon) checkIcon.classList.add('opacity-0');
+      }
+    });
+
+    const displayPrice = document.getElementById('displayPrice');
+    if (displayPrice) {
+      displayPrice.innerText = (price).toLocaleString('fr-FR') + ' FC';
+    }
+
+    updateSubtotal();
+  }
+
+  function adjustQty(delta) {
+    currentQuantity += delta;
+    if (currentQuantity < 1) currentQuantity = 1;
+    if (currentQuantity > 200) currentQuantity = 200;
+
+    const qtyDisplay = document.getElementById('qtyCounter');
+    if (qtyDisplay) {
+      qtyDisplay.innerText = currentQuantity;
+    }
+    updateSubtotal();
+  }
+
+  function updateSubtotal() {
+    const total = currentQuantity * unitPrice;
+    const subtotalDisplay = document.getElementById('subtotalDisplay');
+    if (subtotalDisplay) {
+      subtotalDisplay.innerText = total.toLocaleString('fr-FR') + ' FC';
+    }
+  }
+
+  function openTab(tabId, triggerBtn) {
+    const panels = document.querySelectorAll('.tab-panel');
+    panels.forEach(p => {
+      p.classList.add('hidden');
+      p.classList.remove('flex');
+    });
+
+    const activePanel = document.getElementById(tabId);
+    if (activePanel) {
+      activePanel.classList.remove('hidden');
+      activePanel.classList.add('flex');
+    }
+
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(b => {
+      b.classList.remove('bg-primary', 'text-on-primary');
+      b.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    if (triggerBtn) {
+      triggerBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      triggerBtn.classList.add('bg-primary', 'text-on-primary');
+    }
+  }
+</script></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-md font-bold flex items-center justify-center">NT</div><span class="font-headline-sm text-headline-sm text-on-primary font-bold">NIUMBA TRANSFORM</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Fleuron industriel de la transformation locale et de la formulation de produits d'hygiène éco-responsables de haute performance. Marque officielle BUKHETE.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span>Fièrement fabriqué en RDC</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Navigation Corporate</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="entreprise" href="#">L'Entreprise &amp; Gouvernance</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="produits-bukhete" href="#">Gamme de Produits BUKHETE</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="innovation-&amp;-ecologie" href="#">Laboratoire, R&amp;D &amp; Écologie</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="videos" href="#">Vidéos &amp; Reportages Usine</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="actualites" href="#">Communiqués &amp; Presse</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Partenariats &amp; Ventes</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="devenir-distributeur" href="#">Réseau National de Distribution</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="commander" href="#">Commandes Grossistes &amp; CHR</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="contact" href="#">Service Client &amp; Devis</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="connexion-back-office" href="#">Portail Collaborateurs &amp; Admin</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Mentions Légales &amp; Usine</span><div class="font-body-sm text-body-sm text-on-primary-container space-y-space-xs"><p><strong class="text-on-primary">RCCM :</strong> CD/KNG/RCCM/19-B-01429</p><p><strong class="text-on-primary">Id. Nat. :</strong> 01-G4701-N82914K</p><p><strong class="text-on-primary">NIF :</strong> A1829472H</p><p class="pt-space-xs"><strong class="text-on-primary">Siège Social &amp; Usine :</strong> Kinshasa, République Démocratique du Congo</p></div></div></div><div class="pt-space-lg border-t border-primary-container flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-primary-container">© 2025 Niumba Transform SARL. Tous droits réservés. BUKHETE est une marque déposée.</p><div class="flex items-center gap-space-lg font-label-md text-label-md text-surface-variant"><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Confidentialité</a><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Conditions Générales</a><a class="hover:text-primary-fixed transition-colors flex items-center gap-space-xs" data-path="connexion-back-office" href="#"><span class="material-symbols-outlined text-[14px]">lock</span>Accès Système</a></div></div></div></footer></body></html>

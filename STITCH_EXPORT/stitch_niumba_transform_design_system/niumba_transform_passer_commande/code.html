@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#2a1700","primary-fixed":"#b3f1c3","on-secondary-fixed-variant":"#00522f","on-primary-container":"#80ba90","outline-variant":"#c0c9bf","inverse-surface":"#283044","secondary-fixed":"#8df8b7","primary-container":"#0e4b2a","on-tertiary-fixed-variant":"#653e00","surface":"#faf8ff","tertiary-fixed":"#ffddb8","surface-container-high":"#e2e7ff","error-container":"#ffdad6","primary-fixed-dim":"#98d4a8","tertiary":"#3f2500","on-error":"#ffffff","on-background":"#131b2e","inverse-on-surface":"#eef0ff","on-secondary-container":"#007243","surface-container":"#eaedff","secondary-fixed-dim":"#70db9d","on-tertiary-container":"#f09a02","on-primary-fixed":"#00210e","tertiary-container":"#5d3900","on-error-container":"#93000a","inverse-primary":"#98d4a8","secondary":"#006d40","tertiary-fixed-dim":"#ffb95f","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#16512f","error":"#ba1a1a","surface-variant":"#dae2fd","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary":"#ffffff","on-surface-variant":"#404941","primary":"#003319","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002110","secondary-container":"#8af5b4","outline":"#717971","on-surface":"#131b2e","surface-tint":"#316945"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md font-bold tracking-tight">NT</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">NIUMBA TRANSFORM</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Industrie &amp; Hygiène Durable</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="entreprise" href="#">Entreprise</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="produits-bukhete" href="#">Produits BUKHETE</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="videos" href="#">Vidéos</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="innovation-&amp;-ecologie" href="#">Innovation &amp; Écologie</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="actualites" href="#">Actualités</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="devenir-distributeur" href="#">Devenir Distributeur</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase">RDC</span><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">FR</span></div><a class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" data-path="commander" href="#"><span class="font-bold">Commander</span><span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></span></a><a class="p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dashboard-vue-d'ensemble" href="#" title="Espace Admin"><span class="material-symbols-outlined">admin_panel_settings</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1U-lqjrzSXAWeIT-_tAp8izyX9pKLEMl7EWwHZSyrWlP1IEeXwYUftVPvmRi2Hng7RP27AMPmvJBestR1UMQiZFl_7rAaXuKaXbJim_SOQIlKuaueGepNNWkuYkTNqqSqdtgatMHXSWYBIgW5ojiHmqLY4fYi1B18D_4sM1J7m6SJXUvyTiuYogFLjrGNdzuZETgqJD3Pq3sC1d0wSZEJEDJr0pPkXk3LAxHy_j91rP1kcpW_yf3jZa-kjDWIxy-jdH8j3bHVdW"/></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Status Ribbon -->
+<section class="w-full bg-surface-container-low py-space-sm">
+<div class="max-w-7xl mx-auto px-margin flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="accueil" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Accueil
+        </a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" data-path="produits-bukhete" href="#">Gamme BUKHETE</a>
+<span>/</span>
+<span class="text-primary font-bold">Commander en ligne &amp; WhatsApp</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Stock disponible Kinshasa &amp; Provinces</span>
+</div>
+</div>
+</section>
+<!-- Main Order Studio & Tunnel -->
+<section class="w-full py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<!-- Title & Headline Bar -->
+<div class="mb-space-xl flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+            Expédition Express 24h/48h en RDC
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-extrabold tracking-tight">
+            Passer votre commande BUKHETE
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-1">
+            Particuliers, supermarchés, hôtels, écoles et entreprises : formulez votre panier et validez instantanément.
+          </p>
+</div>
+<!-- Mode Toggle (Particulier / Pro Grossiste) -->
+<div class="bg-surface-container p-1 rounded-full flex items-center shadow-sm shrink-0">
+<button class="order-mode-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg font-bold transition-all bg-surface-container-lowest text-primary shadow-sm" id="btn-mode-retail" type="button">
+            Particulier / Détail
+          </button>
+<button class="order-mode-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-primary transition-all" id="btn-mode-pro" type="button">
+            Grossiste / Cartons
+          </button>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: The Order Steps Form -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- STEP 1: Product Selection Matrix -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">1</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Sélectionnez vos produits BUKHETE</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Formules certifiées haute efficacité industrielle</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container rounded-full text-secondary font-bold">5 Références</span>
+</div>
+<!-- Product Grid Selector -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md" id="product-selection-grid">
+<!-- Product 1: Vaisselle -->
+<div class="product-item-card bg-surface p-space-md rounded-2xl transition-all hover:bg-surface-container-low shadow-sm flex flex-col justify-between" data-box-desc="Carton de 12 flacons" data-box-price="48000" data-id="vaisselle" data-name="BUKHETE Liquide Vaisselle" data-unit-desc="Flacon 500 ml" data-unit-price="4500">
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-xl p-space-xs mb-space-sm flex items-center justify-center overflow-hidden">
+<img alt="BUKHETE Vaisselle" class="h-full w-auto object-contain transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYf1DH1fCNuOAvfU0566GoW4lF53Cjpq2Moup6sLtVZtr6hFMRSy3yIByqotVB2nS33Wqm1P--bPGLI4cHTlAVU-ylT6IriNouVrlorUNv3BXDGr6JtFez8zH7BZ7vEKPwAR3xZntBfgrt7YiC67QAI0P-Rv6gUUnIcqqtCAWlkzlXeFQwi80pMWyFhIxnZ821oXE3uQXAM0B9_j80h37yZRlUPfWzq_nJAeRuMaVUcn9ZNK5TbKMQCIkLCRyho29J"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Dégraissant Max</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Nettoyage Cuisine</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Liquide Vaisselle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Agrumes intenses, action dégraissante immédiate.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between mt-auto">
+<div>
+<div class="font-headline-sm text-headline-sm font-extrabold text-primary item-price-display">4 500 FC</div>
+<div class="font-label-sm text-label-sm text-outline item-format-display">Unité 500 ml</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary font-bold transition-all" type="button">-</button>
+<span class="product-qty-count w-8 text-center font-headline-sm text-headline-sm font-bold text-on-surface">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center font-bold transition-all" type="button">+</button>
+</div>
+</div>
+</div>
+<!-- Product 2: Lessive -->
+<div class="product-item-card bg-surface p-space-md rounded-2xl transition-all hover:bg-surface-container-low shadow-sm flex flex-col justify-between" data-box-desc="Carton de 12 bidons" data-box-price="72000" data-id="lessive" data-name="BUKHETE Lessive Haute Performance" data-unit-desc="Bidon 1 Litre" data-unit-price="6500">
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-xl p-space-xs mb-space-sm flex items-center justify-center overflow-hidden">
+<img alt="BUKHETE Lessive" class="h-full w-auto object-contain transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY1oHsHaWt9mnzToIhbBVuZryIQOCzETUM3AIKgWl4GzHHMb93j7QCFukxKUfv_GmE1OJwjpOwAc-1TH0aMiewX0d2d6i718zyvdY9grpiX5ZfEAd2lAIJ_TvDOOSn912TmRDm91OavMfQyHzZS0Ym9OR_Bh4dq1uV97mUxEIs8x5B--Ea4FhPbxq-UYFVkVl-9CeXduUIkFZ5YESiUdYNIW5h4TT2uDY-8C5SgRyh5gpoVB3EMeIPbBUwacEzIhIQ"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm font-bold">Fraîcheur 72h</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Linge &amp; Textile</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Lessive Concentrée</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Anti-ternissement, actif lavage main et machine.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between mt-auto">
+<div>
+<div class="font-headline-sm text-headline-sm font-extrabold text-primary item-price-display">6 500 FC</div>
+<div class="font-label-sm text-label-sm text-outline item-format-display">Unité 1 L</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary font-bold transition-all" type="button">-</button>
+<span class="product-qty-count w-8 text-center font-headline-sm text-headline-sm font-bold text-on-surface">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center font-bold transition-all" type="button">+</button>
+</div>
+</div>
+</div>
+<!-- Product 3: Lave-mains -->
+<div class="product-item-card bg-surface p-space-md rounded-2xl transition-all hover:bg-surface-container-low shadow-sm flex flex-col justify-between" data-box-desc="Carton de 12 flacons" data-box-price="42000" data-id="lavemains" data-name="BUKHETE Savon Liquide Mains" data-unit-desc="Flacon pompe 350 ml" data-unit-price="4000">
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-xl p-space-xs mb-space-sm flex items-center justify-center overflow-hidden">
+<img alt="BUKHETE Lave-mains" class="h-full w-auto object-contain transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCyhn6fHMCxZF1MzaU5ZoZ2TOa3tGBAuzOeLnxs13GvnzBqy-16moSooUhkAqe2T6qv_T0jmd8JkinHp9OP5bE1EpKgX7S84ceVMoSlVDG53sP9QvYsoEp9EE5TJlVNAxiyUxZR3zIMfnOEKeNUrukXTunmz3dGFysdOFyH9VXX_gBF3uxWRgDMtL-JoVsUkMtI0e5QDpFmm81DqF2yK71VSpH0DqcQaC24_yRnkGRW1epJC1tmHfpMK8rR2lVopvI"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">Dermo-protecteur</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Hygiène Corporelle</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Savon Lave-Mains</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Formule antibactérienne douce enrichie en glycérine.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between mt-auto">
+<div>
+<div class="font-headline-sm text-headline-sm font-extrabold text-primary item-price-display">4 000 FC</div>
+<div class="font-label-sm text-label-sm text-outline item-format-display">Flacon pompe 350 ml</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary font-bold transition-all" type="button">-</button>
+<span class="product-qty-count w-8 text-center font-headline-sm text-headline-sm font-bold text-on-surface">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center font-bold transition-all" type="button">+</button>
+</div>
+</div>
+</div>
+<!-- Product 4: Multi-usages -->
+<div class="product-item-card bg-surface p-space-md rounded-2xl transition-all hover:bg-surface-container-low shadow-sm flex flex-col justify-between" data-box-desc="Carton de 12 flacons" data-box-price="60000" data-id="multiusages" data-name="BUKHETE Nettoyant Multi-usages" data-unit-desc="Flacon 1 Litre" data-unit-price="5500">
+<div class="relative w-full aspect-square bg-surface-container-lowest rounded-xl p-space-xs mb-space-sm flex items-center justify-center overflow-hidden">
+<img alt="BUKHETE Multi usages" class="h-full w-auto object-contain transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEUzk8a4ikgcBFO2uXwlXc0PDW05bEcP5zAVviCe9_yYI8wvPZCGDDwmJgd2N78Xpkba9v1-JWYKwBGhWspyy_5qHVKrc691bfxH1GOWbaM5iIF04l3OBV_4ovXeZyK56BTMNADh-DOzr5t3RjaT54Okq-_AQHXsBNnx-U6AOMREN3_2P2c74S0E9pQ6vFtLiKzsruFI12b585K4iVoT6F_KPw9phlnz5jxSm7C-6Q_ntcmT8cSuBnI-sXp5poLrIU"/>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Polyvalent</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Surfaces &amp; Vitres</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Nettoyant Multi-usages</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Dissout graisse et poussières sans laisser de traces.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between mt-auto">
+<div>
+<div class="font-headline-sm text-headline-sm font-extrabold text-primary item-price-display">5 500 FC</div>
+<div class="font-label-sm text-label-sm text-outline item-format-display">Flacon 1 L</div>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary font-bold transition-all" type="button">-</button>
+<span class="product-qty-count w-8 text-center font-headline-sm text-headline-sm font-bold text-on-surface">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center font-bold transition-all" type="button">+</button>
+</div>
+</div>
+</div>
+<!-- Product 5: Sol & Carrelage -->
+<div class="product-item-card bg-surface p-space-md rounded-2xl transition-all hover:bg-surface-container-low shadow-sm flex flex-col justify-between sm:col-span-2" data-box-desc="Carton de 12 bidons" data-box-price="66000" data-id="sol" data-name="BUKHETE Nettoyant Spécial Sol" data-unit-desc="Bidon 1 Litre" data-unit-price="6000">
+<div class="flex flex-col sm:flex-row gap-space-md items-center">
+<div class="w-28 h-28 shrink-0 bg-surface-container-lowest rounded-xl p-space-xs flex items-center justify-center overflow-hidden">
+<img alt="BUKHETE Sol" class="h-full w-auto object-contain transition-transform duration-300 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE0X1fHYWP9Dlf4VknN2ZsUn4cehNtXj8if0gWE3yC2rDRkZ4dnllgyT13Uq_w-3X_zlWqB7pS1BsdCbnXzAeoM3yxvM9a8qK4l0tZ2x4JWx1g0IEl4kSnPSu8ENosQDHdhmeRw1Zj_WfLGBYLoCA9wzYTTudxT6xxqJPCpJOVM3pDlec9Ldsp0dRD6ealTAnj3gjViNymuv0IbopcdHdEqSx9FV0lOiCjFWBDpEcwD7A21YIepL83VINMa-PLMP8W"/>
+</div>
+<div class="flex-1 text-center sm:text-left">
+<div class="flex items-center justify-center sm:justify-start gap-space-xs mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Sols &amp; Carrelages</span>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Parfum Lavande</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Nettoyant Sols &amp; Surfaces Brutes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Brillance intense, désodorisation longue durée pour carrelages et bureaux.</p>
+</div>
+<div class="flex flex-col items-center sm:items-end gap-space-xs shrink-0">
+<div class="font-headline-sm text-headline-sm font-extrabold text-primary item-price-display">6 000 FC</div>
+<div class="font-label-sm text-label-sm text-outline item-format-display">Bidon 1 L</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest rounded-full p-1 shadow-sm mt-1">
+<button class="btn-qty-minus w-7 h-7 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary font-bold transition-all" type="button">-</button>
+<span class="product-qty-count w-8 text-center font-headline-sm text-headline-sm font-bold text-on-surface">0</span>
+<button class="btn-qty-plus w-7 h-7 rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary flex items-center justify-center font-bold transition-all" type="button">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 2: Client Details -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">2</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Vos coordonnées</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pour confirmation directe de commande</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="client-name">Nom complet ou Raison sociale *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">person</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="client-name" placeholder="Ex: Dieudonné Mwamba ou Hôtel Panorama" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="client-phone">Téléphone d'appel *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">call</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="client-phone" placeholder="+243 820 000 000" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="client-whatsapp">
+                  Numéro WhatsApp actif (RDC) *
+                </label>
+<div class="relative flex items-center">
+<div class="absolute left-3 flex items-center gap-1 text-secondary font-bold font-label-sm text-label-sm pointer-events-none">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    +243
+                  </div>
+<input class="w-full pl-16 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="client-whatsapp" placeholder="81 234 56 78" required="" type="tel"/>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-1 inline-block">Recommandé pour recevoir le tracking GPS du livreur.</span>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="client-email">Email professionnel (Optionnel)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">mail</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="client-email" placeholder="contact@entreprise.cd" type="email"/>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 3: Delivery Location & Specifications -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold">3</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold">Adresse &amp; Modalités de livraison</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Réseau logistique urbain et inter-provinces</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="delivery-city">Ville de destination *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">location_city</span>
+<select class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors appearance-none" id="delivery-city">
+<option selected="" value="Kinshasa">Kinshasa (Livraison le jour même / J+1)</option>
+<option value="Lubumbashi">Lubumbashi (Hub Haut-Katanga)</option>
+<option value="Kolwezi">Kolwezi (Lualaba)</option>
+<option value="Goma">Goma (Nord-Kivu)</option>
+<option value="Matadi">Matadi (Kongo Central)</option>
+<option value="Autre">Autre ville / Territoire [À CONFIRMER]</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="delivery-commune">Commune / Quartier / Zone *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">explore</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="delivery-commune" placeholder="Ex: Gombe, Limete Industriel, Ngaliema..." required="" type="text"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mb-space-md">
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="delivery-landmark">Point de repère connu *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">pin_drop</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="delivery-landmark" placeholder="Ex: Croisement Huileries, Arrêt Pharmacie, En face de..." required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary font-bold mb-1" for="delivery-instructions">Instructions spéciales (Optionnel)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">assignment</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-inner transition-colors" id="delivery-instructions" placeholder="Heure préférée, sonnette, dépôt quai..." type="text"/>
+</div>
+</div>
+</div>
+<!-- Fast Callout Banner inside step 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-high/60 flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[22px]">local_shipping</span>
+<p class="font-body-sm text-body-sm">
+<strong>Livraison Kinshasa offerte</strong> dès 5 cartons ou 80 000 FC d'achat. Dépôt direct dans votre établissement.
+              </p>
+</div>
+</div>
+<!-- SUBMISSION BUTTONS AREA -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<!-- WHATSAPP PRIMARY CTA -->
+<button class="flex-1 inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-headline-sm text-headline-sm font-bold shadow-lg shadow-[#25D366]/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0" id="btn-submit-whatsapp" type="button">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.149.929 3.182 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.768-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.18-.543-1.898-.788-3.13-2.73-3.224-2.855-.095-.127-.775-1.03-.775-1.966 0-.936.491-1.396.666-1.587.175-.19.381-.238.508-.238.127 0 .254.002.365.008.118.006.275-.045.43.327.16.381.543 1.326.591 1.422.048.096.08.207.016.334-.064.127-.096.207-.19.318-.096.111-.202.249-.289.334-.096.096-.197.2-.084.391.112.191.498.823 1.071 1.334.739.658 1.362.862 1.554.957.191.096.303.08.414-.047.112-.128.477-.557.604-.748.127-.191.254-.159.429-.095.175.063 1.112.524 1.303.62.191.095.318.143.365.222.048.08.048.461-.096.866z"></path>
+</svg>
+<span>Commander via WhatsApp</span>
+</button>
+<!-- WEB ORDER SECONDARY CTA -->
+<button class="flex-1 inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-full bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm font-bold shadow-md transition-all" id="btn-submit-web" type="button">
+<span class="material-symbols-outlined text-[20px]">shopping_cart_checkout</span>
+<span>Enregistrer sur le site</span>
+</button>
+</div>
+<!-- Alert / Confirmation Box (Hidden initially) -->
+<div class="hidden p-space-md rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-start gap-space-sm shadow-sm" id="order-feedback">
+<span class="material-symbols-outlined text-[24px] text-secondary">task_alt</span>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold">Votre commande a été préparée avec succès !</p>
+<p class="font-body-sm text-body-sm mt-0.5">Le récapitulatif détaillé a été transmis. Notre service client BUKHETE vous appelle pour vérification d'adresse.</p>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Dynamic Cart & Assurances -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg lg:sticky lg:top-24">
+<!-- Live Cart Overview Box -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[24px]">shopping_bag</span>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Récapitulatif Panier</h3>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-primary" id="cart-item-count">0 article</span>
+</div>
+<!-- Items List Container -->
+<div class="flex flex-col gap-space-sm mb-space-md max-h-64 overflow-y-auto pr-1" id="cart-items-container">
+<div class="py-space-lg text-center text-on-surface-variant font-body-md text-body-md" id="cart-empty-message">
+<span class="material-symbols-outlined text-outline text-[36px] mb-1">production_quantity_limits</span>
+<p>Votre sélection est vide.<br/>Ajoutez des flacons ou cartons depuis la colonne de gauche.</p>
+</div>
+</div>
+<!-- Cost Summary Breakdown -->
+<div class="bg-surface p-space-md rounded-xl space-y-space-xs mb-space-md font-body-sm text-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Sous-total articles :</span>
+<span class="font-bold text-on-surface" id="cart-subtotal">0 FC</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Frais de livraison estimés :</span>
+<span class="font-bold text-secondary" id="cart-shipping">Gratuit (Kinshasa Centre)</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Taxes &amp; T.V.A (incluses) :</span>
+<span class="font-bold text-on-surface">16% RDC comprise</span>
+</div>
+<div class="pt-space-xs flex justify-between font-headline-md text-headline-md text-primary font-extrabold">
+<span>Total à régler :</span>
+<span class="text-secondary" id="cart-total">0 FC</span>
+</div>
+</div>
+<!-- Payment Methods Banner -->
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold block mb-space-xs">Moyens de paiement acceptés</span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs">
+<div class="bg-surface p-space-xs rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-label-sm font-extrabold text-[#E60000] block">M-Pesa</span>
+<span class="text-[10px] text-outline">Vodacom</span>
+</div>
+<div class="bg-surface p-space-xs rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-label-sm font-extrabold text-[#FF7900] block">Orange</span>
+<span class="text-[10px] text-outline">Money</span>
+</div>
+<div class="bg-surface p-space-xs rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-label-sm font-extrabold text-[#ED1C24] block">Airtel</span>
+<span class="text-[10px] text-outline">Money</span>
+</div>
+<div class="bg-surface p-space-xs rounded-lg text-center shadow-xs">
+<span class="font-label-sm text-label-sm font-extrabold text-primary block">Cash</span>
+<span class="text-[10px] text-outline">À la livraison</span>
+</div>
+</div>
+<p class="text-[11px] text-outline mt-1 italic text-center">[Réseaux Mobile Money disponibles selon confirmation de zone]</p>
+</div>
+<!-- Direct Support Helpdesk Trigger -->
+<div class="bg-primary p-space-md rounded-xl text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed">
+<span class="material-symbols-outlined">headset_mic</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-primary-fixed font-bold">Assistance directe</span>
+<div class="font-headline-sm text-headline-sm font-bold">+243 890 000 123</div>
+</div>
+</div>
+<a class="px-space-sm py-1 bg-surface text-primary rounded-full font-label-sm text-label-sm font-bold hover:bg-primary-fixed transition-colors" href="tel:+243890000123">
+                Appeler
+              </a>
+</div>
+</div>
+<!-- Niumba Transform Quality Commitments Card -->
+<div class="bg-surface-container p-space-lg rounded-2xl">
+<h4 class="font-headline-sm text-headline-sm text-primary font-bold mb-space-sm flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+              Engagements Niumba Transform
+            </h4>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Souveraineté industrielle :</strong> Formulation locale rigoureuse respectant les standards chimiques internationaux.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Écologie active :</strong> Flaconnages recyclables et agents tensioactifs hautement biodégradables.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Facturation officielle :</strong> Factures avec NIF et TVA remises systématiquement aux entreprises et revendeurs.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Commercial Hubs & Distribution Network Preview -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Couverture Territoriale</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Présents au plus près de votre quotidien</h2>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg font-bold text-secondary hover:text-primary transition-colors" data-path="devenir-distributeur" href="#">
+<span>Ouvrir un point de dépôt agréé BUKHETE</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Kinshasa Centre &amp; Est</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Entrepôt central Limete. Approvisionnement quotidien des demi-grossistes et superettes.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Grand Katanga</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hubs à Lubumbashi et Kolwezi pour les besoins industriels et miniers.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Kivu &amp; Kongo Central</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Liaisons maritimes et aériennes sécurisées via Matadi, Boma et Goma.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Inline Interactive Logic -->
+<script>
+    (function initOrderPage() {
+      let isProMode = false;
+      const cart = {};
+
+      const retailBtn = document.getElementById('btn-mode-retail');
+      const proBtn = document.getElementById('btn-mode-pro');
+      const cards = document.querySelectorAll('.product-item-card');
+      const cartContainer = document.getElementById('cart-items-container');
+      const emptyMsg = document.getElementById('cart-empty-message');
+      const cartCount = document.getElementById('cart-item-count');
+      const cartSubtotal = document.getElementById('cart-subtotal');
+      const cartTotal = document.getElementById('cart-total');
+      const whatsappBtn = document.getElementById('btn-submit-whatsapp');
+      const webBtn = document.getElementById('btn-submit-web');
+      const feedback = document.getElementById('order-feedback');
+
+      function updateCardPricing() {
+        cards.forEach(card => {
+          const unitPrice = parseInt(card.dataset.unitPrice, 10);
+          const boxPrice = parseInt(card.dataset.boxPrice, 10);
+          const priceDisplay = card.querySelector('.item-price-display');
+          const formatDisplay = card.querySelector('.item-format-display');
+          
+          if (isProMode) {
+            priceDisplay.textContent = boxPrice.toLocaleString('fr-FR') + ' FC';
+            formatDisplay.textContent = card.dataset.boxDesc;
+          } else {
+            priceDisplay.textContent = unitPrice.toLocaleString('fr-FR') + ' FC';
+            formatDisplay.textContent = card.dataset.unitDesc;
+          }
+        });
+      }
+
+      retailBtn.addEventListener('click', () => {
+        isProMode = false;
+        retailBtn.className = 'order-mode-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg font-bold transition-all bg-surface-container-lowest text-primary shadow-sm';
+        proBtn.className = 'order-mode-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-primary transition-all';
+        updateCardPricing();
+        renderCart();
+      });
+
+      proBtn.addEventListener('click', () => {
+        isProMode = true;
+        proBtn.className = 'order-mode-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg font-bold transition-all bg-surface-container-lowest text-primary shadow-sm';
+        retailBtn.className = 'order-mode-btn px-space-md py-space-xs rounded-full font-label-lg text-label-lg font-semibold text-on-surface-variant hover:text-primary transition-all';
+        updateCardPricing();
+        renderCart();
+      });
+
+      cards.forEach(card => {
+        const id = card.dataset.id;
+        const minusBtn = card.querySelector('.btn-qty-minus');
+        const plusBtn = card.querySelector('.btn-qty-plus');
+        const countSpan = card.querySelector('.product-qty-count');
+
+        plusBtn.addEventListener('click', () => {
+          cart[id] = (cart[id] || 0) + 1;
+          countSpan.textContent = cart[id];
+          renderCart();
+        });
+
+        minusBtn.addEventListener('click', () => {
+          if (cart[id] && cart[id] > 0) {
+            cart[id]--;
+            countSpan.textContent = cart[id];
+            renderCart();
+          }
+        });
+      });
+
+      function renderCart() {
+        let totalItems = 0;
+        let subtotal = 0;
+        let html = '';
+
+        Object.keys(cart).forEach(id => {
+          const qty = cart[id];
+          if (qty > 0) {
+            const card = document.querySelector(`.product-item-card[data-id="${id}"]`);
+            const name = card.dataset.name;
+            const price = isProMode ? parseInt(card.dataset.boxPrice, 10) : parseInt(card.dataset.unitPrice, 10);
+            const lineTotal = price * qty;
+            const unitLabel = isProMode ? 'ctn(s)' : 'flacon(s)';
+            
+            totalItems += qty;
+            subtotal += lineTotal;
+
+            html += `
+              <div class="flex items-center justify-between py-1 border-b border-surface-container text-body-sm">
+                <div class="flex-1 pr-2">
+                  <div class="font-bold text-primary truncate">${name}</div>
+                  <div class="text-[12px] text-on-surface-variant">${qty} ${unitLabel} &times; ${price.toLocaleString('fr-FR')} FC</div>
+                </div>
+                <span class="font-bold text-primary shrink-0">${lineTotal.toLocaleString('fr-FR')} FC</span>
+              </div>
+            `;
+          }
+        });
+
+        if (totalItems === 0) {
+          emptyMsg.classList.remove('hidden');
+          cartContainer.innerHTML = '';
+          cartContainer.appendChild(emptyMsg);
+        } else {
+          emptyMsg.classList.add('hidden');
+          cartContainer.innerHTML = html;
+        }
+
+        cartCount.textContent = totalItems + (totalItems > 1 ? ' articles' : ' article');
+        cartSubtotal.textContent = subtotal.toLocaleString('fr-FR') + ' FC';
+        cartTotal.textContent = subtotal.toLocaleString('fr-FR') + ' FC';
+      }
+
+      function buildOrderSummaryText() {
+        const clientName = document.getElementById('client-name').value || 'Client';
+        const clientPhone = document.getElementById('client-phone').value || 'Non renseigné';
+        const clientWA = document.getElementById('client-whatsapp').value || 'Non renseigné';
+        const city = document.getElementById('delivery-city').value;
+        const commune = document.getElementById('delivery-commune').value || 'Non précisé';
+        const landmark = document.getElementById('delivery-landmark').value || 'Non précisé';
+        const mode = isProMode ? 'GROSSISTE (Cartons)' : 'DÉTAIL (Unités)';
+
+        let msg = `*NOUVELLE COMMANDE BUKHETE (${mode})*\n`;
+        msg += `------------------------------------\n`;
+        msg += `*Client :* ${clientName}\n`;
+        msg += `*Téléphone :* ${clientPhone}\n`;
+        msg += `*WhatsApp :* +243 ${clientWA}\n`;
+        msg += `*Ville :* ${city}\n`;
+        msg += `*Zone / Quartier :* ${commune}\n`;
+        msg += `*Repère :* ${landmark}\n\n`;
+        msg += `*ARTICLES SÉLECTIONNÉS :*\n`;
+
+        let subtotal = 0;
+        let count = 0;
+        Object.keys(cart).forEach(id => {
+          const qty = cart[id];
+          if (qty > 0) {
+            count++;
+            const card = document.querySelector(`.product-item-card[data-id="${id}"]`);
+            const name = card.dataset.name;
+            const price = isProMode ? parseInt(card.dataset.boxPrice, 10) : parseInt(card.dataset.unitPrice, 10);
+            const line = price * qty;
+            subtotal += line;
+            msg += `- ${qty}x ${name} (${line.toLocaleString('fr-FR')} FC)\n`;
+          }
+        });
+
+        if (count === 0) {
+          return null;
+        }
+
+        msg += `------------------------------------\n`;
+        msg += `*TOTAL ESTIMÉ :* ${subtotal.toLocaleString('fr-FR')} FC\n`;
+        msg += `*Paiement :* Mobile Money ou Cash à la livraison.`;
+        return msg;
+      }
+
+      whatsappBtn.addEventListener('click', () => {
+        const text = buildOrderSummaryText();
+        if (!text) {
+          alert('Veuillez sélectionner au moins un produit BUKHETE avant de commander.');
+          return;
+        }
+        const encoded = encodeURIComponent(text);
+        const officialWhatsAppNumber = "243890000123";
+        window.open(`https://wa.me/${officialWhatsAppNumber}?text=${encoded}`, '_blank');
+        feedback.classList.remove('hidden');
+      });
+
+      webBtn.addEventListener('click', () => {
+        const text = buildOrderSummaryText();
+        if (!text) {
+          alert('Veuillez sélectionner au moins un produit BUKHETE avant de commander.');
+          return;
+        }
+        feedback.classList.remove('hidden');
+        feedback.scrollIntoView({ behavior: 'smooth' });
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-md font-bold flex items-center justify-center">NT</div><span class="font-headline-sm text-headline-sm text-on-primary font-bold">NIUMBA TRANSFORM</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Fleuron industriel de la transformation locale et de la formulation de produits d'hygiène éco-responsables de haute performance. Marque officielle BUKHETE.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span>Fièrement fabriqué en RDC</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Navigation Corporate</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="entreprise" href="#">L'Entreprise &amp; Gouvernance</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="produits-bukhete" href="#">Gamme de Produits BUKHETE</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="innovation-&amp;-ecologie" href="#">Laboratoire, R&amp;D &amp; Écologie</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="videos" href="#">Vidéos &amp; Reportages Usine</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="actualites" href="#">Communiqués &amp; Presse</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Partenariats &amp; Ventes</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="devenir-distributeur" href="#">Réseau National de Distribution</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="commander" href="#">Commandes Grossistes &amp; CHR</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="contact" href="#">Service Client &amp; Devis</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="connexion-back-office" href="#">Portail Collaborateurs &amp; Admin</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Mentions Légales &amp; Usine</span><div class="font-body-sm text-body-sm text-on-primary-container space-y-space-xs"><p><strong class="text-on-primary">RCCM :</strong> CD/KNG/RCCM/19-B-01429</p><p><strong class="text-on-primary">Id. Nat. :</strong> 01-G4701-N82914K</p><p><strong class="text-on-primary">NIF :</strong> A1829472H</p><p class="pt-space-xs"><strong class="text-on-primary">Siège Social &amp; Usine :</strong> Kinshasa, République Démocratique du Congo</p></div></div></div><div class="pt-space-lg border-t border-primary-container flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-primary-container">© 2025 Niumba Transform SARL. Tous droits réservés. BUKHETE est une marque déposée.</p><div class="flex items-center gap-space-lg font-label-md text-label-md text-surface-variant"><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Confidentialité</a><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Conditions Générales</a><a class="hover:text-primary-fixed transition-colors flex items-center gap-space-xs" data-path="connexion-back-office" href="#"><span class="material-symbols-outlined text-[14px]">lock</span>Accès Système</a></div></div></div></footer></body></html>

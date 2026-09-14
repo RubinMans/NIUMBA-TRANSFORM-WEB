@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/*
+  NIUMBA TRANSFORM — Design tokens
+  Source : cahier des charges + DESIGN.md Stitch (STITCH_EXPORT/).
+  Palette validée : forêt profonde (#0E4B2A), émeraude (#008751),
+  citron (#F59E0B), WhatsApp (#25D366), neutres (#FFFFFF / #F8FAFC),
+  texte (#0F172A / #475569), bordure (#E2E8F0).
+  Typographie : Plus Jakarta Sans.
+*/
+
+@theme {
+  --color-primary: #0e4b2a;
+  --color-primary-dark: #0a341d;
+  --color-primary-deep: #062816;
+  --color-primary-soft: #e8f5e9;
+
+  --color-secondary: #008751;
+  --color-secondary-dark: #006d40;
+  --color-secondary-soft: #d1fae5;
+
+  --color-tertiary: #f59e0b;
+  --color-tertiary-soft: #fef3c7;
+
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1da851;
+
+  --color-ink: #0f172a;
+  --color-ink-muted: #475569;
+  --color-ink-soft: #64748b;
+
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8fafc;
+
+  --color-border-soft: #e2e8f0;
+
+  --color-emploi: #1d4ed8;
+  --color-emploi-soft: #eff6ff;
+
+  --font-sans: var(--font-jakarta);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: var(--color-secondary-soft);
+  color: var(--color-primary-dark);
+}

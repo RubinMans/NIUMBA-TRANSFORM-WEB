@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#2a1700","primary-fixed":"#b3f1c3","on-secondary-fixed-variant":"#00522f","on-primary-container":"#80ba90","outline-variant":"#c0c9bf","inverse-surface":"#283044","secondary-fixed":"#8df8b7","primary-container":"#0e4b2a","on-tertiary-fixed-variant":"#653e00","surface":"#faf8ff","tertiary-fixed":"#ffddb8","surface-container-high":"#e2e7ff","error-container":"#ffdad6","primary-fixed-dim":"#98d4a8","tertiary":"#3f2500","on-error":"#ffffff","on-background":"#131b2e","inverse-on-surface":"#eef0ff","on-secondary-container":"#007243","surface-container":"#eaedff","secondary-fixed-dim":"#70db9d","on-tertiary-container":"#f09a02","on-primary-fixed":"#00210e","tertiary-container":"#5d3900","on-error-container":"#93000a","inverse-primary":"#98d4a8","secondary":"#006d40","tertiary-fixed-dim":"#ffb95f","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#16512f","error":"#ba1a1a","surface-variant":"#dae2fd","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary":"#ffffff","on-surface-variant":"#404941","primary":"#003319","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002110","secondary-container":"#8af5b4","outline":"#717971","on-surface":"#131b2e","surface-tint":"#316945"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md font-bold tracking-tight">NT</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">NIUMBA TRANSFORM</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Industrie &amp; Hygiène Durable</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="entreprise" href="#">Entreprise</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="produits-bukhete" href="#">Produits BUKHETE</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="videos" href="#">Vidéos</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="innovation-&amp;-ecologie" href="#">Innovation &amp; Écologie</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="actualites" href="#">Actualités</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="devenir-distributeur" href="#">Devenir Distributeur</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase">RDC</span><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">FR</span></div><a class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" data-path="commander" href="#"><span class="font-bold">Commander</span><span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></span></a><a class="p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dashboard-vue-d'ensemble" href="#" title="Espace Admin"><span class="material-symbols-outlined">admin_panel_settings</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1U-lqjrzSXAWeIT-_tAp8izyX9pKLEMl7EWwHZSyrWlP1IEeXwYUftVPvmRi2Hng7RP27AMPmvJBestR1UMQiZFl_7rAaXuKaXbJim_SOQIlKuaueGepNNWkuYkTNqqSqdtgatMHXSWYBIgW5ojiHmqLY4fYi1B18D_4sM1J7m6SJXUvyTiuYogFLjrGNdzuZETgqJD3Pq3sC1d0wSZEJEDJr0pPkXk3LAxHy_j91rP1kcpW_yf3jZa-kjDWIxy-jdH8j3bHVdW"/></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Hero & Impact Introduction -->
+<section class="relative w-full bg-gradient-to-b from-surface via-surface to-surface-container-low overflow-hidden py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<!-- Breadcrumb & Network Pill Badge -->
+<div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+<span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md tracking-wider uppercase shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+          Réseau National de Distribution RDC
+        </span>
+<span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-container font-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Agrément B2B Officiel 2025
+        </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Hero Copy -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">
+            Développez votre activité commerciale avec la marque <span class="text-secondary underline decoration-secondary/30 decoration-wavy underline-offset-8">BUKHETE</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Rejoignez le réseau officiel des distributeurs, grossistes et demi-grossistes agréés <strong>Niumba Transform</strong> à Kinshasa, Lubumbashi, Goma, Matadi et dans toutes les provinces de la RDC. Bénéficiez d'une chaîne de valeur locale aux standards internationaux.
+          </p>
+<!-- Key Quick Metrics Pill Banner -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col">
+<span class="font-headline-xl text-headline-xl text-secondary font-bold">25% à 42%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Marges brutes estimées</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">0 Jours</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rupture de stock garantie</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col col-span-2 sm:col-span-1">
+<span class="font-headline-xl text-headline-xl text-on-tertiary-container font-bold">26 Provinces</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Couverture logistique</span>
+</div>
+</div>
+<!-- Anchor trigger to jump to form -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-sm rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg transition-all shadow-md group" href="#formulaire-agrement">
+<span class="font-bold">Postuler à l'Agrément Officiel</span>
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center transition-transform group-hover:translate-x-1">
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-[#25D366] hover:bg-[#1fa952] text-white font-label-lg transition-all shadow-md" href="https://wa.me/243899000000" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Ligne Directe B2B WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Product Presentation Visual Showcase -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-3xl bg-surface-container p-space-lg shadow-xl overflow-hidden">
+<!-- Ambient Glow -->
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-secondary-container/50 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-widest bg-surface-container-lowest px-space-sm py-space-xs rounded-full">Gamme Complète 250ml &amp; 5L</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> En stock usine
+                </span>
+</div>
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-inner bg-surface-container-lowest relative group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Packshot commercial complet de la gamme BUKHETE par Niumba Transform alignant cinq flacons transparents colorés de 250ml aux teintes bleu lagon, citron vert vif, rose cerisier doux, bleu azur et pourpre lavande sur un socle lumineux moderne d'usine de Kinshasa avec reflets nets et bulles légères." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeH2Px0aZI308xiBzYmuqVSWY3ueBR1yyn3d3fdFM0LMwJVMXkX7vd1Z6Mt73NjtN-JB4bOhqypQOzvi04X-B_zeVZYt8uHWyklYg8l0rXPNd8x7eQK9THIjJk1L7Er97ec_t6mB4Cr4nQUku_zBMbKaOdwqwZJIk_fz-BsrpmhAjC4zX7Yj3vzEhkCtPQLzMML-LyRDq2hNtJjzzOCvrqJ7YGmkPtqdtMglmp-m8ALTvo3xHQemU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-space-md">
+<div class="text-on-primary">
+<p class="font-headline-sm text-headline-sm font-bold">BUKHETE Hygiène &amp; Soin Quotidien</p>
+<p class="font-body-sm text-body-sm text-primary-fixed">Formulation aux molécules actives éco-certifiées, fabriquées à Kinshasa.</p>
+</div>
+</div>
+</div>
+<!-- Feature Pills Row -->
+<div class="flex items-center justify-between gap-space-xs text-center">
+<div class="flex-1 bg-surface-container-lowest py-space-xs px-space-xs rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">water_drop</span>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Lave-Mains</p>
+</div>
+<div class="flex-1 bg-surface-container-lowest py-space-xs px-space-xs rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">cleaning_services</span>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Vaisselle</p>
+</div>
+<div class="flex-1 bg-surface-container-lowest py-space-xs px-space-xs rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">layers</span>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Sols Brillants</p>
+</div>
+<div class="flex-1 bg-surface-container-lowest py-space-xs px-space-xs rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary">local_laundry_service</span>
+<p class="font-label-sm text-label-sm text-on-surface font-bold">Lessive</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Pillars: Avantages Partenaires B2B -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-xl">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Une Alliance Commerciale Rentable</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">
+            Pourquoi distribuer les produits BUKHETE en RDC ?
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Un partenariat contractuel solide conçu pour pérenniser votre rentabilité avec des volumes flexibles et un accompagnement de terrain.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Card 1: Marges & Remises -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-lg rounded-2xl shadow-sm transition-all hover:-translate-y-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">percent</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Marges Garanties &amp; Remises Paliers</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Grille tarifaire dégressive dès <strong>50 cartons commandés</strong>. Conditions spécifiques et ristournes trimestrielles pour les grossistes exclusifs par secteur.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Ristourne volume jusqu'à 8%</span>
+</div>
+</div>
+<!-- Card 2: Stock & Approvisionnement continu -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-lg rounded-2xl shadow-sm transition-all hover:-translate-y-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container text-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">warehouse</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Stock Usine &amp; Zéro Rupture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Approvisionnement direct depuis nos cuves industrielles et lignes de conditionnement à Kinshasa. Vous êtes prioritaire sur les cadences de production.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Préparation sous 24h à 48h</span>
+</div>
+</div>
+<!-- Card 3: Support Marketing & PLV -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-lg rounded-2xl shadow-sm transition-all hover:-translate-y-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">storefront</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Kit PLV &amp; Visibilité Officielle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Mise à disposition gratuite de présentoirs de sol métallisés, affiches grand format pour votre boutique, tabliers brandés et référencement sur notre carte d'achat.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">campaign</span>
+<span>Présentoir offert dès 100 cartons</span>
+</div>
+</div>
+<!-- Card 4: Logistique & Sécurisation -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-lg rounded-2xl shadow-sm transition-all hover:-translate-y-1 flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">local_shipping</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Logistique &amp; Hubs Régionaux</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Livraison franco dépôt à Kinshasa ou acheminement sécurisé via partenaires fret fiables vers Lubumbashi, Goma, Kolwezi, Matadi, Mbuji-Mayi et Kisangani.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Expéditions scellées et assurées</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Section: Candidature Form & B2B Ecosystem Split -->
+<section class="w-full bg-surface py-space-xl" id="formulaire-agrement">
+<div class="max-w-7xl mx-auto px-margin">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-space-xl">
+<span class="inline-block font-label-md text-label-md text-secondary uppercase font-bold tracking-widest bg-surface-container px-space-md py-space-xs rounded-full">Dossier de Qualification</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">
+          Formulaire de Demande d'Agrément Distributeur
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Remplissez ce formulaire officiel. Notre Direction Commerciale étudiera votre dossier sous <strong>24 à 48 heures ouvrées</strong> pour activer vos tarifs grossistes.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: The Interactive Comprehensive Application Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-xl rounded-3xl shadow-lg relative">
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-container-low p-space-md rounded-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold flex items-center justify-center font-label-lg">1</span>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">Profil Entreprise &amp; Contact</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Informations requises pour la convention d'agrément BUKHETE</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-space-sm py-space-xs rounded-full font-bold">Formulaire Direct</span>
+</div>
+<form class="space-y-space-md" id="distributor-application-form" onsubmit="event.preventDefault(); document.getElementById('form-success-modal').classList.remove('hidden');">
+<!-- Row 1: Raison Sociale & Gérant -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="company_name">
+                  Raison Sociale / Nom Commercial <span class="text-error">*</span>
+</label>
+<input class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all" id="company_name" name="company_name" placeholder="Ex: Établissements Mwana Congo SARL" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="manager_name">
+                  Nom et Prénom du Responsable <span class="text-error">*</span>
+</label>
+<input class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all" id="manager_name" name="manager_name" placeholder="Ex: Jean-Paul Kabeya Mutombo" required="" type="text"/>
+</div>
+</div>
+<!-- Row 2: WhatsApp & Téléphone Fixe/Mobile -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="whatsapp_num">
+                  Numéro WhatsApp Officiel (RDC) <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-label-md text-label-md text-secondary font-bold">+243</span>
+<input class="w-full bg-surface-container-low pl-14 pr-space-md py-space-sm rounded-xl font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all" id="whatsapp_num" name="whatsapp_num" placeholder="81 234 5678" required="" type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="email_b2b">
+                  Email Professionnel <span class="text-error">*</span>
+</label>
+<input class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all" id="email_b2b" name="email_b2b" placeholder="achats@votre-entreprise.cd" required="" type="email"/>
+</div>
+</div>
+<!-- Row 3: Ville/Province & Type de Structure -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="province_zone">
+                  Ville et Province d'exercice <span class="text-error">*</span>
+</label>
+<select class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all cursor-pointer" id="province_zone" name="province_zone" required="">
+<option disabled="" selected="" value="">Sélectionnez votre zone...</option>
+<option value="Kinshasa">Kinshasa (Toutes communes / Limete / Marché Central)</option>
+<option value="Haut-Katanga">Haut-Katanga (Lubumbashi, Likasi, Kasumbalesa)</option>
+<option value="Lualaba">Lualaba (Kolwezi)</option>
+<option value="Nord-Kivu">Nord-Kivu (Goma, Beni, Butembo)</option>
+<option value="Sud-Kivu">Sud-Kivu (Bukavu, Uvira)</option>
+<option value="Kongo-Central">Kongo-Central (Matadi, Boma, Muanda)</option>
+<option value="Tshopo">Tshopo (Kisangani)</option>
+<option value="Kasaï-Oriental">Kasaï-Oriental (Mbuji-Mayi)</option>
+<option value="Autre-Province">Autre province (Kwilu, Ituri, Équateur, etc.)</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="structure_type">
+                  Type d'Activité / Structure <span class="text-error">*</span>
+</label>
+<select class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all cursor-pointer" id="structure_type" name="structure_type" required="">
+<option disabled="" selected="" value="">Sélectionnez votre profil...</option>
+<option value="Grossiste">Grossiste Généraliste / Produits Entretien</option>
+<option value="Demi-grossiste">Demi-grossiste / Dépôt de distribution</option>
+<option value="Supermarche">Supermarché / Chaîne de supérettes</option>
+<option value="CHR">CHR (Chaîne Hôtelière, Restaurant, Clinique)</option>
+<option value="Detaillant">Détaillant multi-points de vente</option>
+<option value="Exportateur">Opérateur d'export régional (Brazzaville, Angola, Zambie)</option>
+</select>
+</div>
+</div>
+<!-- Gammes BUKHETE ciblées -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold">
+                Gammes BUKHETE envisagées pour la distribution <span class="text-error">*</span>
+</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-xs">
+<label class="flex items-center gap-space-xs p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl cursor-pointer transition-colors">
+<input checked="" class="accent-secondary w-4 h-4 rounded" name="gamme" type="checkbox" value="vaisselle"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">BUKHETE Vaisselle</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl cursor-pointer transition-colors">
+<input checked="" class="accent-secondary w-4 h-4 rounded" name="gamme" type="checkbox" value="lave-mains"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Lave-mains Douceur</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl cursor-pointer transition-colors">
+<input checked="" class="accent-secondary w-4 h-4 rounded" name="gamme" type="checkbox" value="sol"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Sols Brillants Fleur</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl cursor-pointer transition-colors">
+<input checked="" class="accent-secondary w-4 h-4 rounded" name="gamme" type="checkbox" value="lessive"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Lessive Liquide Marine</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm bg-surface-container-low hover:bg-surface-container rounded-xl cursor-pointer transition-colors">
+<input checked="" class="accent-secondary w-4 h-4 rounded" name="gamme" type="checkbox" value="multiusage"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Multi-usages Lavande</span>
+</label>
+<label class="flex items-center gap-space-xs p-space-sm bg-surface-container-high rounded-xl cursor-pointer transition-colors">
+<input class="accent-secondary w-4 h-4 rounded" name="gamme" type="checkbox" value="pack-complet"/>
+<span class="font-body-sm text-body-sm text-primary font-bold">Pack Intégral (5 Gammes)</span>
+</label>
+</div>
+</div>
+<!-- Volume & Capacité de stockage -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1" for="monthly_volume">
+                  Volume mensuel prévisionnel <span class="text-error">*</span>
+</label>
+<select class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all cursor-pointer" id="monthly_volume" name="monthly_volume" required="">
+<option disabled="" selected="" value="">Volume de commande...</option>
+<option value="50-100">Palier Découverte : 50 à 100 cartons / mois</option>
+<option value="100-300">Palier Distributeur : 100 à 300 cartons / mois</option>
+<option value="300-500">Palier Grossiste Régional : 300 à 500 cartons / mois</option>
+<option value="500+">Palier Super-Grossiste : 500+ cartons (Conteneurs)</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold">
+                  Disposez-vous d'un entrepôt sécurisé ? <span class="text-error">*</span>
+</label>
+<div class="flex items-center gap-space-md py-space-xs">
+<label class="flex items-center gap-space-xs font-body-sm text-body-sm cursor-pointer">
+<input checked="" class="accent-secondary" name="warehouse" type="radio" value="oui"/>
+<span>Oui, entrepôt propre ou loué</span>
+</label>
+<label class="flex items-center gap-space-xs font-body-sm text-body-sm cursor-pointer">
+<input class="accent-secondary" name="warehouse" type="radio" value="non"/>
+<span>Non, livraison directe magasin</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Message / Notes -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-bold" for="application_notes">
+                Commentaires complémentaires / Spécificités logistiques
+              </label>
+<textarea class="w-full bg-surface-container-low rounded-xl px-space-md py-space-sm font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container focus:ring-2 focus:ring-secondary transition-all" id="application_notes" placeholder="Précisez votre zone d'exclusivité souhaitée, historique dans la vente d'entretien, etc." rows="3"></textarea>
+</div>
+<!-- Action Buttons -->
+<div class="pt-space-md flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<button class="flex-1 inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md rounded-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-label-lg font-bold transition-all shadow-md group" type="submit">
+<span>Soumettre ma candidature distributeur</span>
+<span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center transition-transform group-hover:translate-x-1">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</span>
+</button>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-full bg-[#25D366]/10 hover:bg-[#25D366]/20 text-[#128C7E] font-label-lg font-bold transition-all text-center" href="https://wa.me/243899000000?text=Bonjour%20Niumba%20Transform,%20je%20souhaite%20des%20informations%20immédiates%20sur%20l'agrément%20distributeur%20BUKHETE." rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Échanger sur WhatsApp</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center pt-space-xs">
+              🔒 Vos données d'entreprise demeurent strictement confidentielles selon la charte industrielle Niumba Transform SARL.
+            </p>
+</form>
+<!-- Interactive Success Modal (Hidden by default) -->
+<div class="hidden absolute inset-0 bg-surface-container-lowest/95 backdrop-blur-md rounded-3xl p-space-xl flex flex-col items-center justify-center text-center z-30" id="form-success-modal">
+<div class="w-20 h-20 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[42px]">check_circle</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Candidature Enregistrée avec Succès !</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-space-xs">
+              Votre dossier a été transmis à la Direction Commerciale Niumba Transform. Un responsable de zone vous contactera par téléphone et WhatsApp sous 24h ouvrées.
+            </p>
+<div class="mt-space-lg flex gap-space-sm">
+<button class="px-space-lg py-space-sm rounded-full bg-primary text-on-primary font-label-md font-bold" onclick="document.getElementById('form-success-modal').classList.add('hidden')">
+                Fermer
+              </button>
+</div>
+</div>
+</div>
+<!-- Right Column: Regional Hubs, Criteria & Verified Testimonial -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Regional Hubs Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-3xl shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">hub</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Hubs Régionaux &amp; Dépôts Relais</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Points de départ des cargaisons scellées</p>
+</div>
+</div>
+<div class="space-y-space-sm">
+<!-- Hub 1: Kinshasa -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">location_city</span>
+<div>
+<div class="flex items-center justify-between">
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">Kinshasa (Siège &amp; Usine)</p>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">Principal</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quartier Industriel Limete, Kinshasa RDC</p>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Enlèvement usine &amp; Flotte locale H24</p>
+</div>
+</div>
+<!-- Hub 2: Lubumbashi -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">warehouse</span>
+<div>
+<div class="flex items-center justify-between">
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">Lubumbashi (Dépôt Katanga)</p>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-bold">Sud-Est</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Avenue Industrielle, Commune Kampemba</p>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Desserte Kolwezi, Likasi, Kasumbalesa</p>
+</div>
+</div>
+<!-- Hub 3: Hub Ouest Kongo Central -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">directions_boat</span>
+<div>
+<div class="flex items-center justify-between">
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">Boma &amp; Matadi (Hub Ouest)</p>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-bold">Portuaire</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zone portuaire &amp; Dépôt relais corridor N1</p>
+<p class="font-label-sm text-label-sm text-secondary font-semibold mt-1">Approvisionnement continu hebdomadaire</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Eligibility Criteria Card -->
+<div class="bg-primary text-on-primary p-space-lg rounded-3xl shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="material-symbols-outlined text-primary-fixed text-[26px]">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-primary">Critères d'Éligibilité Formelle</h3>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0">check</span>
+<span><strong>Enregistrement Légal :</strong> Possession d'un numéro RCCM, Identification Nationale ou Patente commerciale valide.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0">check</span>
+<span><strong>Capacité de Commande :</strong> Volume minimum de démarrage fixé à <strong>50 cartons</strong> (panachage de gammes accepté).</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0">check</span>
+<span><strong>Respect de la Charte Prix :</strong> Engagement à appliquer les prix conseillés de vente en détail pour préserver la confiance consommateur.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-fixed text-[18px] shrink-0">check</span>
+<span><strong>Stockage Conforme :</strong> Espace sec, ventilé et à l'abri du soleil direct pour préserver l'éclat des principes actifs BUKHETE.</span>
+</li>
+</ul>
+</div>
+<!-- Verified Partner Testimonial -->
+<div class="bg-surface-container-low p-space-lg rounded-3xl shadow-sm relative overflow-hidden">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photographique chaleureux et professionnel d'un grossiste congolais prospère dans son grand dépôt commercial propre et ordonné à Kinshasa, portant une chemise formelle et souriant avec assurance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpmexgSAUUKdSKI7EthtyHzs7XCXJMuXOC1d3fNftvoSGUhiu_uecLXRN0P5uvrOsHU1iUbCXUVh-ciM98J0ty-ssIMVmYAvHHo37mo2ElL-T2y3hNqwIHzC8liWfib-BkqT8FWOGTo0ONG_qsWTG60PEuiWLp0UCu9EHOzSABT6oLUWcr8J1iC1p0L_yX4lTrWH1zB8yr9JKuQ9gGd2SE5z7sbHoecj8khoZ2X-I5jYRT6thxh3w"/>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">M. Christian Ilunga</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Grossiste Agréé BUKHETE • Marché Gambela (Kinshasa)</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+              « Depuis que nous distribuons BUKHETE Vaisselle et Lessive, la rotation en rayon a surpassé nos attentes. Les clients apprécient le parfum durable, la formule concentrée et le fait que ce soit un produit fabriqué fièrement chez nous en RDC. L'usine Niumba Transform livre ponctuellement sans aucune rupture. »
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-secondary font-label-sm text-label-sm font-bold">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">stars</span> Partenaire depuis 2 ans
+              </span>
+<span>+450 Cartons / mois</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Step-by-Step Partner Onboarding Timeline -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-widest">Processus d'Intégration</span>
+<h2 class="font-headline-xl text-headline-xl text-primary font-bold mt-space-xs">
+          Comment devenir distributeur en 4 étapes
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-display-hero text-display-hero text-secondary/30 font-bold leading-none">01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Dépôt du Formulaire</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Soumission de vos coordonnées et volumes souhaités via le formulaire en ligne ou contact WhatsApp direct.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-display-hero text-display-hero text-secondary/30 font-bold leading-none">02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Étude &amp; Grille Tarifaire</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Entretien avec le responsable régional des ventes, validation des volumes et envoi de la grille tarifaire grossiste.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-display-hero text-display-hero text-secondary/30 font-bold leading-none">03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Signature &amp; Commande</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Signature de la convention d'agrément, émission du bon de commande initial et paiement sécurisé officiel.
+          </p>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<span class="font-display-hero text-display-hero text-secondary/30 font-bold leading-none">04</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Livraison &amp; Kit PLV</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Réception des palettes scellées à votre dépôt avec mise en place des présentoirs BUKHETE et assistance lancement.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final High-Impact CTA Block -->
+<section class="w-full bg-primary-container text-on-primary py-space-xl relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-margin text-center flex flex-col items-center gap-space-md relative z-10">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[32px]">handshake</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-primary font-bold max-w-2xl">
+        Prêt à alimenter votre marché provincial avec le fleuron de l'hygiène congolaise ?
+      </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl">
+        Rejoignez plus de 120 distributeurs déjà actifs à travers la RDC. Commandez dès aujourd'hui vos premiers cartons BUKHETE aux conditions réservées aux professionnels.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-sm rounded-full bg-secondary-container text-on-secondary-container font-label-lg font-bold hover:bg-secondary-fixed transition-all shadow-md" href="#formulaire-agrement">
+<span>Remplir ma demande d'agrément</span>
+<span class="material-symbols-outlined text-[18px]">arrow_upward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-full bg-primary hover:bg-primary/80 text-on-primary font-label-lg transition-all" href="tel:+243899000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>Appeler le Service Ventes B2B</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple smooth scroll for internal anchors
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId.length > 1) {
+        e.preventDefault();
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    });
+  });
+</script></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-md font-bold flex items-center justify-center">NT</div><span class="font-headline-sm text-headline-sm text-on-primary font-bold">NIUMBA TRANSFORM</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Fleuron industriel de la transformation locale et de la formulation de produits d'hygiène éco-responsables de haute performance. Marque officielle BUKHETE.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span>Fièrement fabriqué en RDC</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Navigation Corporate</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="entreprise" href="#">L'Entreprise &amp; Gouvernance</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="produits-bukhete" href="#">Gamme de Produits BUKHETE</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="innovation-&amp;-ecologie" href="#">Laboratoire, R&amp;D &amp; Écologie</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="videos" href="#">Vidéos &amp; Reportages Usine</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="actualites" href="#">Communiqués &amp; Presse</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Partenariats &amp; Ventes</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="devenir-distributeur" href="#">Réseau National de Distribution</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="commander" href="#">Commandes Grossistes &amp; CHR</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="contact" href="#">Service Client &amp; Devis</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="connexion-back-office" href="#">Portail Collaborateurs &amp; Admin</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Mentions Légales &amp; Usine</span><div class="font-body-sm text-body-sm text-on-primary-container space-y-space-xs"><p><strong class="text-on-primary">RCCM :</strong> CD/KNG/RCCM/19-B-01429</p><p><strong class="text-on-primary">Id. Nat. :</strong> 01-G4701-N82914K</p><p><strong class="text-on-primary">NIF :</strong> A1829472H</p><p class="pt-space-xs"><strong class="text-on-primary">Siège Social &amp; Usine :</strong> Kinshasa, République Démocratique du Congo</p></div></div></div><div class="pt-space-lg border-t border-primary-container flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-primary-container">© 2025 Niumba Transform SARL. Tous droits réservés. BUKHETE est une marque déposée.</p><div class="flex items-center gap-space-lg font-label-md text-label-md text-surface-variant"><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Confidentialité</a><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Conditions Générales</a><a class="hover:text-primary-fixed transition-colors flex items-center gap-space-xs" data-path="connexion-back-office" href="#"><span class="material-symbols-outlined text-[14px]">lock</span>Accès Système</a></div></div></div></footer></body></html>

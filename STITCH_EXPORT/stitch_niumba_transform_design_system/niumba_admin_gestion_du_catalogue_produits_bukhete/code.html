@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"background":"#faf8ff","surface-dim":"#d2d9f4","on-tertiary-fixed":"#2a1700","primary-fixed":"#b3f1c3","on-secondary-fixed-variant":"#00522f","on-primary-container":"#80ba90","outline-variant":"#c0c9bf","inverse-surface":"#283044","secondary-fixed":"#8df8b7","primary-container":"#0e4b2a","on-tertiary-fixed-variant":"#653e00","surface":"#faf8ff","tertiary-fixed":"#ffddb8","surface-container-high":"#e2e7ff","error-container":"#ffdad6","primary-fixed-dim":"#98d4a8","tertiary":"#3f2500","on-error":"#ffffff","on-background":"#131b2e","inverse-on-surface":"#eef0ff","on-secondary-container":"#007243","surface-container":"#eaedff","secondary-fixed-dim":"#70db9d","on-tertiary-container":"#f09a02","on-primary-fixed":"#00210e","tertiary-container":"#5d3900","on-error-container":"#93000a","inverse-primary":"#98d4a8","secondary":"#006d40","tertiary-fixed-dim":"#ffb95f","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#16512f","error":"#ba1a1a","surface-variant":"#dae2fd","on-primary":"#ffffff","on-secondary":"#ffffff","surface-container-low":"#f2f3ff","surface-bright":"#faf8ff","on-tertiary":"#ffffff","on-surface-variant":"#404941","primary":"#003319","surface-container-highest":"#dae2fd","on-secondary-fixed":"#002110","secondary-container":"#8af5b4","outline":"#717971","on-surface":"#131b2e","surface-tint":"#316945"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"gutter":"1.5rem","margin-mobile":"1rem","space-lg":"1.5rem","gutter-mobile":"0.75rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","margin":"2rem"},"fontFamily":{"display-hero":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},"fontSize":{"display-hero":["52px",{"lineHeight":"60px","letterSpacing":"-0.03em","fontWeight":"800"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.05em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"700"}],"display-hero-mobile":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md font-bold tracking-tight">NT</div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">NIUMBA TRANSFORM</span><span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Industrie &amp; Hygiène Durable</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-lg rounded-full shadow-sm"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="accueil" href="#">Accueil</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="entreprise" href="#">Entreprise</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="produits-bukhete" href="#">Produits BUKHETE</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="videos" href="#">Vidéos</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="innovation-&amp;-ecologie" href="#">Innovation &amp; Écologie</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="actualites" href="#">Actualités</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="devenir-distributeur" href="#">Devenir Distributeur</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase">RDC</span><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface-variant">FR</span></div><a class="inline-flex items-center gap-space-xs pl-space-lg pr-space-xs py-space-xs bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" data-path="commander" href="#"><span class="font-bold">Commander</span><span class="w-8 h-8 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[18px]">shopping_bag</span></span></a><a class="p-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" data-path="dashboard-vue-d'ensemble" href="#" title="Espace Admin"><span class="material-symbols-outlined">admin_panel_settings</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida/AEtjO1U-lqjrzSXAWeIT-_tAp8izyX9pKLEMl7EWwHZSyrWlP1IEeXwYUftVPvmRi2Hng7RP27AMPmvJBestR1UMQiZFl_7rAaXuKaXbJim_SOQIlKuaueGepNNWkuYkTNqqSqdtgatMHXSWYBIgW5ojiHmqLY4fYi1B18D_4sM1J7m6SJXUvyTiuYogFLjrGNdzuZETgqJD3Pq3sC1d0wSZEJEDJr0pPkXk3LAxHy_j91rP1kcpW_yf3jZa-kjDWIxy-jdH8j3bHVdW"/></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Top Global Admin Context Bar (Integrated seamlessly under Shell header) -->
+<div class="w-full bg-surface-container-low py-space-sm px-margin flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md text-on-surface-variant text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-secondary text-on-secondary rounded-full font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-pulse"></span>
+        BACK-OFFICE INDUSTRIEL V2.4
+      </span>
+<span class="hidden sm:inline text-outline-variant">|</span>
+<span class="hidden sm:inline">Usine Centrale Kingabwa • Kinshasa, RDC</span>
+<span class="text-outline-variant">|</span>
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">verified_user</span> Certifié OCC 2025
+      </span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="hidden md:flex items-center gap-space-xs text-label-sm font-label-sm text-on-surface-variant">
+<span>Dernière synchro ERP:</span>
+<strong class="text-primary font-bold">Aujourd'hui, 14:32</strong>
+</div>
+<a class="inline-flex items-center gap-1 text-label-sm font-label-sm text-secondary hover:text-primary font-bold transition-colors" data-path="produits-bukhete" href="#">
+<span>Site Public</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Main Administrative Studio Grid (Left Sidebar + Work Area) -->
+<div class="w-full max-w-[1400px] mx-auto px-margin-mobile md:px-margin py-space-lg flex flex-col lg:flex-row gap-gutter">
+<!-- 1. Dedicated Admin Side Navigation -->
+<aside class="w-full lg:w-72 shrink-0 flex flex-col gap-space-md">
+<!-- Admin Identification Card -->
+<div class="bg-primary text-on-primary rounded-lg p-space-md shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary/20 blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-headline-sm">NT</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold truncate">Niumba Admin</span>
+<span class="font-label-sm text-label-sm text-on-primary-container">Espace Réglementé</span>
+</div>
+</div>
+<div class="mt-space-xs pt-space-xs text-on-primary-container text-body-sm font-body-sm flex justify-between items-center">
+<span>Opérateur: <strong class="text-on-primary">Direc. Technique</strong></span>
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+</div>
+</div>
+<!-- Navigation Tree -->
+<nav class="bg-surface-container-lowest rounded-lg p-space-sm shadow-sm flex flex-col gap-1">
+<span class="px-space-sm pt-space-xs pb-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Pilotage Industriel</span>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-body-md font-body-md text-on-surface-variant hover:bg-surface-container transition-all" data-path="dashboard-vue-d'ensemble" href="#">
+<span class="material-symbols-outlined text-[20px] text-outline">dashboard</span>
+<span>Vue d'ensemble</span>
+</a>
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-full text-body-md font-body-md text-on-surface-variant hover:bg-surface-container transition-all" data-path="commander" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-outline">local_shipping</span>
+<span>Commandes Grossistes</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface text-label-sm font-label-sm font-bold">14</span>
+</a>
+<!-- Active Page: Catalogue BUKHETE -->
+<a class="flex items-center justify-between px-space-md py-space-sm rounded-full bg-primary-container text-on-primary text-body-md font-body-md font-bold shadow-sm" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">inventory_2</span>
+<span>Catalogue BUKHETE</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary text-label-sm font-label-sm">5 Réf</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-body-md font-body-md text-on-surface-variant hover:bg-surface-container transition-all" data-path="devenir-distributeur" href="#">
+<span class="material-symbols-outlined text-[20px] text-outline">hub</span>
+<span>Réseau Distributeurs</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-body-md font-body-md text-on-surface-variant hover:bg-surface-container transition-all" data-path="videos" href="#">
+<span class="material-symbols-outlined text-[20px] text-outline">video_library</span>
+<span>Vidéothèque &amp; Médias</span>
+</a>
+<span class="px-space-sm pt-space-md pb-1 font-label-sm text-label-sm text-outline uppercase tracking-wider">Conformité RDC</span>
+<a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-full text-body-md font-body-md text-on-surface-variant hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined text-[20px] text-outline">gavel</span>
+<span>Paramètres &amp; RCCM</span>
+</a>
+<div class="mt-space-sm pt-space-sm bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-1 text-secondary font-headline-sm font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="text-label-md font-label-md">OCC &amp; Labo RDC</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-snug">
+            Toutes les formules respectent la norme RDC-CHM-09/2024 relative aux tensioactifs biodégradables.
+          </p>
+</div>
+</nav>
+<!-- Quick Server Info Banner -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Stock Usine Kinshasa</span>
+<div class="flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg font-bold text-primary">34 820</span>
+<span class="text-label-md font-label-md text-secondary font-bold">Unités dispo</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 78%"></div>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant">Capacité d'embouteillage : 92%</span>
+</div>
+</aside>
+<!-- 2. Main Studio Content Area -->
+<main class="flex-1 flex flex-col gap-space-lg min-w-0">
+<!-- Top Action Bar & Page Title -->
+<div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-label-sm font-label-sm text-secondary uppercase font-bold tracking-wider">
+<span>Production &amp; Distribution</span>
+<span>•</span>
+<span>Marque BUKHETE</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">Catalogue &amp; Fiches Techniques BUKHETE</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Gérez les formules de détergents, tarifications grossistes, fiches de sécurité et fiches e-commerce.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg rounded-full transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Exporter Excel / CSV</span>
+</button>
+<button class="inline-flex items-center gap-space-xs pl-space-md pr-space-sm py-space-xs bg-secondary hover:bg-primary-container text-on-secondary rounded-full font-label-lg text-label-lg transition-all shadow-md group" onclick="document.getElementById('edit-drawer').classList.remove('translate-x-full');" type="button">
+<span class="font-bold">Ajouter une référence</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm group-hover:rotate-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</span>
+</button>
+</div>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">category</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Références Actives</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[24px]">inventory</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">1 450</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cartons en Stock (24u)</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">science</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conformité Labo RDC</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">2 200 FC</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prix Moyen Flacon</span>
+</div>
+</div>
+</div>
+<!-- Filter, Search & Table View of Real Products -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden flex flex-col">
+<!-- Control strip -->
+<div class="p-space-md bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full md:w-80">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-outline">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest rounded-full font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-secondary shadow-sm" placeholder="Rechercher SKU, nom, formule..." type="text"/>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto overflow-x-auto pb-1 md:pb-0">
+<button class="px-space-md py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold whitespace-nowrap shadow-sm">Tous (5)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold whitespace-nowrap transition-colors">Vaisselle (1)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold whitespace-nowrap transition-colors">Lessive (1)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold whitespace-nowrap transition-colors">Hygiène Mains (1)</button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold whitespace-nowrap transition-colors">Sols &amp; Surfaces (2)</button>
+</div>
+</div>
+<!-- Table Responsive Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md font-bold">Produit &amp; Réf</th>
+<th class="py-space-sm px-space-md font-bold">Catégorie</th>
+<th class="py-space-sm px-space-md font-bold">Contenance</th>
+<th class="py-space-sm px-space-md font-bold">Prix Unitaire</th>
+<th class="py-space-sm px-space-md font-bold">Carton (24u)</th>
+<th class="py-space-sm px-space-md font-bold">Stock Kinshasa</th>
+<th class="py-space-sm px-space-md font-bold">Statut</th>
+<th class="py-space-sm px-space-md font-bold text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Item 1: BUKHETE Vaisselle 250ml Citron -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Bouteille de liquide vaisselle Bukhete jaune translucide 250ml bouchon pompe bleu sur fond studio immaculé avec gouttes d'eau fraîches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-olxQ4-6BI_FtYWDZwaLJ8l-6o_e1Gv6DBs8UDobBOmd3Rf0q-BvxuIxGKyj4iJggF10vkyjzQl3ygob89wQRUBJt6wPXQ120OKgqKzT_D73zNJIGpWeUp8w1EezWgHm7VBwrD1k3DR3Bmee5P1OOq1iJHXQQjpIhubAnvDD7Hp8eEQ9uxUY6WfUIt_Xd_Q83CYxcM1FVQeaYVMTWZal1lv6VI01hF8ZtwcCyhKdpwDJpp99nyiE"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BUKHETE Vaisselle Citron</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BKT-VAI-250-CIT</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Dégraisse &amp; Nettoie en profondeur</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Liquide Vaisselle
+                  </span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface">250 ml (Pompe)</td>
+<td class="py-space-md px-space-md font-bold text-primary">2 200 FC</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-secondary">48 000 FC</span>
+<span class="block text-outline text-[11px]">2 000 FC/u grossiste</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">12 400 u</span>
+<span class="text-label-sm text-secondary">516 cartons</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    En ligne
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('edit-drawer').classList.remove('translate-x-full');" title="Modifier la fiche">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Dupliquer">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-error transition-colors" title="Archiver">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 2: BUKHETE Lessive Fraîcheur Marine -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Flacon de lessive liquide Bukhete bleu azur 250ml avec bouchon bleu sur plan de travail buanderie moderne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACQj6w_Oi2vGeVXPWS0KXmP-JbackTCx8uyCSANpocAZ2cjiiDEm2tOez7hOFZVFvHBo-QzLCrDSSceFAVxGQr0mZXke19O_JYseX9OXzW0krrInn6Q5yG_yyQhu9n14aZSmMFLCq6gysASmBHVyHzaNW3RhAQTtDJuj_aAjrW22jK-p26op7gc2lbnS72xiX100jzFIX9vQIwIybDfF7cQCX9ESgrJeX3axFS9cSgjb3zenpv6iw"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BUKHETE Lessive Marine</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BKT-LES-250-MAR</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Douceur &amp; Protection des fibres</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Soin du Linge
+                  </span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface">250 ml / 1 L</td>
+<td class="py-space-md px-space-md font-bold text-primary">2 500 FC</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-secondary">54 000 FC</span>
+<span class="block text-outline text-[11px]">2 250 FC/u grossiste</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">9 850 u</span>
+<span class="text-label-sm text-secondary">410 cartons</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    En ligne
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('edit-drawer').classList.remove('translate-x-full');" title="Modifier la fiche">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Dupliquer">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-error transition-colors" title="Archiver">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 3: BUKHETE Lave-mains Coton -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Flacon de savon liquide Bukhete pour les mains à la fleur de coton packaging translucide pompe ergonomique" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1WUHmItiKgA9cXtUyMlMArG4j8NNDN2QUy6r10rpzcUbzecw2L2gIji0PLdYapvwADC1cxVtOEF_yqd5XXfyiXjH9jNZCfosusIzaFjAO-jhy41TEx4RELE-RWXILnDY4ko_SofqEhpgc7xBV6g4Wgh_71x0NmDedueTXUmkIpVaYWnyYYMkzvqVOjX5r50yo2lpi1PK6FmDHf3sKMB8Q0FjGFw7yjAKQ6JCd1_wkjGgqz4EmWsg"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BUKHETE Savon Mains Coton</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BKT-SAV-250-COT</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Enrichi à la glycérine végétale</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed-dim"></span>
+                    Hygiène Corporelle
+                  </span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface">250 ml</td>
+<td class="py-space-md px-space-md font-bold text-primary">2 000 FC</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-secondary">43 200 FC</span>
+<span class="block text-outline text-[11px]">1 800 FC/u grossiste</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">6 120 u</span>
+<span class="text-label-sm text-secondary">255 cartons</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    En ligne
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('edit-drawer').classList.remove('translate-x-full');" title="Modifier la fiche">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Dupliquer">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-error transition-colors" title="Archiver">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 4: BUKHETE Multi-usages Lavande -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Bouteille dégraissant multi-usages Bukhete formule violette parfum lavande avec bouchon verseur doseur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9o8OzS4Pf1Wl9weRkAgdP6Mry2naxA2ZcNiErEfrgkgV5gjTPV08rulwHsBTEe0r49qabsAlthJdBGWA3sOIjUYE9qb2iNRKWPuYK4PJ1KI2oDe5hqCAIQ6LJp-H7zhqrzphFXJ3om3yz6IzDi7VqcMqvrmsJZZaHgTB1Z-4pc5-xcXlepcCS-o7cWB5JfH9bliCbMsZweopnGJNFLPWYHAXZ3KA0LkM9PGOVmcE_taWoua1CPGY"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BUKHETE Nettoyant Multi Lavande</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BKT-MUL-250-LAV</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Brillance sans rinçage &amp; anti-poussière</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                    Entretien Multi-surfaces
+                  </span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface">250 ml / 5 L</td>
+<td class="py-space-md px-space-md font-bold text-primary">2 100 FC</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-secondary">45 600 FC</span>
+<span class="block text-outline text-[11px]">1 900 FC/u grossiste</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">4 200 u</span>
+<span class="text-label-sm text-secondary">175 cartons</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                    Brouillon
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('edit-drawer').classList.remove('translate-x-full');" title="Modifier la fiche">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Dupliquer">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-error transition-colors" title="Archiver">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Item 5: BUKHETE Sol Fleur de Cerisier -->
+<tr class="hover:bg-surface-container/50 transition-colors group">
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-sm">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform" data-alt="Nettoyant sol Bukhete rose frais parfum fleur de cerisier emballage 250ml haute concentration désinfectante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYR4Gz-zUPhRbbqzUh_rTN79TGJ4-Bw32x6mJSY8UHcMr2AWA41hpv3buPnLCUef0J2oI2dnKIAhgwLMkPEtXtBn_FlJYsUIyhYmzyYU61sGhNqCuDvSHKs5IfdqYAwchtF1FD861hrb8LyndWmepxCYxkXGY4pmUiSnJLO9itJdvFPU2XYLSsyNTXqybHFXr5az-NR2m5k13j6wkwQQzQuAtpp2m68h0rOWu3QzzCPGIr3sbNL24"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">BUKHETE Sols Fleur de Cerisier</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BKT-SOL-250-CER</span>
+<span class="text-label-sm font-label-sm text-secondary font-semibold">Parfum rémanent 24h &amp; désinfection</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Sols &amp; Carrelages
+                  </span>
+</td>
+<td class="py-space-md px-space-md font-semibold text-on-surface">250 ml</td>
+<td class="py-space-md px-space-md font-bold text-primary">2 200 FC</td>
+<td class="py-space-md px-space-md">
+<span class="font-bold text-secondary">48 000 FC</span>
+<span class="block text-outline text-[11px]">2 000 FC/u grossiste</span>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-bold text-on-surface">2 250 u</span>
+<span class="text-label-sm text-tertiary font-bold">Faible stock (93 cart.)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                    En ligne
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" onclick="document.getElementById('edit-drawer').classList.remove('translate-x-full');" title="Modifier la fiche">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-secondary transition-colors" title="Dupliquer">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-2 rounded-full hover:bg-surface-container text-on-surface-variant hover:text-error transition-colors" title="Archiver">
+<span class="material-symbols-outlined text-[18px]">archive</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer Pagination & Industrial Export -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="text-label-sm font-label-sm text-on-surface-variant">
+            Affichage de <strong>5</strong> références sur <strong>5</strong> actives en République Démocratique du Congo
+          </div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-outline text-label-sm font-bold cursor-not-allowed">Précédent</button>
+<span class="px-space-sm py-1 rounded-full bg-primary text-on-primary text-label-sm font-bold">1</span>
+<button class="px-space-sm py-1 rounded-full bg-surface-container text-outline text-label-sm font-bold cursor-not-allowed">Suivant</button>
+</div>
+</div>
+</div>
+<!-- Quick Manufacturing & Quality Assurance Banner -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">biotech</span>
+            Dosage &amp; Tensioactifs
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Nos agents lavants sont synthétisés à partir d'acides gras végétaux traçables certifiés sans phosphate agressif.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">qr_code_2</span>
+            Contrôle &amp; Traçabilité OCC
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Chaque flacon 250ml intègre un code lot imprimé au dos pour la garantie d'authenticité et le suivi logistique.
+          </p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">local_shipping</span>
+            Réseau CHR &amp; Grossistes
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Paliers de dégressivité automatique appliqués dès 100 cartons (soit 2 400 unités livrées par fardeau).
+          </p>
+</div>
+</div>
+</main>
+</div>
+<!-- 3. SLIDE-OVER DRAWER (Modal / Fiche Produit & Technique Complète) -->
+<div class="fixed inset-0 z-50 overflow-hidden translate-x-full transition-transform duration-300 ease-in-out flex justify-end" id="edit-drawer">
+<!-- Backdrop blur -->
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm transition-opacity" onclick="document.getElementById('edit-drawer').classList.add('translate-x-full');"></div>
+<!-- Drawer Panel Canvas -->
+<div class="relative w-full max-w-2xl bg-surface-container-lowest h-full shadow-2xl flex flex-col overflow-hidden z-10">
+<!-- Drawer Header -->
+<div class="bg-primary text-on-primary p-space-lg flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider font-bold">Éditeur Technique Produit</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-primary">BUKHETE Vaisselle Citron 250ml</h2>
+</div>
+</div>
+<button class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center hover:bg-surface-container-highest hover:text-on-surface transition-colors" onclick="document.getElementById('edit-drawer').classList.add('translate-x-full');">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Scrollable Form Body -->
+<div class="flex-1 overflow-y-auto p-space-lg flex flex-col gap-space-lg">
+<!-- Status & Visibility Pills -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant font-bold">État de publication :</span>
+<select class="px-space-md py-1.5 bg-surface-container-lowest rounded-full font-label-sm text-label-sm text-secondary font-bold shadow-sm focus:outline-none">
+<option selected="">En Ligne (Catalogue Public &amp; Grossiste)</option>
+<option>Brouillon / Pré-formulation</option>
+<option>Hors Stock Usine Temporaire</option>
+<option>Bientôt Disponible (Campagne Teasing)</option>
+</select>
+</div>
+<span class="text-label-sm font-label-sm text-outline">Mis à jour le 12/03/2025</span>
+</div>
+<!-- Section 1: Identification Commerciale -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">label</span>
+            1. Dénomination &amp; Présentation Flacon
+          </span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Nom officiel du produit</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="BUKHETE Vaisselle"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Parfum &amp; Arôme</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Citron Frais Zeste"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Catégorie BUKHETE</label>
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary">
+<option selected="">Liquide Vaisselle &amp; Dégraissant</option>
+<option>Lessive Liquide Tous Textiles</option>
+<option>Savon Liquide &amp; Soin Mains</option>
+<option>Nettoyant Multi-surfaces</option>
+<option>Nettoyant &amp; Brillance Sols</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Contenance Commerciale</label>
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary">
+<option selected="">250 ml (Flacon avec Pompe bleue)</option>
+<option>1 Litre (Bouchon doseur)</option>
+<option>5 Litres (Bidon industriel CHR)</option>
+<option>20 Litres (Fût collectivité)</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1 mt-space-xs">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Slogan d'impact étiquette</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary" type="text" value="Dégraisse &amp; Nettoie • Brillance instantanée"/>
+</div>
+</div>
+<!-- Section 2: Tarification Grossistes RDC & Monnaie -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">price_change</span>
+            2. Tarification Unitaire &amp; Fardeau Grossiste (Francs Congolais)
+          </span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Prix Détail Recommandé</label>
+<div class="relative">
+<input class="w-full pl-3 pr-12 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface font-bold" type="number" value="2200"/>
+<span class="absolute right-3 top-2 text-label-sm font-bold text-outline">FC</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Prix Carton (24 unités)</label>
+<div class="relative">
+<input class="w-full pl-3 pr-12 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface font-bold" type="number" value="48000"/>
+<span class="absolute right-3 top-2 text-label-sm font-bold text-outline">FC</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Palier Grossiste (≥ 50 Cartons)</label>
+<div class="relative">
+<input class="w-full pl-3 pr-12 py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface font-bold text-secondary" type="number" value="45000"/>
+<span class="absolute right-3 top-2 text-label-sm font-bold text-outline">FC</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Packshots & Gestionnaire d'Images Studio -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">photo_camera</span>
+            3. Visuels Studio Packshots &amp; Contre-Étiquettes
+          </span>
+<div class="grid grid-cols-3 gap-space-md">
+<!-- Front packshot -->
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm font-bold text-on-surface">Packshot Face Avant</span>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg flex flex-col items-center justify-center p-2 text-center overflow-hidden group">
+<img class="w-full h-full object-contain" data-alt="Flacon vaisselle Bukhete 250ml fond transparent face avant nette étiquette verte citron" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsh_oJKpfNA3iwFdEm_sRSRM9tWAd__t3FtDQ477D1asTy687rOfYaMbT5Hr9FPtmviDDV5eetZpgSxMuL4VSfrbp_MpFKscYRuDEJS1QGJf3vTybpzY5Yf2-W4TvL1f4BSVbor7TIYmLEEXlVf8zMI187a_Nf3PnljlE8DGp9Zjlxi5QoyCOptq0KiZPEBonUAiWLODwXlr3R4YfZY7qkMv2QLQG9yu-SBkvrJefMoB6WdgOaNWM"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity text-on-primary gap-1">
+<span class="material-symbols-outlined text-[20px]">change_circle</span>
+<span class="text-label-sm font-bold">Remplacer</span>
+</div>
+</div>
+</div>
+<!-- Back label -->
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm font-bold text-on-surface">Contre-Étiquette Dos</span>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg flex flex-col items-center justify-center p-2 text-center overflow-hidden group">
+<img class="w-full h-full object-contain" data-alt="Vue arrière bouteille Bukhete dos étiquette mode emploi précautions d'emploi et logo Niumba Transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB663XTzZbp917VYpBQxrj69ei0ac0_DfePzkkJ3_4WefgYiQgHy3sIxMWZzIk7qNA_VeAag_YkVj-0vzgbxVu6lkuErTko0lVdJ50B1rbai5sP3y_N-DW36KpxVgU7SXZpkp-mddnP6aBSdMYnCGLnp0bVeNYI5vtCEdfxlaGf3x7-PUto3yJdmVinCa0HAY07L8SwDXnnoNTn0bRMhCDRyqQvaiqfDRicVM0rRFE4txyhjgWvFc"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity text-on-primary gap-1">
+<span class="material-symbols-outlined text-[20px]">change_circle</span>
+<span class="text-label-sm font-bold">Remplacer</span>
+</div>
+</div>
+</div>
+<!-- Lifestyle / Kitchen Studio -->
+<div class="flex flex-col gap-1">
+<span class="text-label-sm font-label-sm font-bold text-on-surface">Mise en Situation Studio</span>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg flex flex-col items-center justify-center p-2 text-center overflow-hidden group">
+<img class="w-full h-full object-contain" data-alt="Produit Bukhete liquide vaisselle dans une cuisine moderne lumineuse marbre et vaisselle étincelante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmwTrVmn6TThPrf9PC_-eCzWcm-42etfpz8wLpZ6MWu8TrumrT0dJgzIzIe9bZNJe1UBD5nBRiXyc000AywMx5-JZUTVbFbb9SYJYm6Bn1k4HrhJXzVrIOiOBvQyc04KQCzUQ-ldKvIJRFiRo364q5yHBIuWFr2ruZjHZXhmD_1foKsLqHLolWFvxcavl09cEPjn1utJdgkCorDWdHFnG-apbxHKhujLylEgGVlIq9-I0Q9n4SAak"/>
+<div class="absolute inset-0 bg-primary/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity text-on-primary gap-1">
+<span class="material-symbols-outlined text-[20px]">change_circle</span>
+<span class="text-label-sm font-bold">Remplacer</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full p-space-md rounded-lg bg-surface-container border-dashed border-2 border-outline-variant flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-[28px] text-secondary">cloud_upload</span>
+<span class="font-label-md text-label-md font-bold text-primary">Déposer de nouveaux médias flacon (PNG transparents, JPG 300dpi)</span>
+<span class="font-body-sm text-body-sm text-outline">Formats acceptés : WEBP, PNG, MP4 (démo vidéo usine)</span>
+</div>
+</div>
+<!-- Section 4: Fiche Technique & Formulation Chimique -->
+<div class="flex flex-col gap-space-sm pt-space-md">
+<span class="font-headline-sm text-headline-sm font-bold text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">science</span>
+            4. Fiche Technique de Sécurité (FDS) &amp; Ingrédients
+          </span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">pH Recommandé (à 20°C)</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface" type="text" value="6.5 - 7.2 (Neutre pour les mains)"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Biodégradabilité certifiée</label>
+<input class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface" type="text" value="&gt; 90% selon protocole OCDE 301"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Composition &amp; Tensioactifs</label>
+<textarea class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface" rows="2">5-15% tensioactifs anioniques d'origine végétale, &lt;5% tensioactifs amphotères, agent conservateur biodégradable, parfum naturel citron, eau osmosée.</textarea>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Mode d'Emploi Étiquette</label>
+<textarea class="w-full px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface" rows="2">Pour une vaisselle propre et dégraissée : appliquer 1 pression sur éponge humide, frotter puis rincer abondamment à l'eau claire.</textarea>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm font-bold text-on-surface">Vidéo de Démo Associée (Lien Médiathèque BUKHETE)</label>
+<div class="flex items-center gap-space-sm">
+<input class="flex-1 px-space-md py-2 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface" type="text" value="https://niumba.cd/media/demo-bukhete-vaisselle-250ml.mp4"/>
+<button class="px-space-md py-2 bg-surface-container hover:bg-surface-container-high rounded-lg font-label-sm text-label-sm font-bold text-primary transition-colors">Parcourir</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Sticky Controls -->
+<div class="p-space-md bg-surface-container-low border-t border-surface-container flex items-center justify-between gap-space-md shadow-inner">
+<button class="px-space-md py-2 rounded-full hover:bg-surface-container text-on-surface-variant font-label-lg text-label-lg font-semibold transition-colors" onclick="document.getElementById('edit-drawer').classList.add('translate-x-full');" type="button">
+          Annuler
+        </button>
+<div class="flex items-center gap-space-sm">
+<a class="hidden sm:inline-flex items-center gap-1 px-space-md py-2 rounded-full bg-surface-container text-primary hover:bg-surface-container-high font-label-lg text-label-lg font-bold transition-all" data-path="produits-bukhete" href="#">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Prévisualiser</span>
+</a>
+<button class="inline-flex items-center gap-space-xs pl-space-lg pr-space-md py-2 bg-secondary hover:bg-primary text-on-secondary rounded-full font-label-lg text-label-lg font-bold shadow-md transition-all" onclick="document.getElementById('edit-drawer').classList.add('translate-x-full');" type="button">
+<span>Enregistrer les modifications</span>
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-xl pb-space-lg shadow-[0_-1px_8px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl pb-space-xl"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed font-headline-md font-bold flex items-center justify-center">NT</div><span class="font-headline-sm text-headline-sm text-on-primary font-bold">NIUMBA TRANSFORM</span></div><p class="font-body-sm text-body-sm text-on-primary-container leading-relaxed">Fleuron industriel de la transformation locale et de la formulation de produits d'hygiène éco-responsables de haute performance. Marque officielle BUKHETE.</p><div class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">verified</span><span>Fièrement fabriqué en RDC</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Navigation Corporate</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="entreprise" href="#">L'Entreprise &amp; Gouvernance</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="produits-bukhete" href="#">Gamme de Produits BUKHETE</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="innovation-&amp;-ecologie" href="#">Laboratoire, R&amp;D &amp; Écologie</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="videos" href="#">Vidéos &amp; Reportages Usine</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="actualites" href="#">Communiqués &amp; Presse</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Partenariats &amp; Ventes</span><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="devenir-distributeur" href="#">Réseau National de Distribution</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="commander" href="#">Commandes Grossistes &amp; CHR</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="contact" href="#">Service Client &amp; Devis</a><a class="font-body-sm text-body-sm text-surface-variant hover:text-primary-fixed transition-colors" data-path="connexion-back-office" href="#">Portail Collaborateurs &amp; Admin</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-primary-fixed uppercase tracking-wider font-bold mb-space-xs">Mentions Légales &amp; Usine</span><div class="font-body-sm text-body-sm text-on-primary-container space-y-space-xs"><p><strong class="text-on-primary">RCCM :</strong> CD/KNG/RCCM/19-B-01429</p><p><strong class="text-on-primary">Id. Nat. :</strong> 01-G4701-N82914K</p><p><strong class="text-on-primary">NIF :</strong> A1829472H</p><p class="pt-space-xs"><strong class="text-on-primary">Siège Social &amp; Usine :</strong> Kinshasa, République Démocratique du Congo</p></div></div></div><div class="pt-space-lg border-t border-primary-container flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-primary-container">© 2025 Niumba Transform SARL. Tous droits réservés. BUKHETE est une marque déposée.</p><div class="flex items-center gap-space-lg font-label-md text-label-md text-surface-variant"><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Confidentialité</a><a class="hover:text-primary-fixed transition-colors" data-path="contact" href="#">Conditions Générales</a><a class="hover:text-primary-fixed transition-colors flex items-center gap-space-xs" data-path="connexion-back-office" href="#"><span class="material-symbols-outlined text-[14px]">lock</span>Accès Système</a></div></div></div></footer></body></html>
