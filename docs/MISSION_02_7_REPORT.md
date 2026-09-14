@@ -154,7 +154,7 @@ Aucun push effectué. Aucun dépôt distant créé. Aucun déploiement.
 
 ## L. Hash du commit
 
-Renseigné dans le log Git du dépôt local après création (réf. `git log -1 --format=%H`).
+`625acfd982ab4dea6e49021a13248091ae828fc7` (root commit sur `main`).
 
 ## M. Ce qui n'a PAS été fait
 
