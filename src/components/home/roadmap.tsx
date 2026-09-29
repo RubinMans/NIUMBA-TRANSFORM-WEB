@@ -7,7 +7,7 @@ const roadmap = [
   {
     title: "Catalogue BUKHETE",
     text: "Recherche, filtres et fiches produits avec photos officielles.",
-    href: "/produits",
+    href: "/catalogue",
   },
   {
     title: "Commandes",

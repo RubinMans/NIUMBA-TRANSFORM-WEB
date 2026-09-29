@@ -9,13 +9,12 @@ type ProductVisualProps = {
 };
 
 /**
- * Panneau visuel PROVISOIRE des produits BUKHETE.
+ * Panneau visuel des produits BUKHETE.
  *
- * ⚠️ Aucun visuel officiel n'a encore été fourni (ASSETS_OFFICIELS/ absent).
- * Pour respecter la règle anti-invention (cahier § 15, § 52), aucun faux
- * emballage, étiquette, citron ou élément décoratif n'est créé : un panneau
- * de marque neutre affiche explicitement « Visuel officiel à venir ».
- * Il sera remplacé par la photographie officielle dès sa fourniture.
+ * Dès qu'un visuel est renseigné (Admin → Produit → image), il est affiché.
+ * En l'absence de visuel officiel (ASSETS_OFFICIELS), un panneau de marque
+ * neutre affiche explicitement « Visuel officiel à venir » (anti-invention,
+ * cahier § 15, § 52).
  */
 export function ProductVisual({
   product,
@@ -23,6 +22,27 @@ export function ProductVisual({
   showName = false,
   className,
 }: ProductVisualProps) {
+  if (product.image) {
+    const image = product.image;
+    return (
+      <div
+        className={cn(
+          "relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-3xl bg-surface-subtle",
+          variant === "light" && "border-2 border-dashed border-border-soft",
+          className,
+        )}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={image}
+          alt={`${product.name} — ${product.brand}`}
+          className="h-full w-full object-contain"
+          loading="lazy"
+        />
+      </div>
+    );
+  }
+
   if (variant === "light") {
     return (
       <div

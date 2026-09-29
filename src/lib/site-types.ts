@@ -33,6 +33,7 @@ export type SiteSettingsView = {
 export type BrandAssets = {
   logoPath: string | null;
   logoDarkPath: string | null;
+  logoBlackPath: string | null;
   logoSquarePath: string | null;
   faviconPath: string | null;
 };

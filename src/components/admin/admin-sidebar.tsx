@@ -13,20 +13,21 @@ type AdminSidebarProps = {
   user: AdminPanelUser;
   open: boolean;
   onClose: () => void;
+  logoSrc?: string | null;
 };
 
 /**
  * Navigation latérale du portail Admin.
  * Desktop : fixe à gauche. Mobile : tiroir (drawer) avec voile de fond.
  */
-export function AdminSidebar({ user, open, onClose }: AdminSidebarProps) {
+export function AdminSidebar({ user, open, onClose, logoSrc }: AdminSidebarProps) {
   const pathname = usePathname();
   const isActive = (href: string) => (href === "/admin" ? pathname === href : pathname.startsWith(href));
 
   const content = (
     <div className="flex h-full flex-col overflow-y-auto bg-primary-deep text-white">
       <div className="flex items-center justify-between gap-3 px-5 pt-5">
-        <AdminBrand href="/admin" />
+        <AdminBrand href="/admin" logoSrc={logoSrc} />
         <button
           type="button"
           onClick={onClose}

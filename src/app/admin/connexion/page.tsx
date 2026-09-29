@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth";
 import { getBrandAssets } from "@/services/site-settings";
 import { LoginForm } from "@/components/admin/login-form";
+import { LogoImage } from "@/components/site/logo-image";
 import {
   ArrowLeftIcon,
   ShieldIcon,
@@ -65,20 +66,15 @@ export default async function AdminConnexionPage() {
 
               <div className="mt-8 flex items-center gap-4">
                 {assets.logoPath ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={assets.logoPath}
-                    alt="Logo NIUMBA TRANSFORM"
-                    className="h-14 w-auto max-w-[220px] object-contain"
-                  />
+                  <LogoImage src={assets.logoPath} alt="NIUMBA TRANSFORM" />
                 ) : (
-                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-lg font-extrabold tracking-tight text-primary">
+                  <span className="flex h-12 w-12 md:h-14 md:w-14 shrink-0 items-center justify-center rounded-2xl bg-white text-base font-extrabold tracking-tight text-primary">
                     NT
                   </span>
                 )}
                 <div className="leading-none">
-                  <p className="text-lg font-extrabold tracking-tight">NIUMBA TRANSFORM</p>
-                  <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.3em] text-secondary">Marque BUKHETE</p>
+                  <p className="text-xl md:text-2xl font-extrabold tracking-tight">NIUMBA TRANSFORM</p>
+                  <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.3em] text-secondary">Marque BUKHETE</p>
                 </div>
               </div>
 

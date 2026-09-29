@@ -28,7 +28,7 @@ export const mainNavigation: NavItem[] = [
   {
     label: "Produits BUKHETE",
     shortLabel: "Produits",
-    href: "/produits",
+    href: "/catalogue",
     description: "Catalogue de la marque BUKHETE.",
   },
   {
@@ -75,7 +75,7 @@ export const footerLegalLinks: NavItem[] = [
 ];
 
 export const footerBukheteLinks: NavItem[] = [
-  { label: "Catalogue BUKHETE", href: "/produits" },
+  { label: "Catalogue BUKHETE", href: "/catalogue" },
   { label: "Passer une commande", href: "/commander" },
   { label: "Devenir distributeur", href: "/devenir-distributeur" },
   { label: "Contact commercial", href: "/contact" },

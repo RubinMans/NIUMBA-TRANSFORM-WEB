@@ -6,6 +6,7 @@ import type { AdminProductDetail } from "@/services/admin-products";
 import type { CategoryOption } from "@/services/admin-products";
 import { slugify, PRODUCT_STATUSES } from "@/data/catalogue";
 import { AdminButton } from "@/components/admin/admin-button";
+import { MediaUploader } from "@/components/admin/media-uploader";
 import { AlertIcon, PlusIcon, TrashIcon, CheckIcon } from "@/components/admin/icons";
 import { cn } from "@/lib/utils";
 
@@ -289,19 +290,23 @@ export function ProductForm({ categories, product }: ProductFormProps) {
         <div>
           <p className="text-base font-extrabold tracking-tight text-ink">Visuels produits</p>
           <p className="text-sm text-ink-muted">
-            Chemins publics des visuels officiels (ex. /media/produits/savon-en-barre.jpg).
+            Photographie officielle du produit. L&apos;upload l&apos;enregistre localement
+            (/media/uploads/produits/…) et l&apos;affiche sur le site immédiatement.
           </p>
         </div>
 
         <div>
           <FieldLabel htmlFor="productImage">Image principale</FieldLabel>
-          <input
-            id="productImage"
+          <MediaUploader
             value={image}
-            onChange={(event) => setImage(event.target.value)}
-            className={inputClass}
-            placeholder="/media/produits/…"
+            onChange={setImage}
+            folder="produits"
+            label="Visuel du produit"
+            hint="JPG, PNG, WebP, SVG — 5 Mo maximum."
           />
+          <p className="mt-2 text-[11px] text-ink-soft">
+            Chemin interne : <span className="font-mono">{image || "— aucun visuel —"}</span>
+          </p>
         </div>
 
         <div>

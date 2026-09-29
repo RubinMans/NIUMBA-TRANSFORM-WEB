@@ -38,12 +38,6 @@ export type AdminNavGroup = {
   items: AdminNavItem[];
 };
 
-/** Identifiants de démonstration pour la prévisualisation (mission 01.5). */
-export const adminDemoCredentials = {
-  email: "admin@exemple.local",
-  password: "bukhete2025",
-} as const;
-
 export const adminNavGroups: AdminNavGroup[] = [
   {
     items: [

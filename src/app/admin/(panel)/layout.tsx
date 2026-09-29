@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser, type AdminPanelUser } from "@/lib/auth";
+import { getVisualIdentityRaw } from "@/services/site-settings";
 import { AdminLayout } from "@/components/admin/admin-layout";
 
 export const runtime = "nodejs";
@@ -21,5 +22,8 @@ export default async function AdminPanelLayout({ children }: { children: React.R
     roleLabel: user.roleLabel,
   };
 
-  return <AdminLayout user={panelUser}>{children}</AdminLayout>;
+  const identity = await getVisualIdentityRaw();
+  const logoSrc = identity.logoPath ?? identity.logoBlackPath;
+
+  return <AdminLayout user={panelUser} logoSrc={logoSrc}>{children}</AdminLayout>;
 }

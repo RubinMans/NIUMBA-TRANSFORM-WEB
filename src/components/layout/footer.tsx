@@ -24,7 +24,7 @@ export async function Footer() {
       <Container className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:py-16">
         {/* Marque */}
         <div className="flex flex-col gap-4 lg:col-span-4">
-          <Logo onDark logoSrc={assets.logoDarkPath ?? assets.logoPath} />
+          <Logo onDark logoSrc={assets.logoPath ?? assets.logoDarkPath ?? assets.logoBlackPath} />
           <p className="max-w-xs text-sm leading-relaxed text-primary-soft/80">
             {settings.companyDescription}
           </p>
@@ -143,12 +143,42 @@ export async function Footer() {
 
       {/* Signature conception */}
       <div className="border-t border-white/5">
-        <Container className="flex justify-center py-4">
-          <p className="text-[11px] font-medium tracking-wide text-primary-soft/40">
-            {settings.designerCredit || siteConfig.designerCredit}
-          </p>
+        <Container className="flex justify-center py-5">
+          <CreditSignature credit={settings.designerCredit || siteConfig.designerCredit} />
         </Container>
       </div>
     </footer>
+  );
+}
+
+/**
+ * Signature conception affichée en bas de page.
+ * Style discret et professionnel : le nom du concepteur est mis en valeur
+ * sobrement, sans concurrencer la marque NIUMBA TRANSFORM.
+ */
+function CreditSignature({ credit }: { credit: string }) {
+  const brandToken = credit.match(/One.?Koncept/i)?.[0];
+
+  if (!brandToken) {
+    return (
+      <p className="text-center text-[11px] font-medium tracking-wide text-primary-soft/40">
+        {credit}
+      </p>
+    );
+  }
+
+  const [before, after] = credit.split(brandToken);
+  return (
+    <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 text-center text-[11px] font-medium tracking-wide text-primary-soft/50">
+      <span className="hidden h-px w-8 bg-white/10 sm:inline-block" aria-hidden />
+      {before ? <span>{before.trim()}</span> : null}
+      <span className="inline-flex items-center gap-2">
+        <span className="h-1 w-1 rounded-full bg-secondary/70" aria-hidden />
+        <span className="font-bold tracking-[0.08em] text-primary-soft/90">{brandToken}</span>
+        <span className="h-1 w-1 rounded-full bg-secondary/70" aria-hidden />
+      </span>
+      {after ? <span>{after.trim()}</span> : null}
+      <span className="hidden h-px w-8 bg-white/10 sm:inline-block" aria-hidden />
+    </p>
   );
 }

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Découvrez le catalogue BUKHETE : savons, lessives, liquides vaisselle, eau de Javel, esprit de sel et balais écologiques, fabriqués en RDC.",
 };
 
-export default async function ProduitsPage() {
+export default async function CataloguePage() {
   const [categories, products] = await Promise.all([getCategories(), getProducts()]);
 
   return (

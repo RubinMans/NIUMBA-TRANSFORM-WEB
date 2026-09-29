@@ -44,7 +44,7 @@ export default async function CategoriePage({ params }: CategoriePageProps) {
           <nav aria-label="Fil d’Ariane" className="mb-6 text-sm text-primary-soft/70">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/produits" className="transition-colors hover:text-white">
+                <Link href="/catalogue" className="transition-colors hover:text-white">
                   Catalogue
                 </Link>
               </li>
@@ -77,7 +77,7 @@ export default async function CategoriePage({ params }: CategoriePageProps) {
               </h2>
             </div>
             <Link
-              href="/produits"
+              href="/catalogue"
               className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-secondary-dark"
             >
               Retour au catalogue

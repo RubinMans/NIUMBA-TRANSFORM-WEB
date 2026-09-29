@@ -150,9 +150,9 @@ export type DemoUser = {
 };
 
 export const demoUsers: DemoUser[] = [
-  { id: "u1", name: "Administrateur démo", email: "admin@exemple.local", role: "Super administrateur", status: "Actif" },
-  { id: "u2", name: "Rédacteur démo", email: "redacteur@exemple.local", role: "Rédacteur CMS", status: "Actif" },
-  { id: "u3", name: "Commercial démo", email: "commercial@exemple.local", role: "Responsable commercial", status: "Inactif" },
+  { id: "u1", name: "Administrateur démo", email: "admin.demo@exemple.cd", role: "Super administrateur", status: "Actif" },
+  { id: "u2", name: "Rédacteur démo", email: "redacteur@exemple.cd", role: "Rédacteur CMS", status: "Actif" },
+  { id: "u3", name: "Commercial démo", email: "commercial@exemple.cd", role: "Responsable commercial", status: "Inactif" },
 ];
 
 export const demoRoles = [

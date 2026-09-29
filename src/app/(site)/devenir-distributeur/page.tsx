@@ -96,7 +96,7 @@ export default function DevenirDistributeurPage() {
             <Button href="/contact" variant="ghost">
               Contacter l’entreprise
             </Button>
-            <Button href="/produits" variant="ghost">
+            <Button href="/catalogue" variant="ghost">
               Découvrir le catalogue
             </Button>
           </div>

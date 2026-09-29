@@ -11,12 +11,12 @@ import type { AdminPanelUser } from "@/lib/auth";
  * sidebar + header sticky + zone de contenu.
  * Mission 02 : connecté à l'authentification et aux données réelles.
  */
-export function AdminLayout({ user, children }: { user: AdminPanelUser; children: React.ReactNode }) {
+export function AdminLayout({ user, children, logoSrc }: { user: AdminPanelUser; children: React.ReactNode; logoSrc?: string | null }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="min-h-dvh bg-surface-subtle lg:pl-[264px]">
-      <AdminSidebar user={user} open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+      <AdminSidebar user={user} open={sidebarOpen} onClose={() => setSidebarOpen(false)} logoSrc={logoSrc} />
       <div className="flex min-h-dvh flex-col">
         <AdminHeader user={user} onOpenSidebar={() => setSidebarOpen(true)} />
         <main className="flex-1">
@@ -25,7 +25,7 @@ export function AdminLayout({ user, children }: { user: AdminPanelUser; children
         <footer className="border-t border-border-soft px-6 py-4">
           <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-2 text-xs text-ink-muted">
             <span>
-              {siteConfig.companyName} — Portail d’administration ({siteConfig.buildVersion})
+              {siteConfig.companyName} — Portail d&apos;administration ({siteConfig.buildVersion})
             </span>
             <span>Données enregistrées en base (SQLite / développement)</span>
           </div>

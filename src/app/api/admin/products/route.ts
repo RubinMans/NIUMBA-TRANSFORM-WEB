@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { getCurrentUser } from "@/lib/auth";
 import { getAdminProducts, uniqueSlug } from "@/services/admin-products";
 import { prisma } from "@/db/client";
@@ -77,6 +78,11 @@ export async function POST(request: Request) {
         })),
     });
   }
+
+  // Propagation immédiate : accueil, catalogue, catégories, fiche du produit.
+  revalidatePath("/", "layout");
+  revalidatePath("/catalogue");
+  revalidatePath(`/produit/${product.slug}`);
 
   return NextResponse.json({ product: { id: product.id, slug: product.slug } }, { status: 201 });
 }

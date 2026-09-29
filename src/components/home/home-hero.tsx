@@ -54,7 +54,7 @@ export function HomeHero() {
               Découvrir l’entreprise
             </Button>
             <Button
-              href="/produits"
+              href="/catalogue"
               variant="primary"
               size="lg"
               className="border border-white/25 bg-white/10 backdrop-blur-md hover:bg-white/20"

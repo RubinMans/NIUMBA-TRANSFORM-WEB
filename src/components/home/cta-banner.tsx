@@ -20,7 +20,7 @@ export function CtaBanner() {
           </p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-3">
-          <Button href="/produits" variant="accent" size="lg" withArrow>
+          <Button href="/catalogue" variant="accent" size="lg" withArrow>
             Voir le catalogue
           </Button>
           <Button

@@ -55,6 +55,10 @@ yarn-error.log*
 # photos produit provisoires (non référencées, en attente des ASSETS OFFICIELS)
 /public/media/produits/*.jpg
 
+# uploads locaux via Admin (stockage dev — mission 02.9)
+/public/media/uploads/*
+!/public/media/uploads/.gitkeep
+
 # vercel
 .vercel
 

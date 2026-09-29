@@ -240,7 +240,7 @@ export default function EntreprisePage() {
           </ol>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Button href="/produits" variant="primary" withArrow>
+            <Button href="/catalogue" variant="primary" withArrow>
               Découvrir la gamme {siteConfig.brandName}
             </Button>
             <Button href="/contact" variant="ghost">

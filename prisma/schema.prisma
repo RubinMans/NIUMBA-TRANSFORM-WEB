@@ -231,7 +231,7 @@ model SiteSettings {
   // Réseaux sociaux au format JSON (ex. {"facebook": "...", "instagram": "..."})
   social             String   @default("{}")
   horaires           String?
-  designerCredit     String   @default("Site conçu par One Concept")
+  designerCredit     String   @default("Conçu par One Koncept")
   updatedAt          DateTime @updatedAt
 
   @@map("site_settings")
@@ -242,6 +242,7 @@ model VisualIdentity {
   id             Int      @id @default(1)
   logoPath       String?
   logoDarkPath   String?
+  logoBlackPath  String?
   logoSquarePath String?
   faviconPath    String?
   updatedAt      DateTime @updatedAt

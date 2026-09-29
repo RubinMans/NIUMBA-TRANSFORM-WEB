@@ -11,7 +11,7 @@ import {
   AdminTableTitle,
 } from "@/components/admin/admin-table";
 import { PlusIcon, UsersIcon, EditIcon, TrashIcon, ShieldIcon } from "@/components/admin/icons";
-import { adminDemoCredentials, adminNavGroups } from "@/data/admin";
+import { adminNavGroups } from "@/data/admin";
 import { demoUsers, demoRoles } from "@/data/admin-demo";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export default function AdminUtilisateursPage() {
     <div className="space-y-6">
       <AdminPageHeader
         title="Utilisateurs & rôles"
-        subtitle="Comptes, rôles et permissions du portail (cahier § 41). Authentification réelle à venir."
+        subtitle="Comptes, rôles et permissions du portail (cahier § 41). Authentification réelle en place ; la gestion des comptes reste à connecter."
         demo
         actions={
           <AdminButton icon={<PlusIcon width={15} height={15} />}>Inviter un utilisateur</AdminButton>
@@ -133,39 +133,45 @@ export default function AdminUtilisateursPage() {
         </div>
 
         <div className="flex flex-col gap-6 lg:col-span-5">
-          <AdminPanel title="Sécurité à venir" description="Éléments prévus par le cahier des charges (§ 46).">
-            <ul className="flex flex-col gap-2.5 text-sm text-ink-muted">
+          <AdminPanel title="Sécurité de la connexion" description="État réel des protections (cahier § 46).">
+            <ul className="flex flex-col gap-2.5 text-sm">
               {[
-                "Authentification sécurisée",
-                "Mots de passe hashés",
-                "Gestion sécurisée des sessions",
-                "Contrôle des permissions",
-                "Validation des données",
-                "Protection contre les injections",
-                "Protection CSRF",
-                "Validation des uploads",
-                "Journalisation des actions sensibles",
-              ].map((item) => (
-                <li key={item} className="flex items-center gap-2.5 rounded-xl bg-surface-subtle px-3.5 py-2.5">
-                  <ShieldIcon width={15} height={15} className="shrink-0 text-secondary" />
-                  {item}
+                ["Authentification réelle en place", true],
+                ["Mots de passe hachés (scrypt)", true],
+                ["Sessions sécurisées HTTP-only", true],
+                ["Validation des données (formulaires)", true],
+                ["Contrôle des permissions par module", false],
+                ["Journalisation des actions sensibles", false],
+                ["Protection CSRF renforcée", false],
+                ["Rate limiting de la connexion", false],
+              ].map(([label, ready]) => (
+                <li
+                  key={String(label)}
+                  className="flex items-center gap-2.5 rounded-xl bg-surface-subtle px-3.5 py-2.5"
+                >
+                  <ShieldIcon
+                    width={15}
+                    height={15}
+                    className={ready ? "shrink-0 text-secondary" : "shrink-0 text-ink-soft"}
+                  />
+                  <span className={ready ? "text-secondary-dark" : "text-ink-muted"}>{String(label)}</span>
                 </li>
               ))}
             </ul>
           </AdminPanel>
 
-          <AdminPanel title="Compte de démonstration" description="Identifiants utilisables pour la prévisualisation.">
+          <AdminPanel title="Connexion administrateur" description="Comment fonctionne l'accès au portail aujourd'hui.">
             <div className="flex items-start gap-3">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary-soft text-primary">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-secondary-soft text-secondary-dark">
                 <UsersIcon />
               </span>
               <div className="text-sm">
-                <p className="font-extrabold text-ink">Administrateur démo</p>
-                <p className="mt-1 font-mono text-xs text-ink-muted">{adminDemoCredentials.email}</p>
-                <p className="font-mono text-xs text-ink-muted">{adminDemoCredentials.password}</p>
-                <p className="mt-1.5 text-xs leading-relaxed text-ink-muted">
-                  Connexion simulée uniquement — la vraie gestion des utilisateurs arrive
-                  avec la mission d&apos;authentification.
+                <p className="font-extrabold text-ink">Authentification réelle</p>
+                <p className="mt-1 text-xs leading-relaxed text-ink-muted">
+                  La connexion /admin/connexion vérifie les comptes enregistrés dans la
+                  base (mots de passe hachés, sessions persistées). La gestion des
+                  comptes (invitation, activation, mot de passe) sera développée dans
+                  la mission dédiée.
                 </p>
               </div>
             </div>

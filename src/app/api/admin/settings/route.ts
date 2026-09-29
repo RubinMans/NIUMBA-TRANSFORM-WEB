@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { getCurrentUser } from "@/lib/auth";
 import { getSiteSettings, type SiteSettingsView } from "@/services/site-settings";
 import { prisma } from "@/db/client";
@@ -64,6 +65,8 @@ export async function PATCH(request: Request) {
     create: { id: 1, ...data },
     update: data,
   });
+
+  revalidatePath("/", "layout");
 
   return NextResponse.json({ ok: true });
 }

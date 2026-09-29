@@ -56,7 +56,7 @@ export default async function ProduitPage({ params }: ProduitPageProps) {
           <nav aria-label="Fil d’Ariane" className="mb-6 text-sm text-primary-soft/70">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/produits" className="transition-colors hover:text-white">
+                <Link href="/catalogue" className="transition-colors hover:text-white">
                   Catalogue
                 </Link>
               </li>

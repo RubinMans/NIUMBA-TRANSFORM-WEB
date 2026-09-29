@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { getCurrentUser } from "@/lib/auth";
 import { getAdminProduct, uniqueSlug } from "@/services/admin-products";
 import { prisma } from "@/db/client";
@@ -111,6 +112,10 @@ export async function PATCH(request: Request, { params }: RouteContext) {
     }
   }
 
+  revalidatePath("/", "layout");
+  revalidatePath("/catalogue");
+  revalidatePath(`/produit/${product.slug}`);
+
   return NextResponse.json({
     product: { id: product.id, slug: product.slug },
   });
@@ -130,6 +135,9 @@ export async function DELETE(_request: Request, { params }: RouteContext) {
 
   await prisma.productImage.deleteMany({ where: { productId: id } });
   await prisma.product.delete({ where: { id } });
+
+  revalidatePath("/", "layout");
+  revalidatePath("/catalogue");
 
   return NextResponse.json({ ok: true, id });
 }

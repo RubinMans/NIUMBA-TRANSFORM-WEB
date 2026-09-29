@@ -11,7 +11,7 @@
 export const siteConfig = {
   // Identité de l'entreprise (cahier §§ 1-2)
   companyName: "NIUMBA TRANSFORM",
-  legalName: "NIUMA TRANSFORM",
+  legalName: "NIUMBA TRANSFORM",
   brandName: "BUKHETE",
   companyDescription:
     "Entreprise industrielle congolaise de transformation locale : chimie, nettoyage, hygiène, assainissement, recyclage et valorisation des déchets.",
@@ -39,7 +39,7 @@ export const siteConfig = {
   },
 
   // Conception du site (signature discrète dans le footer)
-  designerCredit: "Site conçu par One Concept",
+  designerCredit: "Designed and developed by One_Koncept",
 
   // Statut du projet
   buildVersion: "0.2.0",

@@ -30,7 +30,7 @@ export async function ProductHighlights() {
             </p>
           </div>
           <Link
-            href="/produits"
+            href="/catalogue"
             className="inline-flex items-center gap-2 text-sm font-semibold text-secondary transition-colors hover:text-secondary-dark"
           >
             Tout le catalogue

@@ -98,7 +98,7 @@ export default function CommanderPage() {
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Button href="/produits" variant="ghost">
+            <Button href="/catalogue" variant="ghost">
               Retour au catalogue
             </Button>
             <Button href="/devenir-distributeur" variant="ghost">

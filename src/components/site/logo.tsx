@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { LogoImage } from "@/components/site/logo-image";
 
 type LogoProps = {
   /** Variante pour fond sombre (footer). */
@@ -24,14 +25,10 @@ export function Logo({ onDark = false, logoSrc, className, href = "/" }: LogoPro
         aria-label="NIUMBA TRANSFORM — Accueil"
         className={cn("group inline-flex items-center", className)}
       >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <LogoImage
           src={logoSrc}
           alt="NIUMBA TRANSFORM"
-          className={cn(
-            "h-10 w-auto max-w-[220px] object-contain",
-            onDark && "brightness-0 invert",
-          )}
+          className={cn(onDark && "brightness-0 invert")}
         />
       </Link>
     );
@@ -47,7 +44,7 @@ export function Logo({ onDark = false, logoSrc, className, href = "/" }: LogoPro
     >
       <span
         className={cn(
-          "flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-extrabold tracking-tight",
+          "flex h-12 w-12 md:h-14 md:w-14 shrink-0 items-center justify-center rounded-full text-sm font-extrabold tracking-tight",
           mono,
         )}
         aria-hidden
@@ -57,13 +54,13 @@ export function Logo({ onDark = false, logoSrc, className, href = "/" }: LogoPro
       <span className="flex flex-col leading-none">
         <span
           className={cn(
-            "text-[15px] font-extrabold tracking-tight",
+            "text-[16px] md:text-[17px] font-extrabold tracking-tight",
             onDark ? "text-white" : "text-ink",
           )}
         >
           NIUMBA TRANSFORM
         </span>
-        <span className="mt-0.5 text-[10px] font-bold uppercase tracking-[0.28em] text-secondary">
+        <span className="mt-1 text-[11px] font-bold uppercase tracking-[0.28em] text-secondary">
           Bukhete
         </span>
       </span>

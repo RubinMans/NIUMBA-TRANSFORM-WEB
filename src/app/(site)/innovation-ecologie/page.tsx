@@ -118,7 +118,7 @@ export default function InnovationEcologiePage() {
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-3">
-            <Button href="/produits" variant="primary" withArrow>
+            <Button href="/catalogue" variant="primary" withArrow>
               Découvrir les produits {siteConfig.brandName}
             </Button>
             <Button href="/contact" variant="ghost">

@@ -111,12 +111,14 @@ export async function getBrandAssets(): Promise<BrandAssets> {
     const dbAssets: BrandAssets = {
       logoPath: row?.logoPath || null,
       logoDarkPath: row?.logoDarkPath || null,
+      logoBlackPath: row?.logoBlackPath || null,
       logoSquarePath: row?.logoSquarePath || null,
       faviconPath: row?.faviconPath || null,
     };
     return {
       logoPath: dbAssets.logoPath ?? findFirst(LOGO_CANDIDATES),
       logoDarkPath: dbAssets.logoDarkPath ?? findFirst(LOGO_DARK_CANDIDATES),
+      logoBlackPath: dbAssets.logoBlackPath ?? null,
       logoSquarePath: dbAssets.logoSquarePath ?? findFirst(LOGO_SQUARE_CANDIDATES),
       faviconPath: dbAssets.faviconPath ?? findFirst(FAVICON_CANDIDATES),
     };
@@ -124,8 +126,31 @@ export async function getBrandAssets(): Promise<BrandAssets> {
     return {
       logoPath: findFirst(LOGO_CANDIDATES),
       logoDarkPath: findFirst(LOGO_DARK_CANDIDATES),
+      logoBlackPath: null,
       logoSquarePath: findFirst(LOGO_SQUARE_CANDIDATES),
       faviconPath: findFirst(FAVICON_CANDIDATES),
+    };
+  }
+}
+
+/** Identité visuelle brute (valeurs enregistrées en base, sans repli fichiers). */
+export async function getVisualIdentityRaw(): Promise<BrandAssets> {
+  try {
+    const row = await prisma.visualIdentity.findUnique({ where: { id: 1 } });
+    return {
+      logoPath: row?.logoPath || null,
+      logoDarkPath: row?.logoDarkPath || null,
+      logoBlackPath: row?.logoBlackPath || null,
+      logoSquarePath: row?.logoSquarePath || null,
+      faviconPath: row?.faviconPath || null,
+    };
+  } catch {
+    return {
+      logoPath: null,
+      logoDarkPath: null,
+      logoBlackPath: null,
+      logoSquarePath: null,
+      faviconPath: null,
     };
   }
 }
