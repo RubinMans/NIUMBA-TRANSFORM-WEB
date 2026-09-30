@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { mkdir, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { put } from "@vercel/blob";
 import { randomBytes } from "node:crypto";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/db/client";
@@ -8,7 +7,7 @@ import { prisma } from "@/db/client";
 export const runtime = "nodejs";
 
 /**
- * Upload d'images dans le stockage local (mission 02.9).
+ * Upload d'images vers Vercel Blob (mission production).
  *
  * Sécurité appliquée :
  *  - utilisateur authentifié (session Admin) ;
@@ -17,10 +16,9 @@ export const runtime = "nodejs";
  *  - aucun exécutable ou script ;
  *  - nom de fichier généré côté serveur (jamais celui du client).
  *
- * Les fichiers sont écrits dans `public/media/uploads/<dossier>/` — servis
- * immédiatement par Next.js sous `/media/uploads/…`. Ce stockage local
- * volontairement simple sera migré vers un stockage persistant (Vercel Blob
- * ou S3) dans une mission ultérieure sans changer les URLs publiques.
+ * Les fichiers sont stockés sur Vercel Blob avec un chemin préfixé par le dossier
+ * (logos/, produits/, medias/). L'API retourne le même format qu'avant :
+ * { url, size, type } — compatible avec le frontend existant.
  */
 
 const MAX_FILE_BYTES = 5 * 1024 * 1024; // 5 Mo
@@ -37,11 +35,9 @@ const ALLOWED_TYPES: Record<string, string[]> = {
 
 const ALLOWED_EXTENSIONS = new Set(Object.values(ALLOWED_TYPES).flat());
 
-/** Contextes d'upload autorisés (dossiers sous public/media/uploads/). */
+/** Contextes d'upload autorisés (préfixes de chemin dans le blob store). */
 const ALLOWED_FOLDERS = ["logos", "produits", "medias"] as const;
 type AllowedFolder = (typeof ALLOWED_FOLDERS)[number];
-
-const UPLOAD_ROOT = join(process.cwd(), "public", "media", "uploads");
 
 function sanitizeBaseName(name: string): string {
   const base = name.replace(/\.[^.]+$/, "");
@@ -125,11 +121,24 @@ export async function POST(request: Request) {
 
   const safeName = sanitizeBaseName(file.name) || "image";
   const finalName = `${safeName}-${Date.now()}-${randomBytes(4).toString("hex")}${ext}`;
-  const targetDir = join(UPLOAD_ROOT, folder);
-  await mkdir(targetDir, { recursive: true });
-  await writeFile(join(targetDir, finalName), bytes);
+  const blobPath = `${folder}/${finalName}`;
 
-  const url = `/media/uploads/${folder}/${finalName}`;
+  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  if (!token) {
+    return NextResponse.json(
+      { error: "Configuration de stockage manquante (BLOB_READ_WRITE_TOKEN)." },
+      { status: 500 },
+    );
+  }
+
+  const blob = await put(blobPath, bytes, {
+    access: "public",
+    token,
+    contentType: type,
+    addRandomSuffix: false,
+  });
+
+  const url = blob.url;
 
   try {
     await prisma.media.create({

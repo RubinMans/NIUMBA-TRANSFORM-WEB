@@ -27,6 +27,8 @@ export const metadata: Metadata = {
   title: "Tableau de bord",
 };
 
+export const dynamic = "force-dynamic";
+
 export default async function AdminDashboardPage() {
   const user = await getCurrentUser();
   const [products, categories, orders, distributors, videos, articles] = await Promise.all([
