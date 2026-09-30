@@ -11,7 +11,6 @@ type CategoryRowActionsProps = {
 
 export function CategoryRowActions({ category }: CategoryRowActionsProps) {
   const router = useRouter();
-  const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   async function remove() {
@@ -22,7 +21,6 @@ export function CategoryRowActions({ category }: CategoryRowActionsProps) {
     ) {
       return;
     }
-    setBusy(true);
     setError(null);
     try {
       const response = await fetch(`/api/admin/categories/${category.id}`, {
@@ -31,13 +29,11 @@ export function CategoryRowActions({ category }: CategoryRowActionsProps) {
       const data = await response.json().catch(() => ({}));
       if (!response.ok) {
         setError(typeof data.error === "string" ? data.error : "Suppression impossible.");
-        setBusy(false);
         return;
       }
       router.refresh();
     } catch {
       setError("Erreur réseau pendant la suppression.");
-      setBusy(false);
     }
   }
 

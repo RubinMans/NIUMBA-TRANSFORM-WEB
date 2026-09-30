@@ -70,8 +70,8 @@ export const footerNavigation: NavItem[] = [
 ];
 
 export const footerLegalLinks: NavItem[] = [
-  { label: "Politique de confidentialité", href: "/politique-de-confidentialite" },
-  { label: "Conditions d'utilisation", href: "/conditions-utilisation" },
+  { label: "Politique de confidentialité", href: "/politique-confidentialite" },
+  { label: "CGU", href: "/cgu" },
 ];
 
 export const footerBukheteLinks: NavItem[] = [

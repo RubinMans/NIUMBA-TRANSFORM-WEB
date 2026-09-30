@@ -16,6 +16,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mainNavigation.map((item) => item.href),
     ...footerNavigation.map((item) => item.href),
     ...footerLegalLinks.map((item) => item.href),
+    "/cgu",
+    "/politique-confidentialite",
     ...categories.map((category) => `/categorie/${category.slug}`),
     ...products.map((product) => `/produit/${product.slug}`),
   ]);

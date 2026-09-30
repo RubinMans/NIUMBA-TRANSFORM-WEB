@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AdminPageHeader } from "@/components/admin/admin-page-header";
 import { AdminPanel } from "@/components/admin/admin-panel";
 import { AdminButton } from "@/components/admin/admin-button";
-import { PlusIcon, TagIcon, ProductIcon } from "@/components/admin/icons";
+import { PlusIcon, TagIcon } from "@/components/admin/icons";
 import { getAdminCategories } from "@/services/admin-categories";
 import { CategoryRowActions } from "@/components/admin/categories/category-row-actions";
 import { siteConfig } from "@/lib/site";
