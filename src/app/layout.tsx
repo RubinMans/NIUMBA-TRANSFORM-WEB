@@ -10,10 +10,24 @@ const jakarta = Plus_Jakarta_Sans({
   display: "swap",
 });
 
+function buildIconUrl(path: string | null | undefined): string | undefined {
+  if (!path) return undefined;
+  const base = siteUrl();
+  return path.startsWith("http") ? path : `${base}${path}`;
+}
+
 export async function generateMetadata(): Promise<Metadata> {
   const assets = await getBrandAssets();
-  const faviconPath = assets.faviconPath ?? "/favicon.ico";
-  const iconPath = assets.logoSquarePath ?? assets.logoPath ?? "/icon.svg";
+
+  const faviconUrl = buildIconUrl(assets.faviconPath);
+  const logoUrl = buildIconUrl(assets.logoPath);
+  const logoSquareUrl = buildIconUrl(assets.logoSquarePath);
+
+  const iconUrl = faviconUrl ?? logoSquareUrl ?? logoUrl;
+  const shortcutUrl = faviconUrl ?? logoSquareUrl ?? logoUrl ?? "/favicon.ico";
+  const appleUrl = faviconUrl ?? logoSquareUrl ?? logoUrl;
+
+  const ogImageUrl = logoUrl ?? logoSquareUrl ?? faviconUrl;
 
   return {
     metadataBase: new URL(siteUrl()),
@@ -40,12 +54,32 @@ export async function generateMetadata(): Promise<Metadata> {
       title: siteConfig.companyName,
       description:
         "Entreprise industrielle congolaise — marque BUKHETE de produits de nettoyage, d'hygiène et d'assainissement.",
+      images: ogImageUrl
+        ? [
+            {
+              url: ogImageUrl,
+              width: 1200,
+              height: 630,
+              alt: `${siteConfig.companyName} — ${siteConfig.brandName}`,
+            },
+          ]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@niumbatransform",
+      creator: "@niumbatransform",
+      title: siteConfig.companyName,
+      description:
+        "Entreprise industrielle congolaise — marque BUKHETE de produits de nettoyage, d'hygiène et d'assainissement.",
+      images: ogImageUrl ? [ogImageUrl] : undefined,
     },
     icons: {
-      icon: iconPath,
-      shortcut: faviconPath,
-      apple: iconPath,
+      icon: iconUrl ?? "/icon.svg",
+      shortcut: shortcutUrl,
+      apple: appleUrl ?? "/icon.svg",
     },
+    manifest: `${siteUrl()}/manifest.webmanifest`,
   };
 }
 
