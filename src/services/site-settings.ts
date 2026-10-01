@@ -71,6 +71,7 @@ const LOGO_CANDIDATES = [
 ];
 
 const LOGO_DARK_CANDIDATES = [
+  "/media/logo-niumba-transform-blanc.png",
   "/media/logo-niumba-transform-blanc.svg",
   "/media/logo-niumba-transform-white.svg",
   "/media/logo-niumba-blanc.svg",

@@ -24,7 +24,7 @@ export async function Footer() {
       <Container className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:py-16">
         {/* Marque */}
         <div className="flex flex-col gap-4 lg:col-span-4">
-          <Logo onDark logoSrc={assets.logoPath ?? assets.logoDarkPath ?? assets.logoBlackPath} />
+          <Logo logoSrc={assets.logoDarkPath ?? assets.logoBlackPath ?? assets.logoPath} />
           <p className="max-w-xs text-sm leading-relaxed text-primary-soft/80">
             {settings.companyDescription}
           </p>

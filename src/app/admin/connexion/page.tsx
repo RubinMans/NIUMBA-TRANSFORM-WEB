@@ -65,7 +65,9 @@ export default async function AdminConnexionPage() {
               </p>
 
               <div className="mt-8 flex items-center gap-4">
-                {assets.logoPath ? (
+                {assets.logoDarkPath ? (
+                  <LogoImage src={assets.logoDarkPath} alt="NIUMBA TRANSFORM" />
+                ) : assets.logoPath ? (
                   <LogoImage src={assets.logoPath} alt="NIUMBA TRANSFORM" />
                 ) : (
                   <span className="flex h-12 w-12 md:h-14 md:w-14 shrink-0 items-center justify-center rounded-2xl bg-white text-base font-extrabold tracking-tight text-primary">
