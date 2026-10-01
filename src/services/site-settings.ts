@@ -85,6 +85,7 @@ const LOGO_SQUARE_CANDIDATES = [
 ];
 
 const FAVICON_CANDIDATES = [
+  "/favicon.ico",
   "/media/favicon-niumba-transform.svg",
   "/media/favicon-niumba-transform.png",
   "/media/favicon-niumba.svg",
