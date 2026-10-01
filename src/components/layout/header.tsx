@@ -12,14 +12,14 @@ import { Logo } from "@/components/site/logo";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 
-const OFFICIAL_HEADER_LOGO = "/media/uploads/logos/niumba-transforme-officielle-1789564253802-8ffab721.png";
-
 type HeaderProps = {
   /** Paramètres du site chargés depuis la base (optionnel — repli siteConfig). */
   settings?: SiteSettingsView;
+  /** Chemin du logo officiel (fourni par getBrandAssets). */
+  logoSrc?: string | null;
 };
 
-export function Header({ settings }: HeaderProps) {
+export function Header({ settings, logoSrc }: HeaderProps) {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const cfg = settings ?? fallbackSiteSettings();
@@ -51,7 +51,7 @@ export function Header({ settings }: HeaderProps) {
 
       {/* Barre principale de navigation */}
       <Container className="flex h-16 items-center justify-between gap-4 md:h-20">
-        <Logo logoSrc={OFFICIAL_HEADER_LOGO} />
+        <Logo logoSrc={logoSrc} />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {mainNavigation.map((item) => {

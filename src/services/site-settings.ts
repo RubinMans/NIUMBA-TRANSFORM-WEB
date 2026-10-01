@@ -58,6 +58,7 @@ export async function getSiteSettings(): Promise<SiteSettingsView> {
 
 /** Fichiers candidats pour les assets officiels déposés dans public/. */
 const LOGO_CANDIDATES = [
+  "/media/uploads/logos/niumba-transforme-officielle-1789564253802-8ffab721.png",
   "/media/logo-niumba-transform.svg",
   "/media/logo-niumba-transform.png",
   "/media/logo-niumba-transform.webp",
